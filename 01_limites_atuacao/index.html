@@ -86,7 +86,27 @@
     <section class="paginas">
       <!-- - - - - - - - cada página é independente  - - - - - - - - - - -->
       <div class="pagina">
+        <section class="mob-m no-print">
+          <input id="mob-menu" type="checkbox" />
+          <label class='menu-mob-button-container' for="mob-menu">
+            <div class='menu-mob-button'></div>
+          </label>
+          <ul class="menu">
+            <li><a href="#bloco1">Introdução</a></li>
+            <li><a href="#bloco2">Processos e etapas de venda</a></li>
+            <li><a href="#bloco3">Características de varejo e atacado</a></li>
+            <li><a href="#bloco4">Público-alvo: B2B e B2C</a></li>
+            <li><a href="#bloco5">Funil de vendas</a></li>
+            <li><a href="#bloco6">Código de Defesa do Consumidor</a></li>
+            <li><a href="#bloco7">Encerramento</a></li>
+          </ul>
+        </section>
         <div class="container">
+          <div class="grupo-imprimir no-print">
+            <button type="button" data-pdf="true" class="bto-imprimir" name="button">
+              <span class="fa fa-print"></span> <span>Imprimir</span>
+            </button>
+          </div>
           <h2>Limites de atuação: associações e conselhos (classe e responsabilidade técnica) </h2>
 
         </div>
@@ -163,6 +183,7 @@
   <script src="../template/js/images.loader.js"></script>
   <script src="../template/js/highlight.min.js"></script>
   <script src="../template/js/parallax.min.js"></script>
+  <script src="js/custom.js"></script>
   <noscript>
     <style media="screen">
       .over-loader {
