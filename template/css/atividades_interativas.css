@@ -1,0 +1,146 @@
+/*atividade 01*/
+.ol-atividade01 select:focus{
+    outline: transparent;    
+}
+.ol-atividade01 li{
+    border: 2px solid #999;
+    padding: 10px;
+    list-style-position: inside;
+    margin-right: 50px;
+    padding-right: 65px;
+    border-radius: 10px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 98%;
+    background-size: 50px;
+    
+}
+.atividade01{
+    border-radius: 5px;
+    border: 2px solid #999;
+    padding: 5px;
+    margin: 10px; 
+    position: relative;  
+}
+.btn-warning{background: #c54f5c;}
+.btn-warning:hover{background: #7a3735;}
+
+.ol-atividade01 li.certo{
+    border-color: #4d9264;
+    background-color:  #bff0cf;
+    background-image: url("objetos/ico-positive.png");    
+}
+
+.ol-atividade01 li.certo select{
+    border-color: #4d9264;
+    background-color:  #a2e0b7;
+}
+.ol-atividade01 li.errado{
+    border-color: #853333;
+    background-color:  #e0a2a2;
+    background-image: url("objetos/ico-negative.png");    
+}
+
+.ol-atividade01 li.errado select{
+    border-color: #853333;
+    background-color:  #f8c4c4;
+}
+
+/*Esquema da Bru*/
+div.esquemaDaBru {
+    list-style-position: inside;
+    list-style-type: lower-alpha;
+}
+.esquemaDaBru .alt-c, .esquemaDaBru .alt-e{
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-y: center;
+    background-position-x: 98%;
+    padding: 5px 10px;
+    margin: 0;
+    width: fit-content;
+    padding-right: 60px;
+    transition: 150ms;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border:none;
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: roboto;
+    text-align: left;
+}
+
+.tela3 .esquemaDaBru .alt-c, .tela3 .esquemaDaBru .alt-e{
+    color: black;
+}
+
+.tela1 .esquemaDaBru .alt-c, .tela1 .esquemaDaBru .alt-e{
+    color: #000;
+}
+.esquemaDaBru .alt-c:hover, .esquemaDaBru .alt-e:hover{
+    background-color: lightgoldenrodyellow;
+    padding-right: 60px;
+}
+.esquemaDaBru .alt-c.certo{
+    background-color: rgb(215, 235, 175);    
+    background-image: url("../objetos/ico-positive.png");    
+}
+.esquemaDaBru .alt-e.errado{
+    background-color: rgb(235, 175, 175);   
+    background-image: url("../objetos/ico-negative.png");    
+}
+
+h3.titleQuiz{
+    padding: 25px 0 25px 90px;
+    background-image: url(objetos/ico_vamospraticar_vermelho.png);
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position-y: center;      
+}
+.tela2 h3.titleQuiz{background-image: url(objetos/ico_vamospraticar_branco.png);}
+h4.subQuiz{
+    margin-top: 0;
+}
+
+p.enunciado{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+.feedback-positivo, .feedback-negativo{
+    display: none;
+}
+.feedback-positivo{color:#4d9264;}
+.feedback-negativo{color:#e74c3c;}
+.ol-atividade01 li{list-style: none;}
+.esquemaDaBru button img{
+    max-width: 300px;
+    margin: 0 10px;
+}
+
+@media screen and (max-width:480px){
+    .ol-atividade01{
+        padding: 0;
+        margin-bottom: 60px;
+    }
+    .ol-atividade01 li{
+        line-height: 1.3;
+        width: 100%;
+        padding-right: 50px;
+        background-position-y: 10px;
+        background-size: 30px;
+    }
+    .atividade01{
+        max-width: 100%;
+        text-overflow: ellipsis;
+    }
+    div.esquemaDaBru{
+        padding: 0;
+    }
+}

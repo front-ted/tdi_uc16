@@ -1,0 +1,48 @@
+body {
+  background: url("../imgs/bg.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container.referencias {
+  background-color: transparent;
+  padding: 0px 30px;
+  margin-top: 40px;
+  margin-left: -50px;
+  border-radius: 20px;
+}
+
+.grupo-imprimir {
+  margin-top: 30px;
+}
+
+* {
+  font-family: 'robotoregular', Arial, Verdana, Helvetica;
+  word-break: break-word;
+  color: #fff !important;
+}
+
+p {
+  word-wrap: break-word;
+}
+
+.quebra-linha {
+  display: inline-block;
+}
+
+@media (max-width: 820px) {
+  .fundo-tecnicos {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .container {
+    width: 100% !important;
+  }
+
+  .container.referencias {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100% !important;
+  }
+}
