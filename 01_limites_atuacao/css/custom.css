@@ -571,17 +571,42 @@ img.sombra {
   background: url('../imgs/bt3_hover.png') no-repeat;
 }
 
-
-
-
-
-
 /* fim painel 1 */
 
+.img-destaque1{
+  margin-top: 10%;
+}
 
+/* painel2 */
+.painel2 {
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+}
 
+.painel2 button{
+  border: none;
+}
 
+.bt-diferencas{
+  background: url('../imgs/painel2_bt.png');
+  width: 610px;
+  height: 344px;
+}
 
+.bt-diferencas:hover{
+  background: url('../imgs/painel2_bt_hoover.png')
+}
+
+/* fim painel2 */
+
+.citacao {
+  padding-left: 30%;
+}
+
+table p{
+    margin: 0 0 0px;
+}
 
 
 
@@ -633,7 +658,11 @@ img.sombra {
 
 }
 
-@media (max-width: 820px) {}
+@media (max-width: 820px) {
+  .img-destaque1{
+    margin: 10px auto;
+}
+}
 
 @media (max-width: 580px) {
   .painel1 {
