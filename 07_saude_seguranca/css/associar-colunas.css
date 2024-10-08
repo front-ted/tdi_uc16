@@ -1,0 +1,234 @@
+.div-associar_colunas {
+    background-color: #80392C;
+}
+
+.item {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    align-content: center;
+    gap: 10px;
+    align-items: center;
+    align-content: center;
+    border: 2px solid #333;
+    font-weight: bold;
+}
+
+.selecionado {
+    background-color: #2A8080;
+    border: 2px solid #fff !important;
+    color: #fff;
+}
+
+.associar_colunas_modal .btn-close {
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat !important
+}
+
+.item:hover {
+    background-color: #2A8080;
+    color: #fff;
+    border: 2px solid #fff !important;
+}
+
+.item::before {
+    content: "";
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+}
+
+.item p {
+    text-align: center;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+}
+
+.item.acertou {
+    background-color: #2db534;
+    border-color: #fff;
+    color: #fff;
+}
+
+.item.errou {
+    border: #e93535;
+    background-color: #e93535;
+}
+
+.item1::before {
+    content: "1"
+}
+
+.item2::before {
+    content: "2"
+}
+
+.item3::before {
+    content: "3"
+}
+
+.item4::before {
+    content: "4"
+}
+
+.item5::before {
+    content: "5"
+}
+
+.item6::before {
+    content: "6"
+}
+
+.item7::before {
+    content: "7"
+}
+
+.item8::before {
+    content: "8"
+}
+
+.item9::before {
+    content: "9"
+}
+
+.resp {
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #333;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    align-content: center;
+    font-weight: bold;
+}
+
+.resp:hover {
+    background-color: #2A8080;
+    border: 2px solid #fff !important;
+    color: #fff;
+}
+
+.resp:hover>p {
+    color: #fff;
+}
+
+.resp:hover>div {
+    color: #fff;
+    border-color: #fff;
+}
+
+button:hover {
+    color: #fff !important;
+    border: 2px solid #fff !important;
+}
+
+.resp p {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    color: #333;
+}
+
+.resp.acertou {
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #2db534;
+    border: 2px solid #fff;
+}
+
+.resp.acertou p {
+    color: #fff !important;
+}
+
+.resp.errou {
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #e93535;
+    border-color: #e93535 !important;
+    color: #ffffff;
+}
+
+.resp.errou button,
+.resp.acertou button {
+    color: white;
+
+}
+
+.resp.errou button {
+    border-color: #fff !important;
+}
+
+.resp.acertou button {
+    border-color: #008086 !important;
+}
+
+.txtacao {
+    border: 0px;
+    background: none;
+    color: #333;
+    padding: 8px 20px;
+    border: 3px solid #333;
+    border-radius: 100px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.resp.acertou .txtacao {
+    border: 3px solid #fff;
+    color: white;
+}
+
+.resp.errou .txtacao {
+    border: 3px solid #fff;
+    color: white;
+}
+
+.flexs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.coluna2 {
+    margin-top: 41px;
+}
+
+.modal#associar_colulas_errou .modal-dialog .modal-content .modal-header {
+    background-color: rgb(235, 175, 175) !important;
+    color: darkred;
+    border: 1px solid darkred;
+}
+
+#associarColunasAcertou {
+    color: #008086 !important;
+    font-size: 24px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+#associarColunasErrou {
+    font-size: 24px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+@media screen and (max-width: 820px) {
+    .coluna1 {
+        margin-top: 270px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .coluna1 {
+        margin-top: auto;
+    }
+
+}
