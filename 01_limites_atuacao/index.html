@@ -27,6 +27,7 @@
   <link href="../template/css/fa/css/solid.css" type="text/css" rel="stylesheet" />
   <link href="../template/css/print.css" type="text/css" rel="stylesheet" />
   <link href="../template/fonts/roboto.css" type="text/css" rel="stylesheet" />
+  <link href="css/associar-colunas.css" type="text/css" rel="stylesheet" />
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -106,6 +107,8 @@
             </button>
           </div>
           <div class="section" id="bloco1">
+            <img src="imgs/bg_elemento.png" class="bg-linha no-print">
+            <img src="imgs/bg_img1.png" class="bg-imagem no-print">
             <h2>Limites de atuação: associações e conselhos (classe e responsabilidade técnica) </h2>
             <p>
               Todo profissional tem um limite na sua atuação. Limite de atuação refere-se às restrições legais e
@@ -155,6 +158,8 @@
             </p>
           </div>
           <div class="section" id="bloco2">
+            <img src="imgs/bg_elemento.png" class="bg-linha2 no-print">
+            <img src="imgs/bg_img2.png" class="bg-imagem2 no-print">
             <h3>Associações profissionais e sua importância</h3>
             <p>
               Associações profissionais são entidades criadas para representar, apoiar e promover os interesses de seus
@@ -872,21 +877,66 @@
               </p>
             </div>
             <div class="no-print" aria-hidden="true">
-              <p> Que tal praticar? </p>
-              <p> De acordo com tudo que foi visto até aqui, complete as informações a seguir, relacionando as colunas:
-              </p>
-
-
-
-
-              
+              <div class="caixa-destaque-livre div-associar_colunas">
+                <div class="game-associar-colunas no-print nao-imprimir">
+                  <p> Que tal praticar? </p>
+                  <p> De acordo com tudo que foi visto até aqui, complete as informações a seguir, relacionando as
+                    colunas:
+                  </p>
+                  <div class="row">
+                    <div class="col-12 col-sm-5 flexs coluna1">
+                      <button data-resp="1" class="item item1">
+                        <p><b> O técnico em <i>design</i> de interiores pertence ao Conselho _____ e pode emitir
+                            _____.</b></p>
+                      </button>
+                      <button data-resp="2" class="item item2">
+                        <p><b>O tecnólogo em <i>design</i> de interiores pertence ao Conselho _____ e pode emitir
+                            _____.</b></p>
+                      </button>
+                    </div>
+                    <div class="col-12 col-sm-7 flexs mt-3 coluna2">
+                      <button type="button" data-resp="1" class="resp resp1">
+                        <div class="txtacao"><i class="fa fa-question"></i></div>
+                        <p> ● Conselho Regional de Engenharia e Agronomia (CREA)<br>
+                          ● Anotação de Responsabilidade Técnica
+                          (ART)
+                        </p>
+                      </button>
+                      <button type="button" data-resp="2" class="resp resp2">
+                        <div class="txtacao"><i class="fa fa-question"></i></div>
+                        <p> ● Conselho Federal dos Técnicos Industriais (CFT) <br>
+                          ● Termo de Responsabilidade Técnica (TRT)</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
-
           </div>
-
-
-
+          <div class="section" id="bloco5">
+            <h3> Encerramento </h3>
+            <p>
+              Entender os limites de atuação profissional e reconhecer as associações e os conselhos profissionais é
+              muito
+              importante para os técnicos em design de interiores. Isso garante a qualidade e a segurança dos projetos,
+              assegura a conformidade legal e proporciona suporte, orientação e oportunidades de desenvolvimento
+              profissional. Além disso, confere credibilidade e validação, essenciais para o reconhecimento e sucesso na
+              carreira.
+            </p>
+            <p>
+              Estar associado a entidades de classe profissional não apenas aumenta a credibilidade e as oportunidades
+              de
+              desenvolvimento profissional, mas também assegura que o técnico esteja sempre alinhado com as melhores
+              práticas e regulamentações do setor. Isso significa também estar atualizado sobre normas técnicas,
+              participar de treinamentos e eventos e ter acesso a uma rede de profissionais e recursos que podem
+              enriquecer sua prática e ampliar suas perspectivas de atuação.
+            </p>
+            <p>Quanta informação importante, não é mesmo?</p>
+            <p>
+              Que você se sinta apto e seguro durante sua trajetória. Bons projetos e parcerias profissionais, futuro
+              <i>designer</i>!
+            </p>
+          </div>
         </div>
     </section>
     <!-- - - - - - - - - - - - - - - - não alterar abaixo- - - - - - - - - - - - -->
@@ -1128,8 +1178,29 @@
     </div>
   </div>
 
-
-
+  <div class="modal fade associar_colunas_modal no-print" id="associar_colulas_errou" tabindex="-1"
+    aria-labelledby="associarColunasErrou" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered animate__animated animate__bounceIn">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <h5 class="modal-title" id="associarColunasErrou">Tente novamente! Essa não é resposta correta.
+          </h5>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade associar_colunas_modal no-print" id="associar_colulas_acertou" tabindex="-1"
+    aria-labelledby="associarColunasAcertou" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered  animate__animated animate__zoomIn animate__faster">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <h5 class="modal-title" id="associarColunasAcertou">Parabéns! Sua resposta está correta.</h5>
+          <button type="button" class="btn btn-fechar" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1195,6 +1266,7 @@
   <script src="../template/js/highlight.min.js"></script>
   <script src="../template/js/parallax.min.js"></script>
   <script src="js/custom.js"></script>
+  <script src="js/associar-colunas.js"></script>
   <noscript>
     <style media="screen">
       .over-loader {
