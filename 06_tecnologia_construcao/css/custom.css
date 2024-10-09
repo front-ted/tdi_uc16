@@ -8,36 +8,50 @@ h4,
 h5 {
   color: #000;
 }
-/* 
+
 .bloco {
   padding: 80px 0;
-} */
+} 
 
-/* .bloco1 {
+.bloco1, .bloco5 {
   background: #1A4948;
-  background-image: url('../imgs/bg_dir.png');
   background-repeat: no-repeat;
-  background-position: top right;
   background-attachment: fixed;
-} */
+} 
+
+.bloco3{
+  background: url('../imgs/bg01.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bloco4{
+  background: url('../imgs/bg02.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 .grupo-imprimir {
   margin-top: 104px;
 }
 
-/* .bloco.escuro p,
-.bloco.escuro .container>ul li,
-.bloco.escuro .container>h2,
-.bloco.escuro .container>h3,
-.bloco.escuro .container>h4 {
+.bloco5 h3{
   color: #fff;
 }
 
-.bloco.escuro .modal p,
-.bloco.escuro .caixa-destaque-livre *,
-.bloco.escuro .tab-content * {
+.bloco-escuro p,
+.bloco-escuro .container>ul li,
+.bloco-escuro .container>h2,
+.bloco-escuro .container>h3,
+.bloco-escuro .container>h4 {
+  color: #fff;
+}
+
+.bloco-escuro .modal p,
+.bloco-escuro .caixa-destaque-livre *,
+.bloco-escuro .tab-content * {
   color: #000;
-} */
+} 
 
 .marcadores li {
   list-style: none;
@@ -49,6 +63,10 @@ h5 {
   background: url('../imgs/bg_bloco2.png') no-repeat left 20px top 50px / 12%;
   background-attachment: fixed;
 } */
+
+.img-destaque2{
+  margin-top: 18%;
+}
 
 img.sombra {
   -webkit-box-shadow: 10px -10px 0px 0px rgba(214, 77, 61, 1);
@@ -378,25 +396,10 @@ img.sombra {
 }
 
 
-@media (max-width: 1500px) {
-
-
-
-}
-
-@media (max-width: 1300px) {
-
-
-}
-
-@media (max-width: 1200px) {
-
-
-
-}
-
 @media (max-width: 820px) {
-
+  .img-destaque2 {
+    margin: 10px auto;
+  }
  
 }
 
