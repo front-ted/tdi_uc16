@@ -1,5 +1,7 @@
 body {
-  background: url('../imgs/bg.jpg') repeat;
+  background: url('../imgs/bg.jpg') no-repeat;
+  background-attachment: fixed;
+  background-size:auto;
 }
 
 .container {
@@ -607,7 +609,6 @@ table p {
 /* fim painel1 */
 
 /* painel2 */
-
 .painel2 {
   display: flex;
   justify-content: center;
@@ -660,7 +661,6 @@ table p {
   transform: scale(1.1);
   border: none !important;
 }
-
 /* fim painel */
 
 /* painel3 */
@@ -747,9 +747,6 @@ table p {
   border: none;
 }
 
-
-
-
 .painel-smobile2 {
   display: none;
 }
@@ -758,32 +755,7 @@ table p {
   display: block;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* fim painel3 */
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -846,10 +818,63 @@ table p {
     color: #000;
   }
 
+  .bt-barreiras {
+    background: url('../imgs/bt02-painel02.png');
+    position: absolute;
+    margin-top: 25%;
+    border: none;
+    width: 149px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8.9%;
+  }
 
+  .bt-placas {
+    background: url('../imgs/bt01-painel02.png');
+    position: absolute;
+    margin-top: 15.5%;
+    border: none;
+    width: 127px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 23.9%;
+  }
+
+  .bt-comunicacao {
+    background: url('../imgs/bt04-painel02.png');
+    position: absolute;
+    margin-top: 12.5%;
+    border: none;
+    width: 168px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 36%;
+  }
+
+  .bt-iluminacao {
+    background: url('../imgs/bt03-painel02.png');
+    position: absolute;
+    margin-top: 6.5%;
+    border: none;
+    width: 181px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7%;
+  }
+
+  body {
+    background: unset;
+  }
 
 }
-
 
 
 @media (max-width: 1400px) {
@@ -907,6 +932,58 @@ table p {
     align-items: center;
     margin-left: 40.7%;
     color: #000;
+  }
+
+  .bt-barreiras {
+    background: url('../imgs/bt02-painel02.png');
+    position: absolute;
+    margin-top: 26%;
+    border: none;
+    width: 149px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7.9%;
+  }
+
+  .bt-iluminacao {
+    background: url('../imgs/bt03-painel02.png');
+    position: absolute;
+    margin-top: 6.5%;
+    border: none;
+    width: 181px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7%;
+  }
+
+  .bt-placas {
+    background: url('../imgs/bt01-painel02.png');
+    position: absolute;
+    margin-top: 15.5%;
+    border: none;
+    width: 127px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 23.9%;
+  }
+
+  .bt-comunicacao {
+    background: url('../imgs/bt04-painel02.png');
+    position: absolute;
+    margin-top: 12.5%;
+    border: none;
+    width: 168px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 36%;
   }
 
 }
@@ -969,6 +1046,18 @@ table p {
     color: #000;
   }
 
+  .bt-placas {
+    background: url('../imgs/bt01-painel02.png');
+    position: absolute;
+    margin-top: 16.5%;
+    border: none;
+    width: 127px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 24.9%;
+  }
 
 }
 
@@ -1019,6 +1108,7 @@ table p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 15px;
   }
 
   .painel-sdesktop2 {
@@ -1032,7 +1122,7 @@ table p {
     height: 64px;
   }
 
-  .bt-placas:hover {
+  .bt-placas-mob:hover {
     transform: scale(1.1);
     border: none;
   }
@@ -1044,7 +1134,7 @@ table p {
     height: 65px;
   }
 
-  .bt-barreiras:hover {
+  .bt-barreiras-mob:hover {
     transform: scale(1.1);
     border: none;
   }
@@ -1056,7 +1146,7 @@ table p {
     height: 64px;
   }
 
-  .bt-iluminacao:hover {
+  .bt-iluminacao-mob:hover {
     transform: scale(1.1);
     border: none;
   }
@@ -1068,29 +1158,10 @@ table p {
     height: 64px;
   }
 
-  .bt-comunicacao:hover {
+  .bt-comunicacao-mob:hover {
     transform: scale(1.1);
     border: none;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 
