@@ -606,6 +606,69 @@ table p {
 
 /* fim painel1 */
 
+/* painel2 */
+
+.painel2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bt-capacetes {
+  background: url('../imgs/bt-capacetes.png');
+  width: 251px;
+  height: 221px;
+  border: none !important;
+}
+
+.bt-luvas {
+  background: url('../imgs/bt-luvas.png');
+  width: 251px;
+  height: 221px;
+  border: none;
+}
+
+.bt-oculos {
+  background: url('../imgs/bt-oculos.png');
+  width: 251px;
+  height: 221px;
+  border: none;
+}
+
+.bt-protetor {
+  background: url('../imgs/bt-protetor.png');
+  width: 251px;
+  height: 221px;
+  border: none !important;
+}
+
+.bt-calcados {
+  background: url('../imgs/bt-calcados.png');
+  width: 251px;
+  height: 221px;
+  border: none !important;
+}
+
+.bt-calcados:hover,
+.bt-capacetes:hover,
+.bt-oculos:hover,
+.bt-luvas:hover,
+.bt-protetor:hover {
+  transform: scale(1.1);
+  border: none !important;
+}
+
+
+
+
+
+
+
+
+/* fim painel */
 
 
 
