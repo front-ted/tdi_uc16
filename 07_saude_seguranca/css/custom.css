@@ -661,16 +661,119 @@ table p {
   border: none !important;
 }
 
-
-
-
-
-
-
-
 /* fim painel */
 
+/* painel3 */
+.painel-sdesktop2 {
+  background: url('../imgs/bg-painel02.jpg');
+  width: 801px;
+  height: 501px;
+}
 
+.painel-sdesktop2 button:hover {
+  color: unset !important;
+  border: unset !important;
+}
+
+.bt-placas {
+  background: url('../imgs/bt01-painel02.png');
+  position: absolute;
+  margin-top: 11.5%;
+  border: none;
+  width: 127px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 17.9%;
+}
+
+.bt-placas:hover {
+  transform: scale(1.1);
+  border: none;
+}
+
+.bt-barreiras {
+  background: url('../imgs/bt02-painel02.png');
+  position: absolute;
+  margin-top: 19%;
+  border: none;
+  width: 149px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 7.9%;
+}
+
+.bt-barreiras:hover {
+  transform: scale(1.1);
+  border: none;
+}
+
+.bt-iluminacao {
+  background: url('../imgs/bt03-painel02.png');
+  position: absolute;
+  margin-top: 4.5%;
+  border: none;
+  width: 181px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6%;
+}
+
+.bt-iluminacao:hover {
+  transform: scale(1.1);
+  border: none;
+}
+
+.bt-comunicacao {
+  background: url('../imgs/bt04-painel02.png');
+  position: absolute;
+  margin-top: 9.5%;
+  border: none;
+  width: 168px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 27%;
+}
+
+.bt-comunicacao:hover {
+  transform: scale(1.1);
+  border: none;
+}
+
+
+
+
+.painel-smobile2 {
+  display: none;
+}
+
+.painel-sdesktop2 {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* fim painel3 */
 
 
 
@@ -901,6 +1004,93 @@ table p {
     color: #fff !important;
     font-weight: bold;
   }
+
+  .painel-sdesktop2 button:hover {
+    color: unset !important;
+    border: unset !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .painel-smobile2 {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .painel-sdesktop2 {
+    display: none;
+  }
+
+  .bt-placas-mob {
+    background: url('../imgs/bt01-painel02.png');
+    border: none;
+    width: 127px;
+    height: 64px;
+  }
+
+  .bt-placas:hover {
+    transform: scale(1.1);
+    border: none;
+  }
+
+  .bt-barreiras-mob {
+    background: url('../imgs/bt02-painel02.png');
+    border: none;
+    width: 149px;
+    height: 65px;
+  }
+
+  .bt-barreiras:hover {
+    transform: scale(1.1);
+    border: none;
+  }
+
+  .bt-iluminacao-mob {
+    background: url('../imgs/bt03-painel02.png');
+    border: none;
+    width: 181px;
+    height: 64px;
+  }
+
+  .bt-iluminacao:hover {
+    transform: scale(1.1);
+    border: none;
+  }
+
+  .bt-comunicacao-mob {
+    background: url('../imgs/bt04-painel02.png');
+    border: none;
+    width: 168px;
+    height: 64px;
+  }
+
+  .bt-comunicacao:hover {
+    transform: scale(1.1);
+    border: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
