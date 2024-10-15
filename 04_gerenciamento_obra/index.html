@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office"
+  xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Gerenciamento da obra: acompanhamento (cronograma, monitoramento e recebimento de materiais,
+    organização/logística dos materiais e equipamentos no local da obra, gerenciamento da equipe e de prestadores,
+    administração de intercorrências), controle e finalização (checagem de conclusão, controle de qualidade e termo de
+    finalização)</title>
+
+  <!-- Bootstrap -->
+  <link href="../template/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../template/css/tecnicos_senac.css" rel="stylesheet" />
+  <link href="../template/css/cores.css" rel="stylesheet" />
+  <link href="../template/css/modal-100.css" rel="stylesheet" />
+  <link href="../template/css/devibeans.min.css" rel="stylesheet" />
+  <!--Extras - novas classes para facilitar-->
+  <link rel="stylesheet" href="../template/css/extras.css" />
+  <link href="../template/css/sncload.css" rel="stylesheet" />
+  <link href="../template/css/magnific-popup.css" rel="stylesheet" />
+  <!-- referencia ao arquivo css com estilos especificos da pagina -->
+  <link href="css/custom.css" type="text/css" rel="stylesheet" />
+  <!-- css necessario para o print -->
+  <link href="../template/css/fa/css/fontawesome.css" type="text/css" rel="stylesheet" />
+  <link href="../template/css/fa/css/brands.css" type="text/css" rel="stylesheet" />
+  <link href="../template/css/fa/css/solid.css" type="text/css" rel="stylesheet" />
+  <link href="../template/css/print.css" type="text/css" rel="stylesheet" />
+  <link href="../template/fonts/roboto.css" type="text/css" rel="stylesheet" />
+  <link href="css/associar-colunas.css" type="text/css" rel="stylesheet" />
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+  <!--[if gte mso 9
+      ]><xml>
+        <mso:CustomDocumentProperties>
+          <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor
+            msdt:dt="string"
+            >Paulo Ricardo Soveral
+            Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor
+          >
+          <mso:Order msdt:dt="string">46914400.0000000</mso:Order>
+          <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author
+            msdt:dt="string"
+            >Paulo Ricardo Soveral
+            Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author
+          >
+          <mso:ContentTypeId msdt:dt="string"
+            >0x010100393332CEE5C5294F9D2C3CF7CCDACBE5</mso:ContentTypeId
+          >
+        </mso:CustomDocumentProperties>
+      </xml><!
+    [endif]-->
+</head>
+
+<body onLoad="Javascript:document.getElementById('sncloader').style.display='none';">
+  <!-- MARCA D´ÁGUA -->
+  <img src="../template/images/logo_senac_colorido.png" id="marcadaguaLogo" />
+  <!-- /MARCA D´ÁGUA -->
+
+  <div id="sncloader" class="over-loader">
+    <div class="over-cell">
+      <div id="sncload"></div>
+    </div>
+  </div>
+  <header id="topo" class="senac no-print">
+    <div class="header-tecnicos container">
+      <h1 id="nome-curso">Design de Interiores</h1>
+      <div id="logo-senac">
+        <img src="../template/images/logo-senac.png" alt="logo do senac" />
+      </div>
+    </div>
+    <div id="sombra"></div>
+  </header>
+  <div id="booklet">
+    <header class="no-print">
+      <!-- BTO IMPRIMIR -->
+
+      <!-- /BTO IMPRIMIR -->
+    </header>
+    <!-- - - - - - - - - - - - - - - - não alterar acima - - - - - - - - - - - - -->
+    <section class="paginas">
+      <!-- - - - - - - - cada página é independente  - - - - - - - - - - -->
+      <div class="pagina">
+        <div class="container">
+          <div class="grupo-imprimir no-print">
+            <button type="button" data-pdf="true" class="bto-imprimir" name="button">
+              <span class="fa fa-print"></span> <span>Imprimir</span>
+            </button>
+          </div>
+          <div class="section" id="bloco1">
+            <h2>
+              Gerenciamento da obra: acompanhamento (cronograma, monitoramento e recebimento de materiais,
+              organização/logística dos materiais e equipamentos no local da obra, gerenciamento da equipe e de
+              prestadores, administração de intercorrências), controle e finalização (checagem de conclusão, controle de
+              qualidade e termo de finalização)
+            </h2>
+            <p>
+              Gerenciar uma obra é o processo de planejar, coordenar e supervisionar todas as atividades envolvidas na
+              construção ou na reforma de um espaço. Isso inclui desde o planejamento inicial, a definição do cronograma
+              e
+              do orçamento e a coordenação das equipes de trabalho até a entrega final do projeto. O objetivo é garantir
+              que a obra seja concluída no prazo, dentro do orçamento estabelecido e conforme as especificações de
+              qualidade definidas.
+            </p>
+            <img src="imgs/img1.jpg" class="center-block img-responsive print borda sombra-personalizada">
+            <p class="legenda-imagem">
+              Obra de interiores <br>
+              Fonte: Senac EAD (2024)
+            </p>
+            <p class="acessivel no-print">Espaço interior de um imóvel não mobiliado, em construção ou renovação. As
+              paredes e o teto são pintados de branco, com uma grande janela ao fundo, com vista para o exterior,
+              parecendo ser uma paisagem urbana com edifícios ao longe. Há dois fios elétricos pendentes visíveis no
+              teto, sem luminárias. À direita, há uma abertura para outro cômodo, com armários de cozinha parcialmente
+              visíveis. O chão é de concreto, com detritos de construção espalhados, indicando trabalho em andamento.
+            </p>
+            <div class="caixa-destaque-livre icone-importante">
+              <p>
+                O <i>designer</i> de interiores nem sempre será responsável por gerenciar uma obra de um projeto que ele
+                tenha
+                desenvolvido. Muitas vezes, o profissional é contratado especificamente para realizar o gerenciamento de
+                uma obra, independentemente de ter sido o autor ou não do projeto de <i>design</i>. Nesse papel, o ele
+                atua como
+                um facilitador, garantindo que todas as partes envolvidas na obra trabalhem em harmonia para alcançar o
+                resultado desejado pelo cliente.
+              </p>
+            </div>
+            <p>
+              Para entender as etapas que compõem o gerenciamento de uma obra, você terá acesso a uma abordagem desde o
+              início do acompanhamento até o controle e a finalização da obra.
+            </p>
+            <h3>Acompanhamento</h3>
+            <p>
+              Acompanhar uma obra é um processo contínuo, que envolve a supervisão e o monitoramento detalhado de todas
+              as
+              atividades realizadas no local da construção ou da reforma. O objetivo é garantir que todas as etapas do
+              projeto sejam executadas conforme planejado, no prazo e dentro do orçamento estabelecido, além disso, a
+              qualidade do trabalho deve atender às expectativas do cliente e às normas técnicas. O acompanhamento de
+              obra
+              compreende diversas responsabilidades e atividades. Mas quais etapas abrangem um acompanhamento
+              profissional?
+            </p>
+            <div class="no-print" aria-hidden="true">
+              <p>Clique ou toque para visualizar o conteúdo.</p>
+              <div class="painel-etapas-desk center-block">
+                <button type="button" class="bt-crono" data-toggle="modal" data-target="#modal-crono"></button>
+                <button type="button" class="bt-modelo" data-toggle="modal" data-target="#modal-modelo"></button>
+                <button type="button" class="bt-monitoramento" data-toggle="modal"
+                  data-target="#modal-monitoramento"></button>
+                <button type="button" class="bt-organizacao" data-toggle="modal"
+                  data-target="#modal-organizacao"></button>
+                <button type="button" class="bt-gerenciamento" data-toggle="modal"
+                  data-target="#modal-gerenciamento"></button>
+                <button type="button" class="bt-adm" data-toggle="modal" data-target="#modal-adm"></button>
+              </div>
+              <div class="painel-etapas-mob text-center">
+                <div class="col-xs-12">
+                  <button type="button" class="bt-crono-mob" data-toggle="modal" data-target="#modal-crono"></button>
+                </div>
+                <div class="col-xs-12">
+                  <button type="button" class="bt-modelo-mob" data-toggle="modal" data-target="#modal-modelo"></button>
+                </div>
+                <div class="col-xs-12">
+                  <button type="button" class="bt-monitoramento-mob" data-toggle="modal"
+                    data-target="#modal-monitoramento"></button>
+                </div>
+                <div class="col-xs-12">
+                  <button type="button" class="bt-organizacao-mob" data-toggle="modal"
+                    data-target="#modal-organizacao"></button>
+                </div>
+                <div class="col-xs-12">
+                  <button type="button" class="bt-gerenciamento-mob" data-toggle="modal"
+                    data-target="#modal-gerenciamento"></button>
+                </div>
+                <div class="col-xs-12">
+                  <button type="button" class="bt-adm-mob" data-toggle="modal" data-target="#modal-adm"></button>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="acessivel print">
+              <h3>Cronograma </h3>
+              <img src="imgs/img2.jpg" class="center-block img-responsive print borda sombra-personalizada">
+              <p class="legenda-imagem">
+                Obra de interiores <br>
+                Fonte: Senac EAD (2024)
+              </p>
+              <p class="acessivel no-print">Gráfico de Gantt, em barras, com o cronograma de um projeto. Há linhas de
+                tarefas com barras horizontais correspondentes, que se estendem ao longo de uma linha do tempo na parte
+                superior, indicando as datas de início e de término de cada tarefa. As tarefas estão categorizadas em
+                “serviços preliminares” e “acabamento.” Cada tarefa tem um status atribuído como pendente, em execução
+                ou executado. A linha do tempo vai de cinco de agosto de dois mil e vinte e quatro a dois de setembro de
+                dois mil e vinte e quatro.
+              </p>
+              <p>
+                O cronograma é uma ferramenta de gestão considerada essencial para o acompanhamento eficaz de uma obra.
+                Ele serve como um guia detalhado que estabelece as datas e os prazos para cada etapa do projeto, desde o
+                início até a conclusão. Um cronograma bem elaborado é fundamental por várias razões. Primeiramente, ele
+                proporciona organização e planejamento, oferecendo uma visão global de todas as atividades que precisam
+                ser realizadas e sua ordem de realização, <b>o cronograma ajuda a organizar o trabalho de maneira lógica
+                  e
+                  eficiente</b>. Isso permite que o gerente de obra e as equipes envolvidas planejem antecipadamente,
+                garantindo
+                que todos saibam o que precisa ser feito e quando.
+              </p>
+              <p>
+                Além disso, <b>o cronograma é crucial para o controle de prazos</b>. Ele possibilita o monitoramento
+                contínuo do
+                progresso da obra, ajudando a identificar quaisquer desvios em relação ao plano original. Dessa forma,
+                facilita a realização de ajustes necessários no planejamento para evitar atrasos e garantir que a obra
+                seja concluída dentro do prazo estabelecido. A coordenação de equipes é outro benefício significativo do
+                uso do cronograma. Ele ajuda a sincronizar as diferentes equipes e prestadores de serviços, assegurando
+                que todas as atividades sejam realizadas de forma harmoniosa e sem conflitos. Essa coordenação permite a
+                alocação adequada de recursos, garantindo que materiais e equipamentos estejam disponíveis quando
+                necessários.
+              </p>
+              <p>
+                Nesta unidade curricular, no conhecimento “Planejamento”, você aprenderá como criar seu próprio
+                cronograma
+                de obra, com as melhores práticas para definir datas, priorizar tarefas e ajustar o cronograma, conforme
+                o
+                progresso da obra, assegurando que tudo ocorra conforme o planejado.
+              </p>
+              <h3>Modelo de plano de reforma </h3>
+              <img src="imgs/printtabela.png" class="center-block img-responsive print borda sombra-personalizada">
+              <p class="legenda-imagem">
+                Modelo de plano de reforma <br>
+                Fonte: Senac EAD (2024)
+              </p>
+              <p class="acessivel no-print">
+                Tabela intitulada Modelo plano de reforma, no cabeçalho, com sete colunas e dez linhas. As colunas são
+                Etapa, Atividade, Início, Término, Duração, Materiais/recursos e Observações. As linhas contêm o
+                detalhamento correspondente a cada coluna, como a data do início e do término, quantos dias de duração,
+                os materiais e os recursos necessários e observações para cada tarefa. Há atividades como Demolições,
+                Limpeza pós-obra, Instalações de forro e cobertura, entre outras.
+              </p>
+              <p>
+                O modelo de plano de reforma <b>é uma ferramenta que detalha as especificações técnicas, os desenhos e
+                  os
+                  detalhes necessários para a execução da obra</b>. Um plano de reforma bem elaborado é considerado
+                importante
+                por várias razões. Em primeiro lugar, proporciona <b>clareza</b> e <b>direção</b> ao projeto. Com um
+                plano detalhado,
+                todas as partes envolvidas têm uma compreensão clara do que precisa ser feito e como deve ser executado.
+                Isso inclui a disposição dos espaços, os materiais a serem utilizados, as técnicas de construção, entre
+                outros detalhes específicos, que são fundamentais para a realização do projeto. Além disso, o plano de
+                reforma serve como um guia de referência durante toda a obra. Ele facilita a comunicação entre o
+                <i>designer</i>,
+                as equipes de construção e o cliente, assegurando que todos estejam alinhados quanto às expectativas e
+                aos
+                resultados esperados. Isso minimiza mal-entendidos e erros, contribuindo para a eficiência e a qualidade
+                do trabalho.
+              </p>
+              <p>
+                Outro ponto importante é que o plano de reforma <b>permite uma melhor gestão de recursos</b>. Com todas
+                as
+                especificações detalhadas, é possível planejar a compra de materiais e a contratação de serviços de
+                maneira mais precisa, evitando desperdícios e garantindo que tudo esteja disponível no momento certo.
+              </p>
+              <p>
+                No conhecimento “Planejamento”, você aprenderá como criar seu próprio plano de reforma, por meio das
+                melhores práticas para desenvolver especificações técnicas detalhadas, elaborar desenhos precisos e
+                ajustar o plano conforme necessário, para atender às condições reais do local da obra e às exigências do
+                cliente.
+              </p>
+              <h3>Monitoramento e recebimento de materiais </h3>
+              <p>
+                Monitorar e receber materiais é uma tarefa de extrema importância no gerenciamento de obras, pois
+                garante
+                que todos os materiais necessários estejam disponíveis na hora certa e em boas condições. <b>A
+                  importância do
+                  monitoramento reside na capacidade de assegurar que os materiais corretos sejam entregues conforme o
+                  cronograma, evitando atrasos e mantendo a qualidade da obra</b>. Além disso, esse monitoramento
+                contínuo
+                permite identificar e solucionar problemas rapidamente, antes que possam causar interrupções no projeto.
+              </p>
+              <div class="caixa-destaque-livre icone-nota">
+                <p>
+                  Controlar o fluxo de materiais envolve planejamento cuidadoso e registro detalhado. Planeje as compras
+                  com base no cronograma da obra, garantindo que os materiais estejam disponíveis nas datas de cada
+                  etapa.
+                  Manter o registro atualizado de todos os itens recebidos e utilizados é importante e pode ser feito
+                  por
+                  meio de planilha, <i>software</i> de gerenciamento de projetos ou sistema de inventário. Lembre-se de
+                  manter
+                  uma comunicação eficiente com fornecedores e prestadores de serviço a fim de assegurar entregas
+                  pontuais
+                  e corretas.
+                </p>
+              </div>
+              <p>
+                Ao receber materiais no local da obra, verifique se todos os itens atendem às especificações do projeto.
+                Para revestimentos, por exemplo, é importante conferir se todos os lotes têm o mesmo calibre e a mesma
+                tonalidade, para evitar discrepâncias visuais no acabamento. Inspecione todas as peças para detectar
+                possíveis danos, como peças quebradas ou rachadas. Materiais danificados devem ser rejeitados ou
+                substituídos imediatamente. Somente após a inspeção completa dos materiais deve-se assinar a nota de
+                recebimento, evitando a aceitação de itens defeituosos ou incorretos.
+              </p>
+              <p>
+                Problemas na entrega dos materiais podem ocorrer, e estar preparado para lidar com eles é fundamental.
+                Se
+                os materiais não atenderem às especificações ou estiverem danificados, <b>devem ser rejeitados e
+                  solicitada
+                  sua substituição ao fornecedor. Documente qualquer problema encontrado e comunique o fornecedor
+                  imediatamente para sua rápida resolução</b>. Mas, se isso gerar atrasos, é necessário ajustar o
+                cronograma da
+                obra para acomodar as novas datas de entrega sem comprometer o andamento geral do projeto.
+              </p>
+              <h3>Organização dos materiais: organização/logística dos materiais e equipamentos no local da obra</h3>
+              <p>
+                Um canteiro de obras bem-organizado facilita o trabalho das equipes, além de contribuir para a redução
+                de
+                custos e o cumprimento dos prazos. Por esse motivo, <b>a organização e a logística de materiais e
+                  equipamentos no local da obra são fundamentais para garantir a eficiência e a segurança durante a
+                  construção ou a reforma</b>.
+              </p>
+              <p>
+                Uma boa organização permite que os materiais e os equipamentos sejam acessados de forma rápida e
+                eficiente, minimizando o tempo perdido na busca por itens ou na movimentação desordenada de
+                equipamentos.
+                Além disso, sua disposição adequada reduz o risco de acidentes e danos aos materiais, contribuindo para
+                um
+                ambiente de trabalho seguro.
+              </p>
+              <img src="imgs/img3.jpg" class="center-block img-responsive print borda sombra-personalizada">
+              <p class="legenda-imagem">
+                Organização de materiais em uma obra <br>
+                Fonte: Senac EAD (2024)
+              </p>
+              <p class="acessivel no-print">
+                Fotografia de um local em reforma. Há diversos materiais empilhados no chão, de maneira organizada, para
+                a reforma do ambiente.
+              </p>
+              <p>
+                Uma boa organização permite que os materiais e os equipamentos sejam acessados de forma rápida e
+                eficiente, minimizando o tempo perdido na busca por itens ou na movimentação desordenada de
+                equipamentos.
+                Além disso, sua disposição adequada reduz o risco de acidentes e danos aos materiais, contribuindo para
+                um
+                ambiente de trabalho seguro.
+              </p>
+              <p>
+                Para garantir uma logística eficiente no canteiro de obras, é essencial adotar estratégias eficazes para
+                a
+                disposição e a armazenagem dos materiais. Primeiramente, planeje um leiaute eficiente que permita um
+                fluxo
+                de trabalho contínuo. Isso envolve a localização estratégica de materiais e equipamentos, de forma que
+                estejam próximos às áreas de trabalho onde serão utilizados, evitando deslocamentos desnecessários e
+                agilizando o processo.
+              </p>
+              <p>
+                A armazenagem adequada dos materiais é crucial para preservar sua integridade e qualidade. Materiais
+                devem
+                ser armazenados de acordo com suas características específicas, com a proteção contra intempéries para
+                itens sensíveis à umidade ou o empilhamento correto para evitar deformações. Sempre siga as orientações
+                do
+                fabricante para garantir que os materiais sejam armazenados e manuseados corretamente, prevenindo danos
+                e
+                desperdícios.
+              </p>
+              <p>
+                A movimentação de equipamentos também precisa ser planejada, para evitar congestionamentos e garantir a
+                fluidez das operações no canteiro de obras. É importante seguir um plano de movimentação que leve em
+                consideração o tamanho e o peso dos equipamentos, bem como a segurança das equipes de trabalho. Utilizar
+                equipamentos adequados para transporte e seguir práticas seguras de manuseio são fundamentais para
+                evitar
+                acidentes e garantir que os equipamentos sejam deslocados de maneira eficiente.
+              </p>
+              <div class="caixa-destaque-livre">
+                <p>
+                  No canteiro de obras, a organização e a logística bem planejadas impactam a eficiência e a segurança
+                  do
+                  projeto. O leiaute bem projetado, a armazenagem adequada dos materiais e as práticas eficazes de
+                  movimentação de equipamentos são fundamentais para o sucesso da obra.
+                </p>
+              </div>
+              <p>
+                Sempre siga as orientações do fabricante para assegurar que os materiais e os equipamentos sejam
+                utilizados e armazenados de acordo com as melhores práticas.
+              </p>
+              <h3> Gerenciamento</h3>
+              <p>Gerenciamento da equipe e de prestadores de serviço</p>
+              <p>
+                Gerenciar a equipe e os prestadores de serviço de forma eficaz garante o sucesso de qualquer obra.
+                Técnicas de liderança adequadas e métodos de comunicação eficientes são fundamentais para que todos os
+                membros da equipe trabalhem de forma harmoniosa e produtiva.
+              </p>
+              <img src="imgs/img4.jpg" class="center-block img-responsive print borda sombra-personalizada">
+              <p class="legenda-imagem">
+                Equipe conversando sobre instalação de móveis <br>
+                Fonte: Gonullu (2021)
+              </p>
+              <p class="acessivel no-print">
+                Fotografia da montagem de uma cozinha em uma casa. Dois homens em pé conversam enquanto medem um móvel
+                de
+                cozinha, trabalhando juntos.
+              </p>
+              <h4>Técnicas de liderança</h4>
+              <p>
+                Um bom líder no canteiro de obras deve inspirar e motivar sua equipe. Isso pode ser feito por meio de
+                uma
+                liderança que combina autoridade com empatia. É importante definir expectativas claras, oferecer
+                feedback
+                construtivo e reconhecer o bom trabalho. Líderes eficazes também devem estar abertos a ouvir sugestões e
+                preocupações da equipe, o que ajuda a criar um ambiente de trabalho colaborativo e respeitoso.
+              </p>
+              <h4>Métodos de comunicação</h4>
+              <p>
+                A comunicação clara e eficaz é crucial para o gerenciamento bem-sucedido de uma equipe. Realizar
+                reuniões
+                regulares para discutir o progresso e resolver questões é uma prática recomendada. Além disso, garantir
+                que todos os membros da equipe de obras tenham acesso às informações necessárias do projeto e possam
+                expressar suas preocupações ajuda a evitar mal-entendidos e promove uma colaboração mais eficiente.
+                Ferramentas de comunicação digital, como e-mails e aplicativos de mensagens, também podem ser úteis para
+                manter todos informados e alinhados.
+              </p>
+              <p>
+                Um sistema de trabalho colaborativo facilita a coordenação entre os membros da equipe e os prestadores
+                de
+                serviço. Isso envolve a criação de um ambiente em que todos trabalham juntos para atingir os objetivos
+                comuns do projeto. Incentivar a colaboração pode levar a soluções mais criativas e eficientes para
+                problemas, além de promover um espírito de equipe que contribui para a união e o comprometimento.
+              </p>
+              <p>
+                Implementar ferramentas de gestão de projetos e colaboração, como <i>software</i> de gerenciamento de
+                tarefas e
+                compartilhamento de documentos, pode ajudar a manter todos na mesma página, monitorando o progresso de
+                forma eficaz. Diversas ferramentas podem ser encontradas, pagas ou gratuitas, como <b>MS Project,
+                  Project
+                  Libre, Trello, Monday, Notion</b>, entre outras.
+              </p>
+              <img src="imgs/icos_layout.jpg" class="center-block img-responsive print borda sombra-personalizada">
+              <p class="legenda-imagem">
+              </p>
+              <p>
+                Conflitos podem surgir no ambiente de trabalho, especialmente em uma obra. Caso isso aconteça, é
+                importante abordar de forma rápida e justa. Você pode utilizar técnicas eficazes de resolução de
+                conflitos, como ouvir ativamente as partes envolvidas, identificar a causa raiz do problema e buscar
+                soluções que atendam aos interesses de todos. Mediação e negociação são úteis para resolver
+                desentendimentos e manter um ambiente de trabalho positivo.
+              </p>
+              <div class="caixa-destaque-livre icone-importante">
+                <p>
+                  Manter a motivação da equipe é igualmente importante para garantir a produtividade e a qualidade do
+                  trabalho. Reconhecer e recompensar o bom desempenho, oferecer oportunidades de desenvolvimento
+                  profissional e criar um ambiente de trabalho positivo são estratégias eficazes para engajar a equipe.
+                  Além disso, proporcionar um bom equilíbrio entre vida profissional e pessoal e garantir que as
+                  condições
+                  de trabalho sejam seguras e confortáveis contribuem para a satisfação e o comprometimento da equipe.
+                </p>
+              </div>
+              <p>
+                Em resumo, o gerenciamento eficaz da equipe e dos prestadores de serviço envolve técnicas de
+                <b>liderança
+                  sólidas, comunicação clara, promoção de um sistema colaborativo e habilidades para resolver conflitos
+                  e
+                  manter a motivação</b>. Essas práticas são fundamentais para garantir que a obra seja concluída com
+                sucesso e
+                de acordo com as expectativas do cliente.
+              </p>
+              <h3>Administração de intercorrências</h3>
+              <p>
+                A administração de intercorrências é uma parte crucial do gerenciamento de obras, envolvendo a
+                identificação, a prevenção e a resolução de problemas que podem surgir durante o projeto. Identificar
+                riscos antecipadamente e tomar medidas preventivas é essencial para minimizar o impacto de problemas
+                imprevistos.
+              </p>
+              <div class="caixa-destaque-livre icone-importante">
+                Antes do início da obra, realize uma análise de riscos para identificar possíveis problemas que possam
+                ocorrer. Isso inclui avaliar fatores como condições climáticas, questões relacionadas ao terreno e a
+                possibilidade de imprevistos durante a construção.
+              </div>
+              <p>
+                A prevenção pode ser feita por meio de um planejamento detalhado e da implementação de medidas para
+                mitigar riscos. Isso pode incluir a contratação de profissionais experientes, o uso de materiais de
+                qualidade e a realização de inspeções regulares durante o progresso da obra. Siga algumas práticas
+                recomendadas e prepare-se para eventuais problemas e mitigação de consequências.
+              </p>
+              <h4>Comunicação com a sindicância condominial</h4>
+              <p>
+                Manter uma comunicação aberta e regular com a sindicância é necessário quando a obra está em um edifício
+                ou condomínio. Informar sobre o andamento da obra, horários de trabalho, prestadores envolvidos e
+                qualquer
+                impacto potencial ajuda a evitar conflitos e facilita a resolução de problemas.
+              </p>
+              <h4>Respeito ao cronograma</h4>
+              <p>
+                Cumprir o cronograma estabelecido é fundamental para evitar atrasos que possam impactar a conclusão da
+                obra e gerar custos adicionais. Isso inclui seguir os prazos para cada fase do projeto e ajustar o
+                planejamento conforme necessário.
+              </p>
+              <h4>Identificação dos colaboradores na portaria de acesso</h4>
+              <p>
+                Garantir que todos os colaboradores sejam devidamente identificados e registrados na portaria de acesso,
+                do local da obra, ajuda a manter a segurança e o controle de quem está entrando e saindo das obras.
+              </p>
+              <h4>Respeito aos horários de silêncio</h4>
+              <p>
+                Respeitar os horários de silêncio estabelecidos em áreas residenciais ou comerciais para minimizar o
+                impacto de ruídos e evitar multas, além de manter uma boa relação com os vizinhos, evitando reclamações.
+              </p>
+              <h4>Limpeza das áreas comuns</h4>
+              <p>
+                Manter as áreas comuns limpas e organizadas é fundamental para garantir um ambiente de trabalho seguro e
+                para reduzir a perturbação de residentes ou ocupantes do edifício.
+              </p>
+              <h4>Gestos de carinho</h4>
+              <p>
+                Enviar uma mensagem de carinho aos vizinhos fronteiriços, expressando gratidão pela compreensão e
+                cooperação, pode ajudar a manter um bom relacionamento e reduzir a tensão durante o período da obra.
+              </p>
+              <h4>Falta de materiais</h4>
+              <p>
+                Ter um bom controle de inventário e realizar compras com antecedência, com base no planejamento
+                detalhado,
+                previne a falta de materiais, que pode causar atrasos e afetar o andamento da obra. Para mitigar esse
+                problema, mantenha uma comunicação aberta com fornecedores, a fim de garantir entregas pontuais e
+                resolver
+                rapidamente quaisquer problemas relacionados a materiais.
+              </p>
+              <h4>Problemas durante a demolição</h4>
+              <p>
+                Identificar, durante a demolição, problemas inesperados, reconhecendo possíveis complicações estruturais
+                ou outros desafios que podem surgir é importante para evitar comprometer o orçamento ou o cronograma.
+                Realize uma inspeção detalhada antes da demolição e, se necessário, ajuste o orçamento e o cronograma,
+                comunicando ao cliente esses ajustes para manter a transparência e gerenciar expectativas.
+              </p>
+              <p>
+                Em resumo, a administração de intercorrências envolve a identificação e a prevenção de riscos, a
+                preparação para problemas potenciais e a implementação de medidas para mitigar impactos. Seguir práticas
+                recomendadas para comunicação, respeito às normas e gestão de materiais e problemas ajuda a garantir que
+                a
+                obra prossiga de forma eficiente, sem contratempos significativos.
+              </p>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- - - - - - - - - - - - - - - - não alterar abaixo- - - - - - - - - - - - -->
+    <footer class="text-center no-print">
+      <!--
+          <ul class="pagination">
+          </ul>
+          -->
+    </footer>
+  </div>
+
+  <!-- Modais -->
+
+  <!--   <div class="modal fade" id="modal-crea" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-80" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">CREA</h4>
+        </div>
+        <div class="modal-body">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="no-print" aria-hidden="true">
+    <div class="modal fade" id="modal-crono" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+      aria-live="polite" aria-atomic="true" aria-hidden="true">
+      <div class="modal-dialog modal-80" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Cronograma</h4>
+          </div>
+          <div class="modal-body">
+            <p class="no-print" aria-hidden="true">Toque na imagem para ampliá-la.</p>
+            <a href="imgs/img2.jpg" target="_blank" class="no-print" aria-hidden="true"><img src="imgs/img2.jpg"
+                class="center-block img-responsive borda"></a>
+            <p class="legenda-imagem">
+              Cronograma de obra <br>
+              Fonte: Senac EAD (2024)
+            </p>
+            <p>
+              O cronograma é uma ferramenta de gestão considerada essencial para o acompanhamento eficaz de uma obra.
+              Ele serve como um guia detalhado que estabelece as datas e os prazos para cada etapa do projeto, desde o
+              início até a conclusão. Um cronograma bem elaborado é fundamental por várias razões. Primeiramente, ele
+              proporciona organização e planejamento, oferecendo uma visão global de todas as atividades que precisam
+              ser realizadas e sua ordem de realização, <b>o cronograma ajuda a organizar o trabalho de maneira lógica
+                e
+                eficiente</b>. Isso permite que o gerente de obra e as equipes envolvidas planejem antecipadamente,
+              garantindo
+              que todos saibam o que precisa ser feito e quando.
+            </p>
+            <p>
+              Além disso, <b>o cronograma é crucial para o controle de prazos</b>. Ele possibilita o monitoramento
+              contínuo do
+              progresso da obra, ajudando a identificar quaisquer desvios em relação ao plano original. Dessa forma,
+              facilita a realização de ajustes necessários no planejamento para evitar atrasos e garantir que a obra
+              seja concluída dentro do prazo estabelecido. A coordenação de equipes é outro benefício significativo do
+              uso do cronograma. Ele ajuda a sincronizar as diferentes equipes e prestadores de serviços, assegurando
+              que todas as atividades sejam realizadas de forma harmoniosa e sem conflitos. Essa coordenação permite a
+              alocação adequada de recursos, garantindo que materiais e equipamentos estejam disponíveis quando
+              necessários.
+            </p>
+            <p>
+              Nesta unidade curricular, no conhecimento “Planejamento”, você aprenderá como criar seu próprio
+              cronograma
+              de obra, com as melhores práticas para definir datas, priorizar tarefas e ajustar o cronograma, conforme
+              o
+              progresso da obra, assegurando que tudo ocorra conforme o planejado.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-modelo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+      aria-live="polite" aria-atomic="true" aria-hidden="true">
+      <div class="modal-dialog modal-80" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modelo de plano de reforma</h4>
+          </div>
+          <div class="modal-body">
+            <a href="pdf/plano_reforma.pdf" target="_blank" class="btn btn-default center-block">
+              Abrir PDF
+            </a>
+            <p class="legenda-imagem">
+              Modelo de plano de reforma <br>
+              Fonte: Senac EAD (2024)
+            </p>
+            <p>
+              O modelo de plano de reforma <b>é uma ferramenta que detalha as especificações técnicas, os desenhos e
+                os
+                detalhes necessários para a execução da obra</b>. Um plano de reforma bem elaborado é considerado
+              importante
+              por várias razões. Em primeiro lugar, proporciona <b>clareza</b> e <b>direção</b> ao projeto. Com um
+              plano detalhado,
+              todas as partes envolvidas têm uma compreensão clara do que precisa ser feito e como deve ser executado.
+              Isso inclui a disposição dos espaços, os materiais a serem utilizados, as técnicas de construção, entre
+              outros detalhes específicos, que são fundamentais para a realização do projeto. Além disso, o plano de
+              reforma serve como um guia de referência durante toda a obra. Ele facilita a comunicação entre o
+              <i>designer</i>,
+              as equipes de construção e o cliente, assegurando que todos estejam alinhados quanto às expectativas e
+              aos
+              resultados esperados. Isso minimiza mal-entendidos e erros, contribuindo para a eficiência e a qualidade
+              do trabalho.
+            </p>
+            <p>
+              Outro ponto importante é que o plano de reforma <b>permite uma melhor gestão de recursos</b>. Com todas
+              as
+              especificações detalhadas, é possível planejar a compra de materiais e a contratação de serviços de
+              maneira mais precisa, evitando desperdícios e garantindo que tudo esteja disponível no momento certo.
+            </p>
+            <p>
+              No conhecimento “Planejamento”, você aprenderá como criar seu próprio plano de reforma, por meio das
+              melhores práticas para desenvolver especificações técnicas detalhadas, elaborar desenhos precisos e
+              ajustar o plano conforme necessário, para atender às condições reais do local da obra e às exigências do
+              cliente.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-monitoramento" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+      aria-live="polite" aria-atomic="true" aria-hidden="true">
+      <div class="modal-dialog modal-80" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Monitoramento e recebimento de materiais</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Monitorar e receber materiais é uma tarefa de extrema importância no gerenciamento de obras, pois
+              garante
+              que todos os materiais necessários estejam disponíveis na hora certa e em boas condições. <b>A
+                importância do
+                monitoramento reside na capacidade de assegurar que os materiais corretos sejam entregues conforme o
+                cronograma, evitando atrasos e mantendo a qualidade da obra</b>. Além disso, esse monitoramento
+              contínuo
+              permite identificar e solucionar problemas rapidamente, antes que possam causar interrupções no projeto.
+            </p>
+            <div class="caixa-destaque-livre icone-nota">
+              <p>
+                Controlar o fluxo de materiais envolve planejamento cuidadoso e registro detalhado. Planeje as compras
+                com base no cronograma da obra, garantindo que os materiais estejam disponíveis nas datas de cada
+                etapa.
+                Manter o registro atualizado de todos os itens recebidos e utilizados é importante e pode ser feito
+                por
+                meio de planilha, <i>software</i> de gerenciamento de projetos ou sistema de inventário. Lembre-se de
+                manter
+                uma comunicação eficiente com fornecedores e prestadores de serviço a fim de assegurar entregas
+                pontuais
+                e corretas.
+              </p>
+            </div>
+            <p>
+              Ao receber materiais no local da obra, verifique se todos os itens atendem às especificações do projeto.
+              Para revestimentos, por exemplo, é importante conferir se todos os lotes têm o mesmo calibre e a mesma
+              tonalidade, para evitar discrepâncias visuais no acabamento. Inspecione todas as peças para detectar
+              possíveis danos, como peças quebradas ou rachadas. Materiais danificados devem ser rejeitados ou
+              substituídos imediatamente. Somente após a inspeção completa dos materiais deve-se assinar a nota de
+              recebimento, evitando a aceitação de itens defeituosos ou incorretos.
+            </p>
+            <p>
+              Problemas na entrega dos materiais podem ocorrer, e estar preparado para lidar com eles é fundamental.
+              Se
+              os materiais não atenderem às especificações ou estiverem danificados, <b>devem ser rejeitados e
+                solicitada
+                sua substituição ao fornecedor. Documente qualquer problema encontrado e comunique o fornecedor
+                imediatamente para sua rápida resolução</b>. Mas, se isso gerar atrasos, é necessário ajustar o
+              cronograma da
+              obra para acomodar as novas datas de entrega sem comprometer o andamento geral do projeto.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-organizacao" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+      aria-live="polite" aria-atomic="true" aria-hidden="true">
+      <div class="modal-dialog modal-80" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Organização dos materiais: organização/logística dos materiais e
+              equipamentos no local da obra</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Um canteiro de obras bem-organizado facilita o trabalho das equipes, além de contribuir para a redução
+              de
+              custos e o cumprimento dos prazos. Por esse motivo, <b>a organização e a logística de materiais e
+                equipamentos no local da obra são fundamentais para garantir a eficiência e a segurança durante a
+                construção ou a reforma</b>.
+            </p>
+            <div class="row">
+              <div class="col-md-10 col-sm-12">
+                <p>
+                  Uma boa organização permite que os materiais e os equipamentos sejam acessados de forma rápida e
+                  eficiente, minimizando o tempo perdido na busca por itens ou na movimentação desordenada de
+                  equipamentos.
+                  Além disso, sua disposição adequada reduz o risco de acidentes e danos aos materiais, contribuindo
+                  para
+                  um
+                  ambiente de trabalho seguro.
+                </p>
+              </div>
+              <div class="col-md-2 col-sm-12">
+                <img src="imgs/img3.jpg" class="center-block img-responsive print borda sombra-personalizada">
+                <p class="legenda-imagem">
+                  Organização de materiais em uma obra <br>
+                  Fonte: Senac EAD (2024)
+                </p>
+              </div>
+            </div>
+            <p>
+              Uma boa organização permite que os materiais e os equipamentos sejam acessados de forma rápida e
+              eficiente, minimizando o tempo perdido na busca por itens ou na movimentação desordenada de
+              equipamentos.
+              Além disso, sua disposição adequada reduz o risco de acidentes e danos aos materiais, contribuindo para
+              um
+              ambiente de trabalho seguro.
+            </p>
+            <p>
+              Para garantir uma logística eficiente no canteiro de obras, é essencial adotar estratégias eficazes para
+              a
+              disposição e a armazenagem dos materiais. Primeiramente, planeje um leiaute eficiente que permita um
+              fluxo
+              de trabalho contínuo. Isso envolve a localização estratégica de materiais e equipamentos, de forma que
+              estejam próximos às áreas de trabalho onde serão utilizados, evitando deslocamentos desnecessários e
+              agilizando o processo.
+            </p>
+            <p>
+              A armazenagem adequada dos materiais é crucial para preservar sua integridade e qualidade. Materiais
+              devem
+              ser armazenados de acordo com suas características específicas, com a proteção contra intempéries para
+              itens sensíveis à umidade ou o empilhamento correto para evitar deformações. Sempre siga as orientações
+              do
+              fabricante para garantir que os materiais sejam armazenados e manuseados corretamente, prevenindo danos
+              e
+              desperdícios.
+            </p>
+            <p>
+              A movimentação de equipamentos também precisa ser planejada, para evitar congestionamentos e garantir a
+              fluidez das operações no canteiro de obras. É importante seguir um plano de movimentação que leve em
+              consideração o tamanho e o peso dos equipamentos, bem como a segurança das equipes de trabalho. Utilizar
+              equipamentos adequados para transporte e seguir práticas seguras de manuseio são fundamentais para
+              evitar
+              acidentes e garantir que os equipamentos sejam deslocados de maneira eficiente.
+            </p>
+            <div class="caixa-destaque-livre">
+              <p>
+                No canteiro de obras, a organização e a logística bem planejadas impactam a eficiência e a segurança
+                do
+                projeto. O leiaute bem projetado, a armazenagem adequada dos materiais e as práticas eficazes de
+                movimentação de equipamentos são fundamentais para o sucesso da obra.
+              </p>
+            </div>
+            <p>
+              Sempre siga as orientações do fabricante para assegurar que os materiais e os equipamentos sejam
+              utilizados e armazenados de acordo com as melhores práticas.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-gerenciamento" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+      aria-live="polite" aria-atomic="true" aria-hidden="true">
+      <div class="modal-dialog modal-80" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Gerenciamento </h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-10 col-sm-12">
+                <p>Gerenciamento da equipe e de prestadores de serviço</p>
+                <p>
+                  Gerenciar a equipe e os prestadores de serviço de forma eficaz garante o sucesso de qualquer obra.
+                  Técnicas de liderança adequadas e métodos de comunicação eficientes são fundamentais para que todos os
+                  membros da equipe trabalhem de forma harmoniosa e produtiva.
+                </p>
+              </div>
+              <div class="col-md-2 col-sm-12">
+                <img src="imgs/img4.jpg" class="center-block img-responsive print borda sombra-personalizada">
+                <p class="legenda-imagem">
+                  Equipe conversando sobre instalação de móveis <br>
+                  Fonte: Gonullu (2021)
+                </p>
+              </div>
+            </div>
+            <p>Clique ou toque para visualizar o conteúdo.</p>
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#abd" aria-controls="abd" role="tab"
+                  data-toggle="tab">Técnicas de liderança </a></li>
+              <li role="presentation"><a href="#iida" aria-controls="iida" role="tab" data-toggle="tab">Métodos de
+                  comunicação </a></li>
+            </ul>
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="abd">
+                <p>
+                  Um bom líder no canteiro de obras deve inspirar e motivar sua equipe. Isso pode ser feito por meio de
+                  uma liderança que combina autoridade com empatia. É importante definir expectativas claras, oferecer
+                  <i>feedback</i> construtivo e reconhecer o bom trabalho. Líderes eficazes também devem estar
+                  abertos a ouvir
+                  sugestões e preocupações da equipe, o que ajuda a criar um ambiente de trabalho colaborativo e
+                  respeitoso.
+                </p>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="iida">
+                <p>
+                  A comunicação clara e eficaz é crucial para o gerenciamento bem-sucedido de uma equipe. Realizar
+                  reuniões regulares para discutir o progresso e resolver questões é uma prática recomendada. Além
+                  disso, garantir que todos os membros da equipe de obras tenham acesso às informações necessárias do
+                  projeto e possam expressar suas preocupações ajuda a evitar mal-entendidos e promove uma colaboração
+                  mais eficiente. Ferramentas de comunicação digital, como <i>e-mails</i> e aplicativos de mensagens,
+                  também
+                  podem ser úteis para manter todos informados e alinhados.
+                </p>
+              </div>
+            </div>
+            <p>
+              Um sistema de trabalho colaborativo facilita a coordenação entre os membros da equipe e os prestadores
+              de
+              serviço. Isso envolve a criação de um ambiente em que todos trabalham juntos para atingir os objetivos
+              comuns do projeto. Incentivar a colaboração pode levar a soluções mais criativas e eficientes para
+              problemas, além de promover um espírito de equipe que contribui para a união e o comprometimento.
+            </p>
+            <p>
+              Implementar ferramentas de gestão de projetos e colaboração, como <i>software</i> de gerenciamento de
+              tarefas e
+              compartilhamento de documentos, pode ajudar a manter todos na mesma página, monitorando o progresso de
+              forma eficaz. Diversas ferramentas podem ser encontradas, pagas ou gratuitas, como <b>MS Project,
+                Project
+                Libre, Trello, Monday, Notion</b>, entre outras.
+            </p>
+            <img src="imgs/icos_layout.jpg" class="center-block img-responsive">
+            <p class="legenda-imagem">
+            </p>
+            <p>
+              Conflitos podem surgir no ambiente de trabalho, especialmente em uma obra. Caso isso aconteça, é
+              importante abordar de forma rápida e justa. Você pode utilizar técnicas eficazes de resolução de
+              conflitos, como ouvir ativamente as partes envolvidas, identificar a causa raiz do problema e buscar
+              soluções que atendam aos interesses de todos. Mediação e negociação são úteis para resolver
+              desentendimentos e manter um ambiente de trabalho positivo.
+            </p>
+            <div class="caixa-destaque-livre icone-importante">
+              <p>
+                Manter a motivação da equipe é igualmente importante para garantir a produtividade e a qualidade do
+                trabalho. Reconhecer e recompensar o bom desempenho, oferecer oportunidades de desenvolvimento
+                profissional e criar um ambiente de trabalho positivo são estratégias eficazes para engajar a equipe.
+                Além disso, proporcionar um bom equilíbrio entre vida profissional e pessoal e garantir que as
+                condições
+                de trabalho sejam seguras e confortáveis contribuem para a satisfação e o comprometimento da equipe.
+              </p>
+            </div>
+            <p>
+              Em resumo, o gerenciamento eficaz da equipe e dos prestadores de serviço envolve técnicas de
+              <b>liderança
+                sólidas, comunicação clara, promoção de um sistema colaborativo e habilidades para resolver conflitos
+                e
+                manter a motivação</b>. Essas práticas são fundamentais para garantir que a obra seja concluída com
+              sucesso e
+              de acordo com as expectativas do cliente.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-adm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite"
+      aria-atomic="true" aria-hidden="true">
+      <div class="modal-dialog modal-80" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Administração de intercorrências </h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              A administração de intercorrências é uma parte crucial do gerenciamento de obras, envolvendo a
+              identificação, a prevenção e a resolução de problemas que podem surgir durante o projeto. Identificar
+              riscos antecipadamente e tomar medidas preventivas é essencial para minimizar o impacto de problemas
+              imprevistos.
+            </p>
+            <div class="caixa-destaque-livre icone-importante">
+              Antes do início da obra, realize uma análise de riscos para identificar possíveis problemas que possam
+              ocorrer. Isso inclui avaliar fatores como condições climáticas, questões relacionadas ao terreno e a
+              possibilidade de imprevistos durante a construção.
+            </div>
+            <p>
+              A prevenção pode ser feita por meio de um planejamento detalhado e da implementação de medidas para
+              mitigar riscos. Isso pode incluir a contratação de profissionais experientes, o uso de materiais de
+              qualidade e a realização de inspeções regulares durante o progresso da obra. Siga algumas práticas
+              recomendadas e prepare-se para eventuais problemas e mitigação de consequências.
+            </p>
+            <div class="no-print" aria-hidden="true">
+              <p>Clique ou toque para visualizar o conteúdo.</p>
+              <div class="panel-group" id="accordion4" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading16">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4"
+                        href="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                        Comunicação com a sindicância condominial
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse16" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading16">
+                    <div class="panel-body">
+                      <p>Manter uma comunicação aberta e regular com a sindicância é necessário quando a obra está em um
+                        edifício ou condomínio. Informar sobre o andamento da obra, horários de trabalho, prestadores
+                        envolvidos e qualquer impacto potencial ajuda a evitar conflitos e facilita a resolução de
+                        problemas. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading17">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4"
+                        href="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                        Respeito ao cronograma
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading17">
+                    <div class="panel-body">
+                      <p>
+                        Cumprir o cronograma estabelecido é fundamental para evitar atrasos que possam impactar a
+                        conclusão da obra e gerar custos adicionais. Isso inclui seguir os prazos para cada fase do
+                        projeto e ajustar o planejamento conforme necessário.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading18">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4"
+                        href="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                        Identificação dos colaboradores na portaria de acesso
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading18">
+                    <div class="panel-body">
+                      <p>Garantir que todos os colaboradores sejam devidamente identificados e registrados na portaria
+                        de acesso, do local da obra, ajuda a manter a segurança e o controle de quem está entrando e
+                        saindo das obras. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading19">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4"
+                        href="#collapse19" aria-expanded="false" aria-controls="collapse19">
+                        Respeito aos horários de silêncio
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse19" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading19">
+                    <div class="panel-body">
+                      <p>Respeitar os horários de silêncio estabelecidos em áreas residenciais ou comerciais para
+                        minimizar o impacto de ruídos e evitar multas, além de manter uma boa relação com os vizinhos,
+                        evitando reclamações. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading20">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4"
+                        href="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                        Limpeza das áreas comuns
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse20" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading20">
+                    <div class="panel-body">
+                      <p>Manter as áreas comuns limpas e organizadas é fundamental para garantir um ambiente de trabalho
+                        seguro e para reduzir a perturbação de residentes ou ocupantes do edifício. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading21">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4"
+                        href="#collapse21" aria-expanded="false" aria-controls="collapse21">
+                        Gestos de carinho
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse21" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading21">
+                    <div class="panel-body">
+                      <p>Enviar uma mensagem de carinho aos vizinhos fronteiriços, expressando gratidão pela compreensão
+                        e cooperação, pode ajudar a manter um bom relacionamento e reduzir a tensão durante o período da
+                        obra. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading22">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4"
+                        href="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                        Falta de materiais
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading22">
+                    <div class="panel-body">
+                      <p>Ter um bom controle de inventário e realizar compras com antecedência, com base no planejamento
+                        detalhado, previne a falta de materiais, que pode causar atrasos e afetar o andamento da obra.
+                        Para mitigar esse problema, mantenha uma comunicação aberta com fornecedores, a fim de garantir
+                        entregas pontuais e resolver rapidamente quaisquer problemas relacionados a materiais. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default"></div>
+                <div class="panel-heading" role="tab" id="heading23">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4"
+                      href="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                      Problemas durante a demolição
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse23" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading23">
+                  <div class="panel-body">
+                    <p>Identificar, durante a demolição, problemas inesperados, reconhecendo possíveis complicações
+                      estruturais ou outros desafios que podem surgir é importante para evitar comprometer o orçamento
+                      ou o cronograma. Realize uma inspeção detalhada antes da demolição e, se necessário, ajuste o
+                      orçamento e o cronograma, comunicando ao cliente esses ajustes para manter a transparência e
+                      gerenciar expectativas. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>
+              Em resumo, a administração de intercorrências envolve a identificação e a prevenção de riscos, a
+              preparação
+              para problemas potenciais e a implementação de medidas para mitigar impactos. Seguir práticas recomendadas
+              para comunicação, respeito às normas e gestão de materiais e problemas ajuda a garantir que a obra
+              prossiga
+              de
+              forma eficiente, sem contratempos significativos.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="modal fade" id="modal-oculos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+      aria-live="polite" aria-atomic="true" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content no-print">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Óculos de proteção </h4>
+          </div>
+          <div class="modal-body">
+
+
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-protetor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+      aria-live="polite" aria-atomic="true" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content no-print">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Protetor auricular </h4>
+          </div>
+          <div class="modal-body">
+
+
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+  <!--  Em caso de footer personalizado utilizar esse elemento e adicionar a classe customizada
+    <footer>
+    </footer>
+	-->
+  <!-- carrega todas as imagens dos icones nesta div
+ caso queira adicionar mais imagens de novos icones do css,
+ ou qualquer imagem que deva ser contabilizada durante a fase
+ de loading, referenciar aqui.
+ -->
+  <div class="ico-div-loader">
+    <img src="../template/images/atencao.png" />
+    <img src="../template/images/bg-content.jpg" />
+    <img src="../template/images/bg-topo.jpg" />
+    <img src="../template/images/black-zoom-in-256.png" />
+    <img src="../template/images/concluindo.png" />
+    <img src="../template/images/curtir.png" />
+    <img src="../template/images/desafio.png" />
+    <img src="../template/images/dica.png" />
+    <img src="../template/images/doc.png" />
+    <img src="../template/images/fundamental.png" />
+    <img src="../template/images/icon-03.png" />
+    <img src="../template/images/importante.png" />
+    <img src="../template/images/lightbulb.png" />
+    <img src="../template/images/link.png" />
+    <img src="../template/images/link_pdf_hover.png" />
+    <img src="../template/images/link_pdf_normal.png" />
+    <img src="../template/images/logo-senac.png" />
+    <img src="../template/images/mark-icon.png" />
+    <img src="../template/images/mark-icon02.png" />
+    <img src="../template/images/midia.png" />
+    <img src="../template/images/monitor.png" />
+    <img src="../template/images/bao_curtir.png" />
+    <img src="../template/images/pergunta.png" />
+    <img src="../template/images/pesquisa.png" />
+    <img src="../template/images/play.png" />
+    <img src="../template/images/radio_flat.png" />
+    <img src="../template/images/refletir.png" />
+    <img src="../template/images/saiba_mais.png" />
+    <img src="../template/images/senac_loader.png" />
+    <img src="../template/images/tanamidia.png" />
+    <img src="../template/images/transcricao.png" />
+    <img src="../template/images/transcricao_small.png" />
+    <img src="../template/images/tv.png" />
+    <img src="../template/images/tv_bottom.png" />
+    <img src="../template/images/zoom.png" />
+    <img src="../template/images/zoom_ie.cur" />
+    <img src="../template/images/zoom_ie.png" />
+    <!-- adicionar as imagens customizadas aqui abaixo -->
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="../template/js/jquery.min.js"></script>
+  <script src="../template/js/bootstrap.min.js"></script>
+  <script src="../template/js/jquery.magnific-popup.min.js"></script>
+  <script src="../template/js/print.js"></script>
+  <script src="../template/js/template.config.js"></script>
+  <script src="../template/js/images.loader.js"></script>
+  <script src="../template/js/highlight.min.js"></script>
+  <script src="../template/js/parallax.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/associar-colunas.js"></script>
+  <noscript>
+    <style media="screen">
+      .over-loader {
+        display: none;
+      }
+    </style>
+  </noscript>
+</body>
+
+</html>
+<script>
+  document.addEventListener("DOMContentLoaded", (event) => {
+    document.querySelectorAll("pre code").forEach((el) => {
+      hljs.highlightElement(el);
+    });
+  });
+  //inicializa zoom na imagem
+  $(".zoom-imagem").magnificPopup({
+    type: "image",
+    mainClass: "mfp-with-zoom", // this class is for CSS animation below
+    zoom: {
+      enabled: true, // By default it's false, so don't forget to enable it
+
+      duration: 300, // duration of the effect, in milliseconds
+      easing: "ease-in-out", // CSS transition easing function
+
+      // The "opener" function should return the element from which popup will be zoomed in
+      // and to which popup will be scaled down
+      // By defailt it looks for an image tag:
+      opener: function (openerElement) {
+        // openerElement is the element on which popup was initialized, in this case its <a> tag
+        // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+        return openerElement.is("img")
+          ? openerElement
+          : openerElement.find("img");
+      },
+    },
+    image: {
+      markup:
+        '<div class="mfp-figure">' +
+        '<div class="mfp-close"></div>' +
+        '<div class="mfp-img"></div>' + // Floated left
+        '<div class="mfp-bottom-bar">' +
+        "<figcaption>" +
+        '<div class="mfp-title" style="text-align:center"></div>' +
+        '<div class="mfp-counter"></div>' +
+        "</figcaption>" +
+        "</div>" +
+        "</div>", // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
+
+      cursor: "mfp-zoom-out-cur", // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
+
+      tError: '<a href="%url%">A imagem</a> não pode ser carregada.', // Error message
+    },
+  });
+
+  //inicializa popover
+  $(function () {
+    $('[data-toggle="popover"]').popover();
+  });
+  //inicializa tooltip
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+
+  /*------- Script de animação do botão -------*/
+  var root = document.documentElement;
+  root.className += " js";
+
+  function boxTop(idBox) {
+    var boxOffset = $(idBox).offset().top;
+    return boxOffset;
+  }
+
+  $(document).ready(function () {
+    var $target = $(".animeStart"),
+      $target2 = $(".animeStop"),
+      targetBox = $(".box"),
+      animationClass = "anime-init",
+      windowHeight = $(window).height(),
+      offset = windowHeight - windowHeight / 4;
+
+    function animeScroll() {
+      var documentTop = $(document).scrollTop();
+      $target.each(function () {
+        if (documentTop > boxTop(this) - offset) {
+          targetBox.addClass(animationClass);
+        } else {
+          targetBox.removeClass(animationClass);
+        }
+        if (documentTop > boxTop($target2) - offset) {
+          targetBox.removeClass(animationClass);
+        }
+      });
+    }
+    animeScroll();
+
+    $(document).scroll(function () {
+      animeScroll();
+    });
+  });
+</script>
+
+<script>
+  var scriptElem = document.createElement("script");
+  (scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js"),
+    (scriptElem.charset = "UTF-8"),
+    (scriptElem.onload = function () {
+      window.ht = new HT({
+        token: "bf5b7efb148a829a126a0e0c9fd533bf",
+        align: "top",
+        videoEnabled: true,
+        ytEmbedReplace: true,
+        mobileConfig: {
+          align: "right",
+          actionsAlign: "top",
+          customButtonStyle: {
+            borderRadius: "6px",
+            size: "38px",
+            horizontalMargin: "13px",
+            bottomMargin: "140px",
+            rightMargin: "40px",
+          },
+        },
+      });
+      $(".ht-skip").attr("aria-hidden", "true");
+    }),
+    document.body.appendChild(scriptElem);
+</script>
