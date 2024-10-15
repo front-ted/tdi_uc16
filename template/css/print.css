@@ -37,6 +37,24 @@
 .img-maior2 {
   width: 200%;
 }
+.checklist2 {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.checklist2 li {
+  position: relative;
+  padding-left: 25px;
+  list-style-image: none !important;
+}
+
+.checklist2 li::before {
+  content: "\2713";
+  color: green;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 
 
 .img-aumentada {
