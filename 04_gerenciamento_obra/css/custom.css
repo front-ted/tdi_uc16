@@ -684,7 +684,7 @@ table p {
   display: none;
 }
 
-.selo{
+.selo {
   max-width: 80%;
 }
 
@@ -692,7 +692,9 @@ table p {
 @media (max-width: 1440px) {
 
   body {
-    background: unset;
+    background: url('../imgs/bg.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
 
 
@@ -785,6 +787,10 @@ table p {
 
 
 @media (max-width: 820px) {
+  body {
+    background: unset;
+  }
+
   .img-destaque1 {
     margin: 10px auto;
   }
@@ -909,7 +915,8 @@ table p {
   .mobile {
     display: block;
   }
-  .selo{
+
+  .selo {
     max-width: 50%;
   }
 }
