@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office"
+  xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Planejamento: os três ês, fornecedores e mão de obra, materiais, cronograma físico-financeiro, custos e memorial descritivo</title>
+
+  <!-- Bootstrap -->
+  <link href="../template/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../template/css/tecnicos_senac.css" rel="stylesheet" />
+  <link href="../template/css/cores.css" rel="stylesheet" />
+  <link href="../template/css/modal-100.css" rel="stylesheet" />
+  <link href="../template/css/devibeans.min.css" rel="stylesheet" />
+  <!--Extras - novas classes para facilitar-->
+  <link rel="stylesheet" href="../template/css/extras.css" />
+  <link href="../template/css/sncload.css" rel="stylesheet" />
+  <link href="../template/css/magnific-popup.css" rel="stylesheet" />
+  <!-- referencia ao arquivo css com estilos especificos da pagina -->
+  <link href="css/custom.css" type="text/css" rel="stylesheet" />
+  <!-- css necessario para o print -->
+  <link href="../template/css/fa/css/fontawesome.css" type="text/css" rel="stylesheet" />
+  <link href="../template/css/fa/css/brands.css" type="text/css" rel="stylesheet" />
+  <link href="../template/css/fa/css/solid.css" type="text/css" rel="stylesheet" />
+  <link href="../template/css/print.css" type="text/css" rel="stylesheet" />
+  <link href="../template/fonts/roboto.css" type="text/css" rel="stylesheet" />
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+  <!--[if gte mso 9
+      ]><xml>
+        <mso:CustomDocumentProperties>
+          <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor
+            msdt:dt="string"
+            >Paulo Ricardo Soveral
+            Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor
+          >
+          <mso:Order msdt:dt="string">46914400.0000000</mso:Order>
+          <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author
+            msdt:dt="string"
+            >Paulo Ricardo Soveral
+            Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author
+          >
+          <mso:ContentTypeId msdt:dt="string"
+            >0x010100393332CEE5C5294F9D2C3CF7CCDACBE5</mso:ContentTypeId
+          >
+        </mso:CustomDocumentProperties>
+      </xml><!
+    [endif]-->
+</head>
+
+<body onLoad="Javascript:document.getElementById('sncloader').style.display='none';">
+  <!-- MARCA D´ÁGUA -->
+  <img src="../template/images/logo_senac_colorido.png" id="marcadaguaLogo" />
+  <!-- /MARCA D´ÁGUA -->
+
+  <div id="sncloader" class="over-loader">
+    <div class="over-cell">
+      <div id="sncload"></div>
+    </div>
+  </div>
+  <header id="topo" class="senac no-print ">
+    <div class="header-tecnicos container">
+      <h1 id="nome-curso">Design de Interiores</h1>
+      <div id="logo-senac">
+        <img src="../template/images/logo-senac.png" alt="logo do senac" />
+      </div>
+    </div>
+    <div id="sombra"></div>
+  </header>
+  <div id="booklet" class="">
+    <header class="no-print container margem-botao">
+      <!-- BTO IMPRIMIR -->
+      <div class="grupo-imprimir no-print">
+        <button type="button" data-pdf="true" class="bto-imprimir" name="button">
+          <span class="fa fa-print"></span> <span>Imprimir</span>
+        </button>
+      </div>
+      <!-- /BTO IMPRIMIR -->
+    </header>
+    <!-- - - - - - - - - - - - - - - - não alterar acima - - - - - - - - - - - - -->
+
+    <section class="paginas">
+
+      <!-- - - - - - - - cada página é independente  - - - - - - - - - - -->
+
+      <div class="pagina">
+
+        <div class="container">
+          <h2>Planejamento: os três ês, fornecedores e mão de obra, materiais, cronograma físico-financeiro, custos e memorial descritivo</h2>
+          <p>Diversos são os benefícios de uma obra bem planejada. Segundo Mattos (2010), um planejamento adequado permite o conhecimento pleno da obra, a identificação de situações desfavoráveis antes do tempo, agilização de decisões, otimização de recursos, padronização de comunicações e assim por diante. Por outro lado, o autor também aponta que deficiências de planejamento são mais comuns em obras de pequeno e médio porte. Normalmente, são obras mal planejadas, mal controladas ou mesmo totalmente improvisadas, que causam frustração ao cliente, atrasos na entrega, orçamento estourado e até mesmo litígios judiciais.</p>
+          <img src="imgs/fig01.jpg" class="img-responsive center-block img-borda">
+          <p class="legenda-imagem">
+            Obra de <i>design</i> de interiores <br>
+            Fonte: Pexels (2024)
+          </p>
+          <p class="acessivel no-print">Fotografia de duas pessoas dentro de uma estrutura de madeira residencial que parece estar em construção. Elas parecem estar conversando sobre informações da obra que estão executando e são mostradas em um tablet. Há vários materiais de construção espalhados ao redor deles, destacando a colaboração entre profissionais.</p>
+          <p>No gerenciamento de execução de projetos de <i>design</i> de interiores, o planejamento é uma etapa crucial no sucesso de qualquer obra. É necessário organizar e coordenar diversos elementos, como fornecedores, mão de obra, materiais e cronogramas. Para isso, instrumentos, métodos e ferramentas são utilizados ao longo desse processo.</p>
+          <p>Durante o curso, você teve acesso a diversas ferramentas de planejamento. Realizar um <i>briefing</i> completo, analisar o espaço que será projetado, pesquisar referências, conceituar e idealizar o que será feito, desenvolver os desenhos técnicos e modelos tridimensionais, especificar e orçar materiais e produtos que serão utilizados. Tudo isso é planejamento. Para gerenciar uma obra não seria diferente. Saber planejar adequadamente faz toda a diferença no resultado final do projeto.</p>
+          <p>Antes de abordar esses itens, porém, é importante entender alguns conceitos fundamentais para avaliar os diferentes momentos e os itens do processo de execução da obra. Para isso, entenda o que são os três ês.</p>
+
+          <h3>Os três ês (eficiência, eficácia e efetividade)</h3>
+          <p>Ao avaliar processos, é possível utilizar diversos critérios. No entanto, os chamados “três ês” são tradicionais (Sano; Montenegro Filho, 2013) e servem como uma base importante para fundamentar a avaliação de uma obra. Utilizados nos diferentes contextos de gestão e administração, eles também serão importantes para otimizar processos e avaliar os resultados desejados em uma obra. Eles podem parecer ter o mesmo significado, mas são bem diferentes. Conheça cada um deles:</p>
+          <div class="no-print" aria-hidden="true">
+            <p>Clique ou toque para visualizar o conteúdo.</p>
+            <div class='panel-group' id='accordion' role='tablist' aria-multiselectable='true'>
+              <div class='panel panel-default'>
+                <div class='panel-heading' role='tab' id='headingOne'>
+                  <h3 class='panel-title'>
+                    <a role='button' data-toggle='collapse' data-parent='#accordion' href='#collapseOne' aria-expanded='false' aria-controls='collapseOne'>
+                      Eficácia
+                    </a>
+                  </h3>
+                </div>
+                <div id='collapseOne' class='panel-collapse collapse in' role='tabpanel' aria-labelledby='headingOne'>
+                  <div class='panel-body'>
+                    <p>Se um trabalho executado foi suficiente para atingir o resultado projetado, então esse é um trabalho com eficácia. Em uma obra, ser eficaz significa fazer tarefas que atinjam o resultado, como cumprir prazos, atender às especificações e satisfazer as expectativas do cliente.</p>
+                    <p>À primeira vista, parece ser algo fácil de atingir, mas não é bem assim! Para isso, é fundamental que o planejamento da obra seja seguido à risca, que haja comunicação clara entre todos os envolvidos (<i>designer</i>, mestre de obras, pedreiro, eletricista, hidráulico, profissionais parceiros, cliente etc.) e que os objetivos do projeto sejam claramente definidos.</p>
+                  </div>
+                </div>
+              </div>
+              <div class='panel panel-default'>
+                <div class='panel-heading' role='tab' id='headingTwo'>
+                  <h3 class='panel-title'>
+                    <a class='collapsed' role='button' data-toggle='collapse' data-parent='#accordion' href='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo'>
+                      Eficiência
+                    </a>
+                  </h3>
+                </div>
+                <div id='collapseTwo' class='panel-collapse collapse' role='tabpanel' aria-labelledby='headingTwo'>
+                  <div class='panel-body'>
+                    <p>A eficiência é um passo a mais: será que o caminho que eu percorri para ter eficácia foi o mais adequado? Aqui, não se avalia apenas se algo foi feito, o caminho percorrido também é importante. Em uma obra, ser eficiente significa realizar tarefas de maneira correta utilizando os recursos sem desperdício, otimizando etapas e processos.</p>
+                    <p>Por exemplo: se eu preciso pintar uma sala e compro uma lata de 18 l de tinta a mais, em tese eu estou tendo eficácia, pois tenho o material correto para a pintura. Porém, eu estou tendo eficiência? Não, pois não otimizei os recursos da obra. Será preciso também eficiência em questões como planejamento logístico e cronograma, para evitar equipes e obra paradas sem os materiais necessários.</p>
+                  </div>
+                </div>
+              </div>
+              <div class='panel panel-default'>
+                <div class='panel-heading' role='tab' id='headingThree'>
+                  <h3 class='panel-title'>
+                    <a class='collapsed' role='button' data-toggle='collapse' data-parent='#accordion' href='#collapseThree' aria-expanded='false' aria-controls='collapseThree'>
+                      Efetividade
+                    </a>
+                  </h3>
+                </div>
+                <div id='collapseThree' class='panel-collapse collapse' role='tabpanel' aria-labelledby='headingThree'>
+                  <div class='panel-body'>
+                    <p>A efetividade tratará de uma análise que mede os resultados alcançados (ou seja, se tem eficácia), comparando com a atividade desempenhada para alcançar esse resultado (ou seja, e eficiência). Em uma obra, ser efetivo é finalizá-la corretamente, aplicando os melhores procedimentos possíveis.</p>
+                    <p>Se o cliente está satisfeito e se a obra correu da melhor forma possível, pode-se dizer que houve efetividade no processo de trabalho. Para isso, é necessário aplicar os conceitos de eficácia e eficiência: planejamento seguido à risca, logística e cronogramas adequados, seguir o projeto executivo detalhado, e assim por diante.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="acessivel print">
+            <h4>Eficácia</h4>
+            <p>Se um trabalho executado foi suficiente para atingir o resultado projetado, então esse é um trabalho com eficácia. Em uma obra, ser eficaz significa fazer tarefas que atinjam o resultado, como cumprir prazos, atender às especificações e satisfazer as expectativas do cliente.</p>
+            <p>À primeira vista, parece ser algo fácil de atingir, mas não é bem assim! Para isso, é fundamental que o planejamento da obra seja seguido à risca, que haja comunicação clara entre todos os envolvidos (<i>designer</i>, mestre de obras, pedreiro, eletricista, hidráulico, profissionais parceiros, cliente etc.) e que os objetivos do projeto sejam claramente definidos.</p>
+            <h4>Eficiência</h4>
+            <p>A eficiência é um passo a mais: será que o caminho que eu percorri para ter eficácia foi o mais adequado? Aqui, não se avalia apenas se algo foi feito, o caminho percorrido também é importante. Em uma obra, ser eficiente significa realizar tarefas de maneira correta utilizando os recursos sem desperdício, otimizando etapas e processos.</p>
+            <p>Por exemplo: se eu preciso pintar uma sala e compro uma lata de 18 l de tinta a mais, em tese eu estou tendo eficácia, pois tenho o material correto para a pintura. Porém, eu estou tendo eficiência? Não, pois não otimizei os recursos da obra. Será preciso também eficiência em questões como planejamento logístico e cronograma, para evitar equipes e obra paradas sem os materiais necessários.</p>
+            <h4>Efetividade</h4>
+            <p>A efetividade tratará de uma análise que mede os resultados alcançados (ou seja, se tem eficácia), comparando com a atividade desempenhada para alcançar esse resultado (ou seja, e eficiência). Em uma obra, ser efetivo é finalizá-la corretamente, aplicando os melhores procedimentos possíveis.</p>
+            <p>Se o cliente está satisfeito e se a obra correu da melhor forma possível, pode-se dizer que houve efetividade no processo de trabalho. Para isso, é necessário aplicar os conceitos de eficácia e eficiência: planejamento seguido à risca, logística e cronogramas adequados, seguir o projeto executivo detalhado, e assim por diante.</p>
+          </div>
+          <p>Ao abordar os três ês, percebe-se que existem procedimentos e instrumentos que podem auxiliar os profissionais na gestão e no planejamento da obra.</p>
+
+          <h3>Instrumentos: metodologias e ferramentas</h3>
+          <p>Existem diversos instrumentos que auxiliam o gerenciamento da execução de projetos de <i>design</i> de interiores. Você deverá escolher aquele ou aqueles que mais atendem à demanda do seu escritório de <i>design</i> de interiores ou poderá ter contato com alguns desses métodos ao trabalhar para outros profissionais de <i>design</i> ou arquitetura. Confira algumas metodologias e ferramentas que auxiliam no planejamento e gerenciamento de projetos. Alguns serão abordados de maneira aprofundada em seguida, mas entenda antes como poderá utilizá-los em seus computadores e <i>smartphones</i>.</p>
+          <h4>Metodologias</h4>
+          <p>Neste momento está-se falando do método em si, ou seja, de que forma se pode planejar e gerenciar a obra, e não necessariamente das ferramentas que serão utilizadas para gerenciamento.</p>
+          <p>É importante salientar que as metodologias apresentadas podem ou não ser aplicadas. Cabe ao <i>designer</i> de interiores verificar se o método faz sentido para a organização do seu negócio.</p>
+          <div class="caixa-destaque">
+            <p>O método Scrum é um método bastante utilizado nas áreas de TI (tecnologia da informação) e <i>marketing</i>, que, nos últimos anos, tem sido aplicado por grandes escritórios de arquitetura e engenharia. Jeff Sutherland é o cocriador do método de 1993, inicialmente voltado para as áreas de <i>software</i> e desenvolvimento de produtos. Porém, em seu livro <i>Scrum: A Arte de Fazer o Dobro de Trabalho na Metade do Tempo</i> (2016), Sutherland demonstra que a proposta pode ser aplicada nas mais diversas áreas, incluindo a construção civil, o <i>design</i> de interiores e a arquitetura. Teoricamente, a proposta é simples.</p>
+          </div>
+
+          <div class="no-print" aria-hidden="true">
+            <p>Clique ou toque para visualizar o conteúdo.</p>
+            <div class="painel-scrum">
+              <span id="txt-scrum01">Defina o responsável pelo projeto</span>
+              <span id="txt-scrum02">Defina a equipe</span>
+              <span id="txt-scrum03">Faça um quadro Scrum ou Kanban</span>
+              <span id="txt-scrum04">Defina a ordem da coluna “para fazer”</span>
+              <span id="txt-scrum05">Estime o tamanho de cada tarefa</span>
+              <span id="txt-scrum06"><i>Sprints</i></span>
+              <span id="txt-scrum07">Reunião de planejamento do <i>sprint</i></span>
+              <span id="txt-scrum08">Reuniões constantes</span>
+              <span id="txt-scrum09">Reunião de revisão do <i>sprint</i></span>
+              <button type="button" id="btn-scrum01" data-toggle="modal" data-target="#modal-scrum01"></button>
+              <button type="button" id="btn-scrum02" data-toggle="modal" data-target="#modal-scrum02"></button>
+              <button type="button" id="btn-scrum03" data-toggle="modal" data-target="#modal-scrum03"></button>
+              <button type="button" id="btn-scrum04" data-toggle="modal" data-target="#modal-scrum04"></button>
+              <button type="button" id="btn-scrum05" data-toggle="modal" data-target="#modal-scrum05"></button>
+              <button type="button" id="btn-scrum06" data-toggle="modal" data-target="#modal-scrum06"></button>
+              <button type="button" id="btn-scrum07" data-toggle="modal" data-target="#modal-scrum07"></button>
+              <button type="button" id="btn-scrum08" data-toggle="modal" data-target="#modal-scrum08"></button>
+              <button type="button" id="btn-scrum09" data-toggle="modal" data-target="#modal-scrum09"></button>
+            </div>
+          </div>
+          <div class="acessivel print">
+            <h4>1. Defina o responsável pelo projeto</h4>
+            <p>O responsável é a pessoa que sabe tudo que está acontecendo no andamento da obra. No caso de gerenciamento de obras, o ideal é que essa pessoa seja você.</p>
+            <h4>2. Defina a equipe</h4>
+            <p>Quem são os profissionais envolvidos no projeto? Escolha e conheça o trabalho de cada um dos membros, até para saber o que exigir e quanto exigir.</p>
+            <h4>3. Faça um quadro Scrum ou Kanban</h4>
+            <p>Assim como aqui no curso você tem acesso a um quadro Kanban, separando os conteúdos para leitura semanal, essa mesma estrutura pode ser criada para organizar a obra dos seus clientes. Um quadro Scrum ou Kanban deve apresentar de maneira bem visual e de fácil acesso para todos os participantes as tarefas que deverão ser realizadas, incluindo ordem e datas de execução. Separe em três colunas: para fazer, fazendo e feito. A equipe monitora e movimenta cada uma das tarefas do quadro na medida em que as for realizando. O responsável pelo projeto monitora o andamento.</p>
+            <h4>4. Defina a ordem da coluna “para fazer”</h4>
+            <p>Defina e priorize as tarefas mais importantes do projeto. Lembre-se sempre de que uma obra tem a sua ordem de realização, normalmente iniciada pela demolição.</p>
+            <h4>5. Estime o tamanho de cada tarefa</h4>
+            <p>Sutherland (2016) indica criar uma escala de 1 a 10 para a classificação das tarefas, na qual 1 é uma tarefa pequena e 10 é uma tarefa grande. Quanto maior a tarefa, mais tempo ela levará para ser concluída, pois exigirá mais esforço.</p>
+            <h4>6. <i>Sprints</i></h4>
+            <p>Os <i>sprints</i> são os ciclos de entrega e conferência, ou seja, os momentos nos quais o responsável pelo projeto avaliará o andamento das tarefas do quadro Scrum. Esses ciclos podem ter a duração de até um mês, dependendo do tamanho do projeto. No caso de uma reforma residencial, por exemplo, é interessante definir <i>sprints</i> semanais, que poderiam ocorrer nas suas visitas técnicas até o local da obra, conferindo o andamento do quadro Scrum e resgatando as responsabilidades da equipe no andamento das tarefas.</p>
+            <h4>7. Reunião de planejamento do <i>sprint</i></h4>
+            <p>Essa reunião deve acontecer antes de cada <i>sprint</i> (ciclo). A equipe define quais são as tarefas que devem acontecer dentro daquele ciclo. Como já está definido o tamanho de cada tarefa de 1 até 10, na medida em que vão sendo realizadas as tarefas, pode-se ir pontuando. Por exemplo: ao fechar um <i>sprint</i>, você verificou que sua equipe de obras realizou 4 tarefas difíceis, totalizando 40 pontos, e o previsto para aquele <i>sprint</i> eram 30 pontos. Portanto, é possível ampliar em 10 pontos o próximo <i>sprint</i>, talvez agilizando o cronograma. Importante: toda a equipe precisa estar de acordo com as metas estabelecidas.</p>
+            <h4>8. Reuniões constantes</h4>
+            <p>Sutherland (2016) comenta que as reuniões diárias oxigenam e permitem avaliar o andamento das tarefas antes do fechamento de um ciclo (<i>sprint</i>). Portanto, realizar conversas e <i>feedbacks</i> diários, como bate-papos curtos e diretos, para acompanhar o andamento das tarefas é algo bem importante. Você pode se guiar pelas seguintes perguntas:</p>
+            <ul>
+              <li>O que você fez ontem para ajudar na conclusão do ciclo (<i>sprint</i>)?</li>
+              <li>O que você fará para ajudar a equipe na conclusão do ciclo (<i>sprint</i>)?</li>
+              <li>Você ou a equipe estão com alguma dificuldade na conclusão desta tarefa?</li>
+            </ul>
+            <h4>9. Reunião de revisão do <i>sprint</i></h4>
+            <p>Ao final de cada ciclo (<i>sprint</i>), normalmente na sexta-feira, é preciso realizar uma revisão das tarefas concluídas e o que ficou ajustado para a semana seguinte (novo <i>sprint</i>). Somente itens marcados como “feito” devem ser revisados.</p>
+          </div>
+
+          <p>Interessante o método Scrum, não é mesmo? Algumas empresas oferecem consultorias e plataformas que auxiliam neste gerenciamento. Mas ferramentas gratuitas, como o Trello ou o Miro, permitem aplicação digital do método. E, se você e sua equipe de obras são mais visuais, um quadro físico na obra também ajuda na organização. Não deixe de testar!</p>
+          <p>Além do método <i>Scrum</i>, outro método conhecido e utilizado na construção civil é o Project Management Body of Knowledge, ou simplesmente PMBOK. Esse método é de autoria do Project Management Institute (PMI), uma associação voltada para o gerenciamento de projetos. O guia criado por eles apresenta técnicas e práticas que auxiliam na melhoria contínua de gerenciamento de obras. Porém, é um método mais voltado para a construção civil, em obras mais pesadas. De qualquer forma, vale você pesquisar e conhecer, para entender melhor os métodos apresentados.</p>
+          <h4>Ferramentas</h4>
+          <p>É possível dizer que a metodologia é como se planeja e gerencia uma obra. As ferramentas são como se aplica o que foi planejado. Falou-se anteriormente sobre o Trello e o Miro, que são ferramentas para a aplicação da metodologia Scrum. Quais outras ferramentas o mercado pode oferecer para planejar e gerenciar um projeto de <i>design</i> de interiores? Confira algumas:</p>
+
+          <div class="no-print" aria-hidden="true">
+            <p>Clique ou toque para visualizar o conteúdo.</p>
+            <div class='panel-group' id='accordion01' role='tablist' aria-multiselectable='true'>
+              <div class='panel panel-default'>
+                <div class='panel-heading' role='tab' id='heading01'>
+                  <h3 class='panel-title'>
+                    <a role='button' data-toggle='collapse' data-parent='#accordion01' href='#collapse01' aria-expanded='false' aria-controls='collapse01'>
+                      Orçamentos
+                    </a>
+                  </h3>
+                </div>
+                <div id='collapse01' class='panel-collapse collapse in' role='tabpanel' aria-labelledby='heading01'>
+                  <div class='panel-body'>
+                    <p>É a forma que se tem de aferir os valores de cada um dos itens de um projeto. Aqui, é necessário tentar ser o mais detalhista possível, para que não haja gastos fora do que está sendo previsto. Quando você indica um piso cerâmico, por exemplo, não pode esquecer que precisará comprar argamassa e rejunte também. A forma mais simples de organizar um orçamento é em tabelas, e programas de planilha como o Excel são ótimos para isso.</p>
+                    <a href="imgs/fig02.jpg" target="_blank" class="img-zoom">
+                      <img src="imgs/fig02.jpg" class="img-responsive center-block img-borda">
+                    </a>
+                    <p class="legenda-imagem">
+                      Planilha de orçamento para reforma <br>
+                      Fonte: Max Planilhas (s. d.)
+                    </p>
+                    <p class="acessivel no-print">Captura de tela que mostra uma planilha no software Excel chamada “Orçamento reforma residencial”. É composta de diversas células preenchidas com itens como valor previsto, valor gasto, saldo, gasto material e gasto mão de obra. Abaixo, quatro colunas indicadas como data, descrição, categoria e valor. Abaixo estão células preenchidas com essas informações</p>
+                  </div>
+                </div>
+              </div>
+              <div class='panel panel-default'>
+                <div class='panel-heading' role='tab' id='heading02'>
+                  <h3 class='panel-title'>
+                    <a class='collapsed' role='button' data-toggle='collapse' data-parent='#accordion01' href='#collapse02' aria-expanded='false' aria-controls='collapse02'>
+                      Memorial descritivo
+                    </a>
+                  </h3>
+                </div>
+                <div id='collapse02' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading02'>
+                  <div class='panel-body'>
+                    <p>O nome “memorial descritivo” vocês já viram algumas vezes ao longo do curso. No contexto do gerenciamento de obra, o memorial descritivo especificará materiais, técnicas e acabamentos que serão utilizados na execução do projeto. Portanto, ele é um documento escrito que indica o que o projeto executivo não consegue comunicar. Você pode utilizar programas tipo planilha, como Excel, ou até mesmo programas de texto, como o Word.</p>
+                    <a href="imgs/fig03.jpg" target="_blank" class="img-zoom">
+                      <img src="imgs/fig03.jpg" class="img-responsive center-block img-borda">
+                    </a>
+                    <p class="legenda-imagem">
+                      Memorial descritivo <br>
+                      Fonte: Marilac (s. d.)
+                    </p>
+                    <p class="acessivel no-print">Captura de tela que mostra uma tabela com listagem de itens que serão realizados em uma obra. Está dividida em quadros menores, com títulos como demolição e remoção, elétrica, alvenaria, instalações, gesso, revestimento e pintura. Em cada quadro há linhas especificando aposentos e colunas especificando local, trabalho e quantitativo.</p>
+                  </div>
+                </div>
+              </div>
+              <div class='panel panel-default'>
+                <div class='panel-heading' role='tab' id='heading03'>
+                  <h3 class='panel-title'>
+                    <a class='collapsed' role='button' data-toggle='collapse' data-parent='#accordion01' href='#collapse03' aria-expanded='false' aria-controls='collapse03'>
+                      Cronograma de obra e diagrama de Gantt
+                    </a>
+                  </h3>
+                </div>
+                <div id='collapse03' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading03'>
+                  <div class='panel-body'>
+                    <p>É a principal ferramenta para auxiliar no planejamento da obra. Com o cronograma de obra (e o diagrama de Gantt), é possível determinar as atividades, os prazos e as sequências de execução e ter uma visão clara de todo o processo. Basta pintar as células e colunas, definindo as datas para que cada tarefa seja cumprida. Aqui, programas como o MS Project ou Excel podem ajudar.</p>
+                    <a href="imgs/fig04.jpg" target="_blank" class="img-zoom">
+                      <img src="imgs/fig04.jpg" class="img-responsive center-block img-borda">
+                    </a>
+                    <p class="legenda-imagem">
+                      Cronograma e diagrama de Gantt <br>
+                      Fonte: <i>Blog</i> Planilha de Obra (2020)
+                    </p>
+                    <p class="acessivel no-print">Captura de tela de uma planilha no software Excel contendo, no topo, datas e dias por semana, e, na esquerda, os diferentes serviços. No encontro da data com o serviço, é pintado de verde quando ocorre, ficando em branco quando não ocorre. É possível verificar que, ao longo dos dias, as barras vão indo para a direita, demonstrando a passagem dos serviços e a interligação entre eles.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="acessivel print">
+            <h4>Orçamentos</h4>
+            <p>É a forma que se tem de aferir os valores de cada um dos itens de um projeto. Aqui, é necessário tentar ser o mais detalhista possível, para que não haja gastos fora do que está sendo previsto. Quando você indica um piso cerâmico, por exemplo, não pode esquecer que precisará comprar argamassa e rejunte também. A forma mais simples de organizar um orçamento é em tabelas, e programas de planilha como o Excel são ótimos para isso.</p>
+            <img src="imgs/fig02.jpg" class="img-responsive center-block img-borda">
+            <p class="legenda-imagem">
+              Planilha de orçamento para reforma <br>
+              Fonte: Max Planilhas (s. d.)
+            </p>
+            <p class="acessivel no-print">Captura de tela que mostra uma planilha no software Excel chamada “Orçamento reforma residencial”. É composta de diversas células preenchidas com itens como valor previsto, valor gasto, saldo, gasto material e gasto mão de obra. Abaixo, quatro colunas indicadas como data, descrição, categoria e valor. Abaixo estão células preenchidas com essas informações</p>
+            <h4>Memorial descritivo</h4>
+            <p>O nome “memorial descritivo” vocês já viram algumas vezes ao longo do curso. No contexto do gerenciamento de obra, o memorial descritivo especificará materiais, técnicas e acabamentos que serão utilizados na execução do projeto. Portanto, ele é um documento escrito que indica o que o projeto executivo não consegue comunicar. Você pode utilizar programas tipo planilha, como Excel, ou até mesmo programas de texto, como o Word.</p>
+            <img src="imgs/fig03.jpg" class="img-responsive center-block img-borda">
+            <p class="legenda-imagem">
+              Memorial descritivo <br>
+              Fonte: Marilac (s. d.)
+            </p>
+            <p class="acessivel no-print">Captura de tela que mostra uma tabela com listagem de itens que serão realizados em uma obra. Está dividida em quadros menores, com títulos como demolição e remoção, elétrica, alvenaria, instalações, gesso, revestimento e pintura. Em cada quadro há linhas especificando aposentos e colunas especificando local, trabalho e quantitativo.</p>
+            <h4>Cronograma de obra e diagrama de Gantt</h4>
+            <p>É a principal ferramenta para auxiliar no planejamento da obra. Com o cronograma de obra (e o diagrama de Gantt), é possível determinar as atividades, os prazos e as sequências de execução e ter uma visão clara de todo o processo. Basta pintar as células e colunas, definindo as datas para que cada tarefa seja cumprida. Aqui, programas como o MS Project ou Excel podem ajudar.</p>
+            <img src="imgs/fig04.jpg" class="img-responsive center-block img-borda">
+            <p class="legenda-imagem">
+              Cronograma e diagrama de Gantt <br>
+              Fonte: <i>Blog</i> Planilha de Obra (2020)
+            </p>
+            <p class="acessivel no-print">Captura de tela de uma planilha no software Excel contendo, no topo, datas e dias por semana, e, na esquerda, os diferentes serviços. No encontro da data com o serviço, é pintado de verde quando ocorre, ficando em branco quando não ocorre. É possível verificar que, ao longo dos dias, as barras vão indo para a direita, demonstrando a passagem dos serviços e a interligação entre eles.</p>
+          </div>
+          
+          <p>Esses são os principais instrumentos que auxiliarão você no planejamento de obra e que serão estudados com mais detalhes posteriormente. Existem outros, como diário de obras (para registrar os acontecimentos a cada dia), <i>checklists</i> e <i>softwares</i>/serviços que oferecem soluções completas, mas o importante é entender quais são os principais e que farão com que sua obra seja eficiente, efetiva e eficaz.</p>
+
+          <h3>Fornecedores e mão de obra</h3>
+          <p>Uma obra não é uma via de mão única. Como dificilmente você será capaz de projetar e executar uma obra sozinho, sempre precisará tratar com outras pessoas. Confira dois grupos que se destacam: os fornecedores e a mão de obra.</p>
+          <h4>Fornecedores</h4>
+          <p>São as pessoas e empresas que fornecem material, equipamentos e serviços para a execução da obra, ou seja, são as lojas de revestimento e de material de construção, os marceneiros, as empresas de fornecimento de acabamentos de banheiro e assim por diante.</p>
+          <img src="imgs/fig05.jpg" class="img-responsive center-block img-borda">
+          <p class="legenda-imagem">
+            Vendedora e comprador em loja de fornecedor de piso <br>
+            Fonte: Freepik (2024)
+          </p>
+          <p class="acessivel no-print">Fotografia de duas pessoas em uma loja com uma variedade de amostras de materiais ao fundo, possivelmente para reforma ou design de interiores. A pessoa à esquerda está segurando uma prancheta, sendo uma vendedora. A pessoa à direita examina uma amostra de piso retangular, sendo o cliente. Ambos estão conversando sobre o produto observado.</p>
+          <div class="caixa-destaque icone-importante">
+            <p>Manter um relacionamento saudável com esses grupos é importantíssimo, pois eles terão uma função muito importante no andamento da obra com o fornecimento dos insumos. É interessante estar em contato direto e frequente com eles para que, caso aconteça algum problema, possam ajudá-lo. Aqui, monitorar entregas e avaliar a qualidade dos materiais é muito importante.</p>
+          </div>
+          <p>Nesse sentido, a logística é fundamental para a obra. Saber as datas e os horários de recebimento e como você levará os materiais até o local da obra é muito importante. Imagine que, por algum motivo, o piso que você encomendou para chegar em 5 dias chegará em 15. Se você tem um bom contato com o fornecedor, poderá avaliar se esse prazo está correto, se há formas de substituir o piso, se haverá algum desconto pelo atraso, e assim tomar a melhor decisão para o momento.</p>
+          <p>Ao montar a sua carta de fornecedores, você deve ter como critério a qualidade no atendimento, os custos, a confiabilidade e o atendimento de prazos. Muitas vezes, você terá um fornecedor que é um pouco mais caro, mas que você sabe que sempre atende aos seus prazos. Com isso, você terá margem para negociar com o cliente esse valor maior, certo?</p>
+          <h4>Mão de obra</h4>
+          <p>Já a mão de obra se refere a quem realmente irá colocar a “mão na massa”. São as pessoas e empresas que instalarão o seu piso, pintarão a parede, instalarão luminárias e assim por diante. É o pedreiro, o pintor, o eletricista, o hidráulico, o mestre de obra, entre outros.</p>
+          <img src="imgs/fig06.jpg" class="img-responsive center-block img-borda">
+          <p class="legenda-imagem">
+            Pessoa construindo uma casa <br>
+            Fonte: Freepik (2024)
+          </p>
+          <p class="acessivel no-print">Fotografia de um trabalhador da construção civil aplicando argamassa em uma parede de tijolos na construção de uma casa que ainda está sem cobertura. O trabalhador está vestindo uma camisa xadrez, um cinto de ferramentas, luvas e um capacete de segurança laranja.</p>
+          <p>Com a mão de obra, a coordenação e o cronograma de obra são fundamentais. Você deve entender os prazos e a duração de cada uma das etapas que serão realizadas na obra. Mattos (2010) fornece algumas regras práticas para determinar a duração de uma atividade:</p>
+          <div class='table-responsive'>
+            <table class='senac'>
+              <tbody>
+                <tr>
+                  <th>Regra</th>
+                  <th>Significado</th>
+                </tr>
+                <tr>
+                  <td>Avaliar as durações uma a uma</td>
+                  <td>Deve-se estimar a duração de cada atividade separadamente das demais, assumindo que mão de obra tem oferta suficiente.</td>
+                </tr>
+                <tr>
+                  <td>Adotar o dia normal</td>
+                  <td>Cada atividade deve ser calculada tendo como base a jornada regular do dia, sem contabilizar horas extras e turnos maiores, pois isso pode acabar refletindo em um cronograma tendencioso.</td>
+                </tr>
+                <tr>
+                  <td>Não pensar no prazo total da obra</td>
+                  <td>Deve-se montar o cronograma de forma isenta, sem pensar em um tempo total de obra. Com isso, é possível passar um prazo realista.</td>
+                </tr>
+                <tr>
+                  <td>Dias úteis não são dias corridos</td>
+                  <td>Por exemplo: quinze dias no calendário é diferente de quinze dias de obra (aqui se conta normalmente de segunda a sexta, o que totalizaria três semanas de obra).</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="legenda-imagem">
+            Regras práticas para determinação de duração de uma atividade <br>
+            Fonte: Adaptada de Mattos (2010)
+          </p>
+          <p>Assim como no caso dos fornecedores, a seleção de mão de obra deve focar em qualidade de serviço, custos, atendimento de prazos e confiabilidade. Além disso, o <i>designer</i> que está acompanhando uma obra deve assegurar que ela está progredindo de maneira adequada, de acordo com o projeto e com as etapas do cronograma.</p>
+          <p>Por esse motivo, manter um relacionamento saudável com fornecedores e mão de obra é fundamental para um bom andamento da sua obra. Acompanhando de perto os fornecedores e a mão de obra, será possível resolver os problemas rapidamente.</p>
+
+          <h3>Materiais</h3>
+          <p>Além das pessoas, uma obra também depende dos materiais que serão utilizados para ter um andamento adequado. Materiais são tudo aquilo que será comprado e utilizado, como piso, argamassa, rejunte, tintas, eletrodutos, fios, luminárias e assim por diante. É preciso ter sempre fornecedores confiáveis, que ofereçam bons materiais para a obra, assim como mão de obra confiável, que saiba como utilizar esses materiais.</p>
+          <div class="caixa-destaque icone-doc">
+            <p>Os materiais representam uma parte significativa do orçamento de uma obra. Assim, é importante ter quantitativos e orçamentos detalhados de cada um dos itens que está no projeto executivo. Quantitativo é a quantidade exata de materiais necessários que serão utilizados em cada etapa do projeto, o que é fundamental para a elaboração de um orçamento preciso. Um quantitativo adequado evita desperdícios e faltas de materiais, garantindo que o cronograma seja seguido evitando interrupções. <i>Softwares</i> de projeto e planilhas específicas ajudam a tornar esse processo mais preciso.</p>
+          </div>
+          <p>Com os quantitativos, é muito mais fácil ter orçamentos corretos e precisos. Com eles, você consegue ter os custos diretos e indiretos. Por exemplo, se você for indicar um piso cerâmico, com o quantitativo preciso, você já consegue ter também os valores corretos de argamassa, rejunte, espaçadores, transporte e assim por diante. Além disso, o quantitativo correto permitirá que você possa negociar os orçamentos de maneira mais efetiva, agilizando prazos e valores para seu cliente.</p>
+
+          <h3>Cronograma físico-financeiro</h3>
+          <p>Antes de iniciar um cronograma, é importante estabelecer uma ordem lógica das atividades que serão feitas. Por exemplo, você não fará a pintura antes de passar os eletrodutos nas paredes. Mattos (2010) traz uma dica importante de como pensar a ordem das atividades: pergunte “<b>de quem esta atividade depende?</b>”; com isso, é possível determinar um ponto final e determinar os antecessores.</p>
+          <div class="caixa-destaque icone-doc">
+            <p>O cronograma é o instrumento de planejamento no dia a dia da obra, e é por ele que o responsável técnico e a equipe devem seguir diversas providências, como programar atividades, instruir equipes, fazer compras, alugar equipamentos, verificar e monitorar progresso das atividades, replanejar a obra, entre outros (Mattos, 2010). O cronograma físico-financeiro abordará o planejamento e também incluirá valores gastos no período em questão. A junção dos dois faz com que seja possível fazer uma previsão semanal ou mensal de gastos, além das conclusões e dos pagamentos por etapa realizada.</p>
+          </div>
+          <p>Um instrumento que ajuda muito neste momento é o cronograma de Gantt. Esse recurso criado pelo engenheiro Henry Gantt insere um gráfico de barras associando atividades em uma coluna na esquerda e datas em uma linha na parte superior. O comprimento da barra corresponde à duração da atividade, de forma que se consegue visualizar os dias de início e fim. Veja um exemplo simples.</p>
+          <div class='table-responsive'>
+            <table class='senac'>
+              <tbody>
+                <tr>
+                  <th>Atividade</th>
+                  <th>1/8</th>
+                  <th>2/8</th>
+                  <th>3/8</th>
+                  <th>4/8</th>
+                  <th>5/8</th>
+                  <th>Sáb.</th>
+                  <th>Dom.</th>
+                  <th>8/8</th>
+                  <th>9/8</th>
+                  <th>10/8</th>
+                  <th>11/8</th>
+                  <th>12/8</th>
+                  <th>Sáb.</th>
+                  <th>Dom.</th>
+                  <th>15/8</th>
+                </tr>
+                <tr>
+                  <th>Instalar piso</th>
+                  <td style="background-color: #b1b1b1;"></td>
+                  <td style="background-color: #b1b1b1;"></td>
+                  <td style="background-color: #b1b1b1;"></td>
+                  <td style="background-color: #b1b1b1;"></td>
+                  <td style="background-color: #b1b1b1;"></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Pintar paredes</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td style="background-color: #b1b1b1;"></td>
+                  <td style="background-color: #b1b1b1;"></td>
+                  <td style="background-color: #b1b1b1;"></td>
+                  <td style="background-color: #b1b1b1;"></td>
+                  <td style="background-color: #b1b1b1;"></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Instalar luminárias</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td style="background-color: #b1b1b1;"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="legenda-imagem">
+            Cronograma de barras <br>
+            Fonte: Senac EAD (2024)
+          </p>
+          <p>Esse é um exemplo bem simplificado. Note que, quanto mais detalhado, mais se consegue organizar a obra. Nesse exemplo, poderiam ser inseridas mais linhas falando sobre rejunte, compra de materiais, divisão por cômodos e assim por diante.</p>
+          <p>No cronograma físico-financeiro, também é preciso cuidar dos valores de pagamento para fornecedores e mão de obra. Ao acertar pagamentos semanais com o empreiteiro, por exemplo, eles devem estar indicados para serem pagos a cada semana. Você contratou outros profissionais? Deve indicar em qual semana cada um deles deverá receber o pagamento. O mesmo vale para materiais: as compras serão feitas ao longo da obra? Então devem estar previstas no cronograma.</p>
+          <div class='table-responsive'>
+            <table class='senac'>
+              <tbody>
+                <tr>
+                  <th>Atividade</th>
+                  <th>Semana 1</th>
+                  <th>Semana 2</th>
+                  <th>Semana 3</th>
+                </tr>
+                <tr>
+                  <td>Instalador piso</td>
+                  <td style="background-color: #b1b1b1; text-align: center;">R$ _____</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Pintor</td>
+                  <td></td>
+                  <td style="background-color: #b1b1b1; text-align: center;">R$ _____</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Eletricista</td>
+                  <td></td>
+                  <td></td>
+                  <td style="background-color: #b1b1b1; text-align: center;">R$ _____</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="legenda-imagem">
+            Cronograma financeiro <br>
+            Fonte: Senac EAD (2024)
+          </p>
+
+          <p>Que tal fazer um teste? Clique abaixo para fazer o <i>download</i> do arquivo em Excel de uma situação hipotética de reforma de cozinha e insira mais linhas na planilha. Pense em tudo que seria feito em uma obra deste tipo. Coloque itens como “fazer rejunte”, “compra de tintas”, “fazer abertura no gesso”, “instalação de luminárias”, “marcenaria” e pense em quantos dias você estimaria para cada um desses itens. Tente também fazer a inserção de linhas e de valores fictícios. Poste no fórum ou envie para seu tutor conferir.</p>
+          <div class="download-pdf no-print">
+            <a class="btn-download" href="docs/ANEXO CRONOGRAMA GANTT.xlsx" download="ANEXO CRONOGRAMA GANTT.xlsx">ANEXO CRONOGRAMA GANTT</a>
+          </div>
+
+          <h3>Custos e memorial descritivo</h3>
+          <p>Nas unidades curriculares que abordam projetos residenciais, de ambientes corporativos, de espaços efêmeros e de pontos de venda, você já estudou como se produz um memorial descritivo. Nesses materiais estavam informações como cálculo de áreas, montagem do material, indicação do que deveria aparecer e especificidades dependendo do tipo de projeto.</p>
+          <div class="caixa-destaque icone-dica">
+            <p>Dica: acesse as seguintes unidades curriculares para rever esses conhecimentos:</p>
+            <ul>
+              <li>Projetar design de interiores residencial</li>
+              <li>Projetar design de interiores corporativo</li>
+              <li>Projetar design de interiores de ponto de vendas</li>
+              <li>Projetar design de espaços efêmeros</li>
+            </ul>
+          </div>
+          <p>O memorial descritivo é, portanto, mais um documento de importância fundamental no planejamento da obra. É a partir dele que você conseguirá estabelecer orçamentos e cronogramas para o andamento da execução. Com ele, você também tem uma documentação que evita mal-entendidos e combinações verbais. Garantir que essa documentação esteja de posse dos envolvidos facilita a comunicação e garante eficiência no processo. Além disso, com o memorial, você conseguirá ter um controle mais adequado dos custos do projeto.</p>
+          <p>O controle dos custos começará no orçamento inicial. A partir de um levantamento detalhado, você conseguirá contatar fornecedores e mão de obra para passarem os valores de cada serviço e material que será utilizado. Com isso, você terá uma estimativa bastante detalhada do que será gasto. </p>
+          <div class="caixa-destaque">
+            <p>É importante que, mesmo com orçamento inicial, os gastos sejam monitorados. Não é incomum acontecerem gastos a mais na obra, podendo ser por erros de execução ou de projeto, mas também por questões diversas, como alterações dos itens do memorial descritivo ou até mesmo do projeto inicial. Aqui, um acompanhamento com ferramentas como o Excel poderá ajudá-lo a ter esses valores sempre atualizados.</p>
+          </div>
+
+          <h3>Plano de reforma</h3>
+          <p>A ABD, Associação Brasileira de <i>Design</i> de Interiores, disponibiliza para os seus associados uma ferramenta que auxilia no planejamento e no gerenciamento de obras. Trata-se de um documento de plano de reforma, criado em um editor de planilha, contendo as principais informações da reforma e o escopo de trabalho em cada ambiente, que vão de aplicação e revestimentos até a instalação de marcenaria. A planilha deve ser alimentada com todas as informações, desde tipo de intervenção que será realizada, quem será o prestador de serviço a qual será o material utilizado. Para ter acesso ao modelo, é preciso ser associado. A ABD aceita profissionais experientes, recém-formados e estudantes por meio do pagamento de anuidade.</p>
+          <a href="imgs/fig07.jpg" target="_blank" class="img-zoom">
+            <img src="imgs/fig07.jpg" class="img-responsive center-block img-borda">
+          </a>
+          <p class="legenda-imagem">
+            Tabela de plano de reforma ABD <br>
+            Fonte: ABD (c2021)
+          </p>
+          <p class="acessivel no-print">Captura de tela mostrando uma planilha organizada com um plano de reforma, em que constam o nome do proprietário da obra, o endereço, a data de elaboração do plano de reforma, o autor, a previsão de início e de término da reforma, além de detalhar o escopo do trabalho realizado em cada ambiente, desde o revestimento de superfícies até a instalação de marcenaria.</p>
+
+          <h3>Encerramento</h3>
+          <p>Este conteúdo demonstrou como o planejamento de obra pode fazer com que a execução dela seja mais eficaz, eficiente e efetiva ao utilizar ferramentas de gestão e gerenciamento. Segundo Mattos (2010), deficiências no planejamento e controle são algumas das maiores causas de produtividade baixa e perdas elevadas, tendo com isso produtos imobiliários de baixa qualidade.</p>
+          <p>Assim, o planejamento de obras é um processo que envolve a gestão de fornecedores, mão de obra, materiais, cronogramas, custos e a elaboração de um memorial descritivo detalhado. Saber escolher fornecedores e gerir a mão de obra qualificada é essencial para a qualidade e pontualidade das entregas. Dessa forma, um planejamento bem-sucedido garante a execução do projeto dentro do prazo, do orçamento e com boa qualidade, que é o que seu cliente espera de você!</p>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- - - - - - - - - - - - - - - - não alterar abaixo- - - - - - - - - - - - -->
+    <footer class="text-center no-print">
+      <!--
+          <ul class="pagination">
+
+          </ul>
+          -->
+    </footer>
+  </div>
+
+  <!-- Modais -->
+  <div class="modal fade" id="modal-scrum01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">1. Defina o responsável pelo projeto</h4>
+        </div>
+        <div class="modal-body">
+          <p>O responsável é a pessoa que sabe tudo que está acontecendo no andamento da obra. No caso de gerenciamento de obras, o ideal é que essa pessoa seja você.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal-scrum02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">2. Defina a equipe</h4>
+        </div>
+        <div class="modal-body">
+          <p>Quem são os profissionais envolvidos no projeto? Escolha e conheça o trabalho de cada um dos membros, até para saber o que exigir e quanto exigir.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal-scrum03" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">3. Faça um quadro Scrum ou Kanban</h4>
+        </div>
+        <div class="modal-body">
+          <p>Assim como aqui no curso você tem acesso a um quadro Kanban, separando os conteúdos para leitura semanal, essa mesma estrutura pode ser criada para organizar a obra dos seus clientes. Um quadro Scrum ou Kanban deve apresentar de maneira bem visual e de fácil acesso para todos os participantes as tarefas que deverão ser realizadas, incluindo ordem e datas de execução. Separe em três colunas: para fazer, fazendo e feito. A equipe monitora e movimenta cada uma das tarefas do quadro na medida em que as for realizando. O responsável pelo projeto monitora o andamento.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal-scrum04" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">4. Defina a ordem da coluna “para fazer”</h4>
+        </div>
+        <div class="modal-body">
+          <p>Defina e priorize as tarefas mais importantes do projeto. Lembre-se sempre de que uma obra tem a sua ordem de realização, normalmente iniciada pela demolição.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal-scrum05" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">5. Estime o tamanho de cada tarefa</h4>
+        </div>
+        <div class="modal-body">
+          <p>Sutherland (2016) indica criar uma escala de 1 a 10 para a classificação das tarefas, na qual 1 é uma tarefa pequena e 10 é uma tarefa grande. Quanto maior a tarefa, mais tempo ela levará para ser concluída, pois exigirá mais esforço.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal-scrum06" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">6. <i>Sprints</i></h4>
+        </div>
+        <div class="modal-body">
+          <p>Os <i>sprints</i> são os ciclos de entrega e conferência, ou seja, os momentos nos quais o responsável pelo projeto avaliará o andamento das tarefas do quadro Scrum. Esses ciclos podem ter a duração de até um mês, dependendo do tamanho do projeto. No caso de uma reforma residencial, por exemplo, é interessante definir <i>sprints</i> semanais, que poderiam ocorrer nas suas visitas técnicas até o local da obra, conferindo o andamento do quadro Scrum e resgatando as responsabilidades da equipe no andamento das tarefas.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal-scrum07" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">7. Reunião de planejamento do <i>sprint</i></h4>
+        </div>
+        <div class="modal-body">
+          <p>Essa reunião deve acontecer antes de cada <i>sprint</i> (ciclo). A equipe define quais são as tarefas que devem acontecer dentro daquele ciclo. Como já está definido o tamanho de cada tarefa de 1 até 10, na medida em que vão sendo realizadas as tarefas, pode-se ir pontuando. Por exemplo: ao fechar um <i>sprint</i>, você verificou que sua equipe de obras realizou 4 tarefas difíceis, totalizando 40 pontos, e o previsto para aquele <i>sprint</i> eram 30 pontos. Portanto, é possível ampliar em 10 pontos o próximo <i>sprint</i>, talvez agilizando o cronograma. Importante: toda a equipe precisa estar de acordo com as metas estabelecidas.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal-scrum08" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">8. Reuniões constantes</h4>
+        </div>
+        <div class="modal-body">
+          <p>Sutherland (2016) comenta que as reuniões diárias oxigenam e permitem avaliar o andamento das tarefas antes do fechamento de um ciclo (<i>sprint</i>). Portanto, realizar conversas e <i>feedbacks</i> diários, como bate-papos curtos e diretos, para acompanhar o andamento das tarefas é algo bem importante. Você pode se guiar pelas seguintes perguntas:</p>
+          <ul>
+            <li>O que você fez ontem para ajudar na conclusão do ciclo (<i>sprint</i>)?</li>
+            <li>O que você fará para ajudar a equipe na conclusão do ciclo (<i>sprint</i>)?</li>
+            <li>Você ou a equipe estão com alguma dificuldade na conclusão desta tarefa?</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal-scrum09" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">9. Reunião de revisão do <i>sprint</i></h4>
+        </div>
+        <div class="modal-body">
+          <p>Ao final de cada ciclo (<i>sprint</i>), normalmente na sexta-feira, é preciso realizar uma revisão das tarefas concluídas e o que ficou ajustado para a semana seguinte (novo <i>sprint</i>). Somente itens marcados como “feito” devem ser revisados.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <!-- Modais 100% -->
+
+  
+
+  <!--  Em caso de footer personalizado utilizar esse elemento e adicionar a classe customizada
+    <footer>
+    </footer>
+	-->
+  <!-- carrega todas as imagens dos icones nesta div
+ caso queira adicionar mais imagens de novos icones do css,
+ ou qualquer imagem que deva ser contabilizada durante a fase
+ de loading, referenciar aqui.
+ -->
+  <div class="ico-div-loader">
+    <img src="../template/images/atencao.png" />
+    <img src="../template/images/bg-content.jpg" />
+    <img src="../template/images/bg-topo.jpg" />
+    <img src="../template/images/black-zoom-in-256.png" />
+    <img src="../template/images/concluindo.png" />
+    <img src="../template/images/curtir.png" />
+    <img src="../template/images/desafio.png" />
+    <img src="../template/images/dica.png" />
+    <img src="../template/images/doc.png" />
+    <img src="../template/images/fundamental.png" />
+    <img src="../template/images/icon-03.png" />
+    <img src="../template/images/importante.png" />
+    <img src="../template/images/lightbulb.png" />
+    <img src="../template/images/link.png" />
+    <img src="../template/images/link_pdf_hover.png" />
+    <img src="../template/images/link_pdf_normal.png" />
+    <img src="../template/images/logo-senac.png" />
+    <img src="../template/images/mark-icon.png" />
+    <img src="../template/images/mark-icon02.png" />
+    <img src="../template/images/midia.png" />
+    <img src="../template/images/monitor.png" />
+    <img src="../template/images/nao_curtir.png" />
+    <img src="../template/images/pergunta.png" />
+    <img src="../template/images/pesquisa.png" />
+    <img src="../template/images/play.png" />
+    <img src="../template/images/radio_flat.png" />
+    <img src="../template/images/refletir.png" />
+    <img src="../template/images/saiba_mais.png" />
+    <img src="../template/images/senac_loader.png" />
+    <img src="../template/images/tanamidia.png" />
+    <img src="../template/images/transcricao.png" />
+    <img src="../template/images/transcricao_small.png" />
+    <img src="../template/images/tv.png" />
+    <img src="../template/images/tv_bottom.png" />
+    <img src="../template/images/zoom.png" />
+    <img src="../template/images/zoom_ie.cur" />
+    <img src="../template/images/zoom_ie.png" />
+    <!-- adicionar as imagens customizadas aqui abaixo -->
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="../template/js/jquery.min.js"></script>
+  <script src="../template/js/bootstrap.min.js"></script>
+  <script src="../template/js/jquery.magnific-popup.min.js"></script>
+  <script src="../template/js/print.js"></script>
+  <script src="../template/js/template.config.js"></script>
+  <script src="../template/js/images.loader.js"></script>
+  <script src="../template/js/highlight.min.js"></script>
+  <script src="../template/js/parallax.min.js"></script>
+  <script src="js/custom.js"></script>
+
+  <noscript>
+    <style media="screen">
+      .over-loader {
+        display: none;
+      }
+    </style>
+  </noscript>
+</body>
+
+</html>
+<script>
+  document.addEventListener("DOMContentLoaded", (event) => {
+    document.querySelectorAll("pre code").forEach((el) => {
+      hljs.highlightElement(el);
+    });
+  });
+  //inicializa zoom na imagem
+  $(".zoom-imagem").magnificPopup({
+    type: "image",
+    mainClass: "mfp-with-zoom", // this class is for CSS animation below
+    zoom: {
+      enabled: true, // By default it's false, so don't forget to enable it
+
+      duration: 300, // duration of the effect, in milliseconds
+      easing: "ease-in-out", // CSS transition easing function
+
+      // The "opener" function should return the element from which popup will be zoomed in
+      // and to which popup will be scaled down
+      // By defailt it looks for an image tag:
+      opener: function (openerElement) {
+        // openerElement is the element on which popup was initialized, in this case its <a> tag
+        // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+        return openerElement.is("img")
+          ? openerElement
+          : openerElement.find("img");
+      },
+    },
+    image: {
+      markup:
+        '<div class="mfp-figure">' +
+        '<div class="mfp-close"></div>' +
+        '<div class="mfp-img"></div>' + // Floated left
+        '<div class="mfp-bottom-bar">' +
+        "<figcaption>" +
+        '<div class="mfp-title" style="text-align:center"></div>' +
+        '<div class="mfp-counter"></div>' +
+        "</figcaption>" +
+        "</div>" +
+        "</div>", // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
+
+      cursor: "mfp-zoom-out-cur", // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
+
+      tError: '<a href="%url%">A imagem</a> não pode ser carregada.', // Error message
+    },
+  });
+
+  //inicializa popover
+  $(function () {
+    $('[data-toggle="popover"]').popover();
+  });
+  //inicializa tooltip
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+
+  /*------- Script de animação do botão -------*/
+  var root = document.documentElement;
+  root.className += " js";
+
+  function boxTop(idBox) {
+    var boxOffset = $(idBox).offset().top;
+    return boxOffset;
+  }
+
+  $(document).ready(function () {
+    var $target = $(".animeStart"),
+      $target2 = $(".animeStop"),
+      targetBox = $(".box"),
+      animationClass = "anime-init",
+      windowHeight = $(window).height(),
+      offset = windowHeight - windowHeight / 4;
+
+    function animeScroll() {
+      var documentTop = $(document).scrollTop();
+      $target.each(function () {
+        if (documentTop > boxTop(this) - offset) {
+          targetBox.addClass(animationClass);
+        } else {
+          targetBox.removeClass(animationClass);
+        }
+        if (documentTop > boxTop($target2) - offset) {
+          targetBox.removeClass(animationClass);
+        }
+      });
+    }
+    animeScroll();
+
+    $(document).scroll(function () {
+      animeScroll();
+    });
+  });
+</script>
+
+<script>
+  var scriptElem = document.createElement("script");
+  (scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js"),
+    (scriptElem.charset = "UTF-8"),
+    (scriptElem.onload = function () {
+      window.ht = new HT({
+        token: "bf5b7efb148a829a126a0e0c9fd533bf",
+        align: "top",
+        videoEnabled: true,
+        ytEmbedReplace: true,
+        mobileConfig: {
+          align: "right",
+          actionsAlign: "top",
+          customButtonStyle: {
+            borderRadius: "6px",
+            size: "38px",
+            horizontalMargin: "13px",
+            bottomMargin: "140px",
+            rightMargin: "40px",
+          },
+        },
+      });
+      $(".ht-skip").attr("aria-hidden", "true");
+    }),
+    document.body.appendChild(scriptElem);
+</script>
