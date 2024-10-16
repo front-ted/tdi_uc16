@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office"
+  xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Prestação de serviços: proposta, precificação, orçamento, contrato, projeto executivo, as built, execução, acompanhamento e visitas técnicas</title>
+
+  <!-- Bootstrap -->
+  <link href="../template/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../template/css/tecnicos_senac.css" rel="stylesheet" />
+  <link href="../template/css/cores.css" rel="stylesheet" />
+  <link href="../template/css/modal-100.css" rel="stylesheet" />
+  <link href="../template/css/devibeans.min.css" rel="stylesheet" />
+  <!--Extras - novas classes para facilitar-->
+  <link rel="stylesheet" href="../template/css/extras.css" />
+  <link href="../template/css/sncload.css" rel="stylesheet" />
+  <link href="../template/css/magnific-popup.css" rel="stylesheet" />
+  <!-- referencia ao arquivo css com estilos especificos da pagina -->
+  <link href="css/custom.css" type="text/css" rel="stylesheet" />
+  <link href="css/associar-colunas.css" type="text/css" rel="stylesheet">
+  <!-- css necessario para o print -->
+  <link href="../template/css/fa/css/fontawesome.css" type="text/css" rel="stylesheet" />
+  <link href="../template/css/fa/css/brands.css" type="text/css" rel="stylesheet" />
+  <link href="../template/css/fa/css/solid.css" type="text/css" rel="stylesheet" />
+  <link href="../template/css/print.css" type="text/css" rel="stylesheet" />
+  <link href="../template/fonts/roboto.css" type="text/css" rel="stylesheet" />
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+  <!--[if gte mso 9
+      ]><xml>
+        <mso:CustomDocumentProperties>
+          <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor
+            msdt:dt="string"
+            >Paulo Ricardo Soveral
+            Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor
+          >
+          <mso:Order msdt:dt="string">46914400.0000000</mso:Order>
+          <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author
+            msdt:dt="string"
+            >Paulo Ricardo Soveral
+            Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author
+          >
+          <mso:ContentTypeId msdt:dt="string"
+            >0x010100393332CEE5C5294F9D2C3CF7CCDACBE5</mso:ContentTypeId
+          >
+        </mso:CustomDocumentProperties>
+      </xml><!
+    [endif]-->
+</head>
+
+<body onLoad="Javascript:document.getElementById('sncloader').style.display='none';">
+  <!-- MARCA D´ÁGUA -->
+  <img src="../template/images/logo_senac_colorido.png" id="marcadaguaLogo" />
+  <!-- /MARCA D´ÁGUA -->
+
+  <div id="sncloader" class="over-loader">
+    <div class="over-cell">
+      <div id="sncload"></div>
+    </div>
+  </div>
+  <header id="topo" class="senac no-print ">
+    <div class="header-tecnicos container">
+      <h1 id="nome-curso">Design de Interiores</h1>
+      <div id="logo-senac">
+        <img src="../template/images/logo-senac.png" alt="logo do senac" />
+      </div>
+    </div>
+    <div id="sombra"></div>
+  </header>
+  <div id="booklet" class="">
+    <header class="no-print container margem-botao">
+      <!-- BTO IMPRIMIR -->
+      <div class="grupo-imprimir no-print">
+        <button type="button" data-pdf="true" class="bto-imprimir" name="button">
+          <span class="fa fa-print"></span> <span>Imprimir</span>
+        </button>
+      </div>
+      <!-- /BTO IMPRIMIR -->
+    </header>
+    <!-- - - - - - - - - - - - - - - - não alterar acima - - - - - - - - - - - - -->
+
+    <section class="paginas">
+
+      <!-- - - - - - - - cada página é independente  - - - - - - - - - - -->
+
+      <div class="pagina">
+
+        <div class="container">
+          <h2>Prestação de serviços: proposta, precificação, orçamento, contrato, projeto executivo, <i>as built</i>, execução, acompanhamento e visitas técnicas</h2>
+
+          <div class="no-print" aria-hidden="true">
+            <p>Clique ou toque para visualizar o conteúdo.</p>
+            <div class="painel-prestacao">
+              <div class="painel-linha01">
+                <button type="button" class="btn-prestacao" data-toggle="modal" data-target="#modal-prestacao">
+                  <span>Prestação de serviço</span>
+                </button>
+                <button type="button" class="btn-proposta" data-toggle="modal" data-target="#modal-proposta">
+                  <span>Proposta ou orçamento</span>
+                </button>
+                <button type="button" class="btn-precificacao" data-toggle="modal" data-target="#modal-precificacao">
+                  <span>Precificação</span>
+                </button>
+              </div>
+              <div class="painel-linha02">
+                <button type="button" class="btn-contrato" data-toggle="modal" data-target="#modal-contrato">
+                  <span>Contrato</span>
+                </button>
+                <button type="button" class="btn-projeto" data-toggle="modal" data-target="#modal-projeto">
+                  <span>Projeto executivo</span>
+                </button>
+                <button type="button" class="btn-as_built" data-toggle="modal" data-target="#modal-as_built">
+                  <span><i>As built</i></span>
+                </button>
+              </div>
+              <div class="painel-linha03">
+                <button type="button" class="btn-execucao" data-toggle="modal" data-target="#modal-execucao">
+                  <span>Execução</span>
+                </button>
+                <button type="button" class="btn-acompanhamento" data-toggle="modal" data-target="#modal-acompanhamento">
+                  <span>Acompanhamento e visitas técnicas</span>
+                </button>
+                <button type="button" class="btn-encerramento" data-toggle="modal" data-target="#modal-encerramento">
+                  <span>Encerramento</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="acessivel print">
+            <div class="">
+              <h3>Prestação de serviços</h3>
+              <p>A prestação de serviço em <i>design</i> de interiores consiste no planejamento, na concepção e na execução de projetos destinados a otimizar e harmonizar os espaços internos de diferentes tipos de ambientes, como residências, escritórios e estabelecimentos comerciais. Esse serviço envolve várias etapas que vão desde contato inicial com o cliente, análise do espaço a ser projetado, levantamento de medidas do ambiente, <i>briefing</i>, estudos preliminares e definição de conceito, elaboração do projeto, revisões, projeto executivo, orçamentos até a etapa de execução. </p>
+              <div class="caixa-destaque icone-nota">
+                <p>O profissional pode ser contratado tanto para desenvolver um projeto completo, que envolve todas as etapas mencionadas, quanto para etapas pontuais, como uma consultoria ou apenas o gerenciamento de obras. Por esse motivo, a proposta de prestação de serviço é uma ferramenta essencial para alinhar expectativas, formalizar acordos entre as partes envolvidas e garantir a clareza do serviço que será prestado ao cliente.</p>
+              </div>
+              <p>Aprenda neste material todas as partes que compõem esse processo de elaboração de uma proposta de prestação de serviços em <i>design</i> de interiores, que envolve a precificação dos serviços prestados, o contrato que deve ser elaborado e assinado antes do início de qualquer serviço e as etapas que compreendem um projeto executivo, <i>as built</i>, execução, acompanhamento e visitas técnicas. Que tal começar?</p>
+              <img src="imgs/fig01.jpg" class="img-responsive center-block img-borda">
+              <p class="legenda-imagem">
+                Reunião de apresentação de proposta de prestação de serviço <br>
+                Fonte: Pexels (2024)
+              </p>
+              <p class="acessivel no-print">Fotografia de parte de uma mesa branca redonda na qual estão apoiadas sobre ela uma prancheta e um caderno com anotações e também duas xícaras com café preto. É possível perceber duas pessoas sentadas ao redor da mesa, mas na imagem elas não aparecem por inteiro. Uma delas está sentada com os braços cruzados e segura uma caneta apoiada no queixo. Não é possível ver o rosto dessa pessoa. Da outra, que está no sentido oposto, só aparecem as mãos.</p>
+            </div>
+            <div class="">
+              <h3>Proposta/orçamento</h3>
+              <p>A proposta de prestação de serviços, também conhecida como orçamento de serviço do <i>designer</i> de interiores, é um documento para formalizar uma relação comercial. Esse documento é vital para estabelecer um relacionamento de trabalho claro, transparente e profissional entre o <i>designer</i> de interiores e o cliente, assegurando que todas as partes envolvidas entendam e concordem com os termos estabelecidos. É importante ressaltar que aqui o valor informado está relacionado aos honorários do profissional e não ao quanto o cliente terá que investir na obra como um todo.</p>
+              <h4>Formatos</h4>
+              <p>Uma proposta de prestação de serviços em <i>design</i> de interiores pode ser apresentada em vários formatos, cada um com suas próprias vantagens. O formato impresso é tradicional e oferece uma sensação tangível e formalidade, sendo ideal para reuniões presenciais. O formato digital, como PDF ou apresentações de <i>slides</i>, é prático e facilmente compartilhável por <i>e-mail</i>, permitindo a inclusão de elementos visuais interativos, como <i>links</i> e vídeos. Plataformas <i>on-line</i>, como <i>websites</i> dedicados ou portfólios digitais, permitem uma apresentação dinâmica e acessível, nas quais clientes podem navegar por diferentes seções do projeto.</p>
+              <p>Além disso, apresentações virtuais por meio de videoconferências são uma opção moderna que permite uma explicação detalhada e ao vivo da proposta, facilitando a interação e o esclarecimento imediato de dúvidas. A escolha do formato deve considerar a preferência do cliente e o contexto da apresentação para garantir clareza e impacto.</p>
+              <div class="caixa-destaque icone-atencao">
+                <p>Vale lembrar que a melhor maneira de entregar uma proposta de prestação de serviços em <i>design</i> de interiores é por meio de uma apresentação ao vivo, seja presencial, seja <i>on-line</i>. Essa abordagem permite uma comunicação direta e imediata, facilitando o esclarecimento de dúvidas e a discussão de detalhes em tempo real. Além disso, a interação ao vivo permite ao <i>designer</i> captar as reações e os <i>feedbacks</i> do cliente, ajustando a proposta conforme necessário. A apresentação ao vivo também demonstra profissionalismo e comprometimento, já criando vínculo e proporcionando um ambiente de confiança e colaboração, que é fundamental desde o início do processo para que se tenha sucesso no projeto.</p>
+              </div>
+              <p>Quanto mais completa e visual for a proposta, demonstrando ao cliente os benefícios da contratação, mais fácil será o fechamento de contrato. É importante deixar o preço sempre para o final: mostrar primeiramente a qualidade e os diferenciais do serviço que será prestado e depois informar o preço e as condições.</p>
+              <p>Normalmente o escritório já tem um modelo de proposta de prestação de serviços a ser apresentado. Esse modelo serve para qualquer tipo de trabalho a ser realizado pelo <i>designer</i> de interiores, seja uma consultoria mais simples, seja um projeto completo ou ainda um gerenciamento de obra. Será necessário apenas personalizar para cada situação específica, considerando as especificidades de cada projeto e serviço.</p>
+              <h4>Elaboração e estrutura: como elaborar?</h4>
+              <p>Confira no infográfico a seguir a estrutura para elaborar a proposta de prestação de serviços em <i>design</i> de interiores.</p>
+              <div aria-hidden="true">
+                <img src="imgs/infografico1.png" class="img-responsive center-block hidden-xs print">
+                <img src="imgs/info1_1.png" class="img-responsive center-block visible-xs no-print">
+                <img src="imgs/info1_2.png" class="img-responsive center-block visible-xs no-print">
+                <img src="imgs/info1_3.png" class="img-responsive center-block visible-xs no-print">
+                <img src="imgs/info1_4.png" class="img-responsive center-block visible-xs no-print">
+                <img src="imgs/info1_5.png" class="img-responsive center-block visible-xs no-print">
+                <img src="imgs/info1_6.png" class="img-responsive center-block visible-xs no-print">
+              </div>
+              <div class="acessivel no-print">
+                Introdução <br>
+                Apresentação do designer e do escopo do trabalho <br>
+                <br>
+                Objetivos <br>
+                Metas e expectativas do projeto <br>
+                <br>
+                Metodologia <br>
+                Passos que serão seguidos durante o projeto <br>
+                <br>
+                Cronograma <br>
+                Prazos para cada etapa do projeto <br>
+                <br>
+                Custos <br>
+                Honorários profissionais <br>
+                <br>
+                Anexos <br>
+                Materiais adicionais, como portfólio, referências e outros documentos relevantes
+              </div>
+              <div class="download-pdf no-print">
+                <p>Clique ou toque para fazer <i>download</i> do conteúdo. </p>
+                <a class="btn-download no-print" href="docs/Modelo de orçamento.docx" download="Modelo de orçamento.docx">Modelo de orçamento da ABD</a>
+              </div>
+            </div>
+            <div class="">
+              <h3>Precificação</h3>
+              <p>Este conhecimento trará algumas reflexões, pois, na vida profissional, você perceberá que muitos clientes estão dispostos a gastar grandes quantias em itens de mobiliário, como, por exemplo, um sofá de R$ 12.000, mas relutam em investir na contratação de um profissional de <i>design</i> de interiores. Isso acontece porque, muitas vezes, os clientes não percebem a vantagem clara desse serviço. </p>
+              <p>A falta de compreensão da diferença entre valor e preço pode ser uma barreira significativa. O valor de contratar um <i>designer</i> de interiores vai além do custo; envolve a experiência, a visão criativa e a capacidade de transformar um espaço de maneira funcional e esteticamente agradável. Um <i>designer</i> de interiores não só otimiza a disposição e a funcionalidade dos ambientes, mas também evita erros que podem sair caros, como a compra de móveis inadequados ou a escolha de materiais impróprios. Além disso, pode indicar melhores fornecedores e garantir que o projeto seja concluído dentro do orçamento e do prazo estabelecido.</p>
+              <p>Ao explicar esses benefícios e demonstrar como a contratação de um profissional pode resultar em um projeto mais eficiente e com menos problemas. Os clientes podem começar a entender que o investimento em um bom profissional de interiores é um passo inteligente que traz retornos significativos, em termos tanto de satisfação pessoal quanto de valorização do seu imóvel.</p>
+              <h4>Eu empresa, eu CNPJ: por que não posso ser MEI e sim Simples Nacional. Vantagens da empresa Simples Nacional. Contrate um contador de confiança</h4>
+              <img src="imgs/fig02.jpg" class="img-responsive center-block img-borda">
+              <p class="legenda-imagem">
+                <i>Designer</i> em seu escritório <br>
+                Fonte: Pexels (2024)
+              </p>
+              <p class="acessivel no-print">Fotografia de mulher branca, com cabelos loiros e lisos em comprimento médio, olhos claros, olhando para a frente em direção ao observador da cena. Ela veste uma camisa branca e está sentada em frente uma mesa de trabalho e folheando uma revista de designer de interiores. Dispostos sobre a mesa estão outros elementos relacionados com a profissão, como folhas de projetos, cartela de cores, amostras de materiais. A parede ao fundo é em um cinza esverdeado e há um vaso grande com folhas verdes.</p>
+              <p><b>Os <i>designers</i> de interiores não podem se enquadrar como microempreendedores individuais (MEI) devido às especificidades e exigências da sua atividade profissional, que requerem um grau de qualificação e responsabilidade</b>. As atividades intelectuais desenvolvidas por um <i>designer</i> são regulamentadas por algum órgão de classe. No caso dos técnicos em <i>design</i> de interiores, o órgão é o CFT (Conselho Federal dos Técnicos Industriais).</p>
+              <div class="caixa-destaque icone-importante">
+                <p>A classificação de MEI é destinada a atividades de baixo risco e complexidade, enquanto o <i>design</i> de interiores exige um conhecimento técnico aprofundado, frequentemente envolvendo projetos que têm um impacto significativo em termos de segurança e funcionalidade dos espaços.</p>
+              </div>
+              <p>Além disso, contratar um contador é essencial para que os <i>designers</i> de interiores mantenham suas obrigações fiscais e contábeis em ordem. Um contador ajuda a escolher o regime tributário mais adequado, gerir a emissão de notas fiscais, realizar o cálculo correto dos impostos e garantir a conformidade com a legislação vigente. Esse suporte é vital para que o <i>designer</i> possa focar em sua atividade principal, garantindo a sustentabilidade financeira do seu negócio e evitando problemas legais e fiscais no futuro.</p>
+              <h4>Como chegar a um preço justo e competitivo? O que considerar?</h4>
+              <p>Na unidade curricular <b>Prestar consultoria em <i>design</i> de interiores</b>, no conhecimento sobre consultoria, você teve acesso a informações sobre as melhores formas de precificar os seus serviços. Esse cálculo pode ser feito por metragem quadrada (m²) ou por custo de produção (valor hora). Vale a pena revisitar esse conhecimento, pois nele você aprendeu a precificar os honorários para uma consultoria em <i>design</i> de interiores. Agora, você só precisa seguir os mesmos passos para precificar outros serviços.</p>
+              <p>Para chegar a um preço justo e competitivo no serviço de <i>design</i> de interiores, é fundamental considerar uma série de fatores. Primeiramente, é importante avaliar os custos operacionais, incluindo despesas com materiais, ferramentas, <i>softwares</i> especializados e o tempo dedicado a cada projeto. Além disso, é essencial analisar o mercado, observando os preços praticados por outros profissionais da área e a demanda pelos serviços. A experiência e a reputação do <i>designer</i> também devem ser levadas em conta, pois profissionais mais experientes e reconhecidos podem justificar preços mais elevados. A complexidade e a escala do projeto são outros fatores cruciais, já que projetos mais detalhados requerem mais tempo de dedicação. Por fim, a percepção de valor pelo cliente deve ser considerada, garantindo que o preço reflita não apenas os custos e o lucro desejado, mas também o valor percebido pelo cliente em termos de qualidade, criatividade e inovação do serviço prestado. Equilibrar todos esses elementos ajuda a definir um preço que seja justo para o cliente e sustentável para o seu negócio.</p>
+            </div>
+            <div class="">
+              <h3>Contrato</h3>
+              <img src="imgs/fig03.jpg" class="img-responsive center-block img-borda">
+              <p class="legenda-imagem">
+                Aceite de proposta <br>
+                Fonte: Pexels (2024)
+              </p>
+              <p class="acessivel no-print">Fotografia de quatro pessoas. No primeiro plano, ao lado direito da imagem, está uma mulher branca, cabelos castanhos curtos e cacheados, usando óculos redondo, vestindo blazer bege e blusa de lã com gola alta na cor cinza. Ela está olhando para o lado esquerdo e cumprimentando um homem. Este veste blusa marrou e tem pele parda, cabelos castanhos e curtos e também usa óculos. No segundo plano há outra mulher, um pouco mais baixa, de pele branca, cabelos castanhos lisos e compridos, e veste uma camisa social em tom bege e está olhando na direção da primeira mulher. Logo ao lado dela está um outro homem mais alto, pele negra, cabelos pretos, veste uma camisa em cor terra sobreposta a uma camiseta verde clara. Todos estão sorrindo.</p>
+              <p>Um contrato de prestação de serviço em <i>design</i> de interiores é um documento formal que estabelece os termos e as condições acordados entre o <i>designer</i> e o cliente para a execução de um projeto de interiores. Esse contrato serve para definir claramente os direitos e as responsabilidades de ambas as partes, garantindo que todos os aspectos do serviço sejam compreendidos e aceitos antes do início do trabalho.</p>
+              <p>Assim como acontece com o documento de orçamento (proposta de prestação de serviço), normalmente o escritório já tem um modelo de contrato já formatado. Esse modelo também serve para qualquer tipo de trabalho a ser realizado pelo designer de interiores, como uma consultoria mais simples, um projeto completo ou ainda um gerenciamento de obra. É necessário personalizá-lo para cada situação específica considerando as especificidades de cada projeto e serviço.</p>
+              <img src="imgs/fig04.jpg" class="img-responsive center-block img-borda">
+              <p class="legenda-imagem">
+                Assinatura de contrato <br>
+                Fonte: Pexels (2024)
+              </p>
+              <p class="acessivel no-print">Fotografia de um contrato sendo assinado. Há uma folha branca com espaço para a assinatura e essa assinatura sendo feita por uma mão branca e caneta tinteiro preta.</p>
+              <h4>Elaboração e estrutura: como elaborar?</h4>
+              <p>Em seguida você terá acesso a dois modelos de contrato: o primeiro é um contrato para projeto de <i>design</i> de interiores e o segundo é o contrato de acompanhamento para a execução do projeto.</p>
+              <p>Conheça antes alguns importantes conceitos do assunto:</p>
+              <ul>
+                <li><b>Escopo</b>: descrição detalhada dos serviços a serem prestados.</li>
+                <li><b>Prazos</b>: cronograma para a conclusão de cada etapa do projeto ou do serviço prestado.</li>
+                <li><b>Formas de pagamento</b>: especificação dos honorários do designer, as formas de pagamento, o cronograma de pagamentos e possíveis adicionais ou alterações de preço. Isso proporciona clareza financeira e evita surpresas.</li>
+                <li><b>Aspectos legais</b>:<br>Responsabilidade das partes: deveres e obrigações tanto do consultor quanto do cliente, incluindo aprovação de etapas e fornecimento de informações e condições para cancelamento do contrato e possíveis penalidades.</li>
+              </ul>
+              <div class="download-pdf no-print">
+                <p>Clique ou toque para fazer <i>download</i> do conteúdo. </p>
+                <a class="btn-download" href="docs/modelo-de-proposta-contrato.doc" download="modelo-de-proposta-contrato.doc">Modelo ABD contrato de projeto</a>
+                <a class="btn-download" href="docs/contrato-de-acompanhamento.docx" download="contrato-de-acompanhamento.docx">Modelo ABD contrato de acompanhamento para execução de projeto</a>
+              </div>
+            </div>
+            <div class="">
+              <h3>Projeto executivo</h3>
+              <p>Na unidade curricular <b>Elaborar projeto executivo de <i>design</i> de interiores</b>, você teve acesso a informações detalhadas sobre a etapa de projeto chamada projeto executivo. Vale a pena revisar esse conteúdo!</p>
+              <div class="caixa-destaque icone-nota">
+                <p>É o projeto executivo que fornecerá todas as informações necessárias para que a etapa de execução seja realizada da melhor forma possível.</p>
+              </div>
+              <p>Um ponto importante no processo de gerenciamento da obra é, além de enviar o projeto para fornecedores e equipe de mão de obra, imprimir as pranchas dos projetos e fixá-las em local visível na obra. Dessa forma, caso seja necessário consultar as orientações, os profissionais terão fácil acesso aos desenhos diretamente no local.</p>
+              <img src="imgs/fig05.jpg" class="img-responsive center-block img-borda">
+              <p class="legenda-imagem">
+                Projeto executivo fixado na obra  <br>
+                Fonte: Freepik (2024)
+              </p>
+              <p class="acessivel no-print">Fotografia de dois profissionais, um homem e uma mulher, em frente a um projeto técnico que está sobre uma superfície em uma obra ao ar livre. Ao fundo da fotografia estão prédios de vários andares. Os profissionais estão analisando o projeto com a ajuda de um tablet e um notebook.</p>
+              <p>Vale lembrar que o <i>designer</i> pode ser contratado apenas para fazer o gerenciamento do projeto executivo, fazendo o acompanhamento do projeto que foi elaborado por outro <i>designer</i> de interiores. Nesses casos, é importante ter o contato do profissional que realizou o projeto para sanar eventuais dúvidas ou alterações necessárias. O cliente deve realizar essa conexão entre os profissionais.</p>
+            </div>
+            <div class="">
+              <h3><i>As built</i></h3>
+              <p><i>As built</i>, que significa “como construído”, são os desenhos técnicos que você entregará ao cliente após o final da obra, demonstrando, de forma comparativa, como os espaços ficaram após a execução dos trabalhos, ou seja, <i>as built</i> é uma versão atualizada de um projeto original.</p>
+              <p>Não é exatamente o caderno de projeto executivo. No <i>as built</i> comparam-se os desenhos originais da edificação e inclui-se qualquer alteração projetual que possa ter sido feita com a nova proposta e execução. O termo refere-se, em outras palavras, a um desenho comparativo de como era o espaço e de como ficou após as alterações.</p>
+              <p>Por que esse documento é importante? A resposta está neste infográfico:</p>
+              <img src="imgs/infografico2.png" class="img-responsive center-block hidden-xs print">
+              <div class="visible-xs no-print">
+                <img src="imgs/info2_manutencao.png" class="img-responsive center-block">
+                <img src="imgs/info2_responsabilidade.png" class="img-responsive center-block">
+                <img src="imgs/info2_reformas.png" class="img-responsive center-block">
+                <img src="imgs/info2_compilance.png" class="img-responsive center-block">
+              </div>
+              <div class="acessivel no-print">
+                Manutenção <br>
+                Ajuda na localização dos elementos executados, em caso de reparos futuros. <br>
+                Reformas e expansões <br>
+                Detalhamentos demonstrando como tudo ficou instalado, de que forma tudo foi feito, sendo a base para novas intervenções. <br>
+                <i>Compliance</i> <br>
+                Garantia de que a obra está de acordo com as normas e os regulamentos. <br>
+                Responsabilidade <br>
+                Registro oficial de como tudo foi executado.
+              </div>
+              <p><b>De que forma é feito o <i>as built</i>?</b></p>
+              <p>O <i>designer</i> de interiores faz a comparação visual entre os projetos originais e os atuais, em camadas visuais sobrepostas, marcando com uma cor de destaque o que mudou. Esse tipo de trabalho é mais comum quando há alteração ou construção de paredes (alvenaria ou <i>drywall</i>), ou ainda quando há mudanças de pontos elétricos e hidráulicos.</p>
+              <p>É preciso lembrar sempre que, para realizar o projeto e a execução de intervenções estruturais (projeto arquitetônico), o <i>designer</i> de interiores precisará contar com a parceria de um engenheiro, arquiteto ou técnico em edificação. O profissional técnico em edificação está habilitado para trabalhar como parceiro do <i>designer</i> de interiores em construções de até 80 m² de área construída com até dois pavimentos. </p>
+            </div>
+            <div class="">
+              <h3>Execução</h3>
+              <img src="imgs/fig06.jpg" class="img-responsive center-block img-borda">
+              <p class="legenda-imagem">
+                Executando um projeto em obra  <br>
+                Fonte: Pexels (2024)
+              </p>
+              <p class="acessivel no-print">Fotografia de uma obra sendo executada. Na cena estão duas pessoas, um homem e uma mulher. O homem está no primeiro plano ao lado direito da imagem. Ele segura e olha em direção a uma folha grande de projeto. O homem tem pele parda e cabelos pretos curtos, veste uma camiseta preta de mangas curtas. Ao lado dele está uma mulher negra, cabelos pretos lisos, presos em um rabo de cavalo. Ela veste uma camisa xadrez com fundo preto e detalhes em bege sobreposta a uma camiseta bege. Ela está de braços cruzados olhando em direção ao projeto que está nas mãos do homem.</p>
+              <p>A execução de um projeto envolve a tradução precisa dos planos e conceitos desenvolvidos na fase de planejamento, transformando o que era um projeto no papel em realidade. Esse processo começa pela coordenação e supervisão das equipes de trabalho, como pedreiros, eletricistas, pintores, marceneiros, entre outros. A atenção aos detalhes é crucial, garantindo que cada elemento seja instalado conforme projetado e que todas as soluções técnicas e estéticas sejam implementadas corretamente.</p>
+              <p>Durante a execução, o <i>designer</i> de interiores monitora continuamente o progresso, ajustando conforme necessário para resolver problemas imprevistos e garantir a qualidade do trabalho. O objetivo é assegurar que o resultado final reflita fielmente a visão inicial, atendendo às expectativas do cliente em termos de funcionalidade, estética e conforto, culminando em um espaço harmonioso e bem-acabado.</p>
+              <p>No conhecimento <b>Gerenciamento de obra</b>, nesta mesma unidade curricular, você terá acesso a maiores detalhes.</p>
+              <img src="imgs/fig07.jpg" class="img-responsive center-block img-borda">
+              <p class="legenda-imagem">
+                Execução de obra <br>
+                Fonte: Pexels (2024)
+              </p>
+              <p class="acessivel no-print">Fotografia de um homem branco, cabelos castanhos curtos, que usa uma camiseta de manga curta na cor branca, calça preta e óculos. Ele usa uma luva de proteção na cor branca e está segurando um equipamento em direção ao teto, que serve para lixar o forro de gesso. Não é possível ver na imagem, mas presume-se que ele esteja sobre algum andaime ou escada. Ao fundo aparecem as paredes sem o acabamento e uma janela. O teto também não está com o acabamento finalizado, pois é justamente onde o homem está trabalhando.</p>
+            </div>
+            <div class="">
+              <h3>Acompanhamento e visitas técnicas</h3>
+              <p>O acompanhamento de obra e as visitas técnicas são essenciais para garantir a fidelidade do projeto de <i>design</i> de interiores, assegurando que cada detalhe seja executado conforme o planejado. Essas práticas permitem a supervisão constante do progresso, a identificação e a resolução de problemas em tempo real e a verificação da qualidade dos materiais e da mão de obra utilizada. Além disso, o acompanhamento contínuo facilita a comunicação entre o <i>designer</i>, os fornecedores e os profissionais da construção, promovendo ajustes necessários e evitando erros que podem resultar em custos adicionais e atrasos.</p>
+              <div class="caixa-destaque">
+                <p>Visitas técnicas regulares garantem que o projeto esteja dentro do cronograma e do orçamento, proporcionando ao cliente a confiança de que o resultado final atenderá às suas expectativas de forma precisa e satisfatória.</p>
+              </div>
+              <img src="imgs/fig08.jpg" class="img-responsive center-block img-borda">
+              <p class="legenda-imagem">
+                Visita técnica <br>
+                Fonte: Pexels (2024)
+              </p>
+              <p class="acessivel no-print">Fotografia de uma obra, em que há uma mulher mostrada de corpo inteiro. Ela é branca, cabelos pretos lisos e presos em um rabo de cavalo e está usando um capacete de obra na cor branca. Ela veste uma camisa bege-clara sobreposta a uma blusa branca, calça jeans azul marinho, tênis branco e está segurando um tablet branco. As paredes, o piso e o teto do ambiente ainda não estão acabados e na cena há vários equipamentos e elementos usados na execução de obra, como, por exemplo, uma escada ao fundo e maletas de ferramentas.</p>
+              <p>A assiduidade das visitas dependerá de quanto o profissional confia na equipe de mão de obra. Se for uma equipe com a qual ele nunca trabalhou, é importante estar em contato mais direto com ela, fazendo visitas mais constantes. Também depende de os seus projetos executivos apresentarem os detalhes mais importantes e conterem todas as informações para a correta execução e interpretação dos profissionais de mão de obra, deixando-os com maior autonomia.</p>
+              <p>Acompanhar a chegada dos materiais na obra é de suma importância para garantir que todos os itens recebidos estejam de acordo com as especificações do projeto e em perfeitas condições. Essa etapa permite a conferência dos materiais, verificando se a quantidade, a qualidade e as características correspondem ao que foi solicitado. Além disso, o <i>designer</i> de interiores pode instruir a equipe de obra sobre o armazenamento adequado dos materiais, prevenindo danos e preservando a integridade dos itens até sua utilização. Esse cuidado evita desperdícios, retrabalhos e atrasos no cronograma, garantindo que o projeto se desenvolva de maneira eficiente e dentro dos padrões de qualidade esperados. Assim, a supervisão na chegada dos materiais contribui significativamente para o sucesso do projeto, assegurando que todos os elementos necessários estejam prontos para serem implementados conforme o planejamento.</p>
+              <p>Você verá mais detalhes sobre esse assunto no conhecimento <b>Gerenciamento de obra</b>, nesta mesma unidade curricular.</p>
+  
+            </div>
+            <div class="">
+              <h3>Encerramento</h3>
+              <p>O trabalho de um <i>designer</i> de interiores é fundamental para transformar espaços comuns em ambientes funcionais, esteticamente agradáveis e personalizados, atendendo às necessidades e expectativas dos clientes. Neste conhecimento, você aprendeu pontos importantes relacionados aos documentos que devem ser elaborados durante o processo de atendimento dos seus clientes.</p>
+              <p>A proposta de prestação de serviço é um documento inicial que tem como objetivo alinhar as expectativas e formalizar uma relação comercial entre as partes envolvidas. Foi demonstrado também que essa proposta pode ser apresentada, seja em formato impresso, digital ou <i>on-line</i>. Ela deve ser bem elaborada e estruturada para comunicar claramente o escopo e as etapas do projeto ou serviços que serão realizados. Isso se aplica também ao contrato, que também é um documento extremamente importante por informar os aspectos legais formalizando o acordo entre <i>designer</i> e cliente. A execução do projeto passa pela criação de um projeto executivo e o <i>as built</i>, acompanhada por visitas técnicas regulares para assegurar a qualidade e a conformidade do trabalho realizado. O acompanhamento contínuo e a coordenação eficaz garantem que cada detalhe do <i>design</i> seja implementado conforme planejado, resultando em um trabalho bem-sucedido e clientes satisfeitos.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- - - - - - - - - - - - - - - - não alterar abaixo- - - - - - - - - - - - -->
+    <footer class="text-center no-print">
+      <!--
+          <ul class="pagination">
+
+          </ul>
+          -->
+    </footer>
+  </div>
+
+  <!-- Modais -->
+
+  
+  <!-- Modais 100% -->
+  <div class="modal modal-100 fade" id="modal-prestacao" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <div class="container">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              <div class="ico-fechar"></div>
+            </button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <h3>Prestação de serviços</h3>
+            <p>A prestação de serviço em <i>design</i> de interiores consiste no planejamento, na concepção e na execução de projetos destinados a otimizar e harmonizar os espaços internos de diferentes tipos de ambientes, como residências, escritórios e estabelecimentos comerciais. Esse serviço envolve várias etapas que vão desde contato inicial com o cliente, análise do espaço a ser projetado, levantamento de medidas do ambiente, <i>briefing</i>, estudos preliminares e definição de conceito, elaboração do projeto, revisões, projeto executivo, orçamentos até a etapa de execução. </p>
+            <div class="caixa-destaque icone-nota">
+              <p>O profissional pode ser contratado tanto para desenvolver um projeto completo, que envolve todas as etapas mencionadas, quanto para etapas pontuais, como uma consultoria ou apenas o gerenciamento de obras. Por esse motivo, a proposta de prestação de serviço é uma ferramenta essencial para alinhar expectativas, formalizar acordos entre as partes envolvidas e garantir a clareza do serviço que será prestado ao cliente.</p>
+            </div>
+            <p>Aprenda neste material todas as partes que compõem esse processo de elaboração de uma proposta de prestação de serviços em <i>design</i> de interiores, que envolve a precificação dos serviços prestados, o contrato que deve ser elaborado e assinado antes do início de qualquer serviço e as etapas que compreendem um projeto executivo, <i>as built</i>, execução, acompanhamento e visitas técnicas. Que tal começar?</p>
+            <img src="imgs/fig01.jpg" class="img-responsive center-block img-borda">
+            <p class="legenda-imagem">
+              Reunião de apresentação de proposta de prestação de serviço <br>
+              Fonte: Pexels (2024)
+            </p>
+            <p class="acessivel no-print">Fotografia de parte de uma mesa branca redonda na qual estão apoiadas sobre ela uma prancheta e um caderno com anotações e também duas xícaras com café preto. É possível perceber duas pessoas sentadas ao redor da mesa, mas na imagem elas não aparecem por inteiro. Uma delas está sentada com os braços cruzados e segura uma caneta apoiada no queixo. Não é possível ver o rosto dessa pessoa. Da outra, que está no sentido oposto, só aparecem as mãos.</p>
+
+            <button type="button" class="btn btn-fechar" data-dismiss="modal"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal modal-100 fade" id="modal-proposta" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <div class="container">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              <div class="ico-fechar"></div>
+            </button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <h3>Proposta/orçamento</h3>
+            <p>A proposta de prestação de serviços, também conhecida como orçamento de serviço do <i>designer</i> de interiores, é um documento para formalizar uma relação comercial. Esse documento é vital para estabelecer um relacionamento de trabalho claro, transparente e profissional entre o <i>designer</i> de interiores e o cliente, assegurando que todas as partes envolvidas entendam e concordem com os termos estabelecidos. É importante ressaltar que aqui o valor informado está relacionado aos honorários do profissional e não ao quanto o cliente terá que investir na obra como um todo.</p>
+            <h4>Formatos</h4>
+            <p>Uma proposta de prestação de serviços em <i>design</i> de interiores pode ser apresentada em vários formatos, cada um com suas próprias vantagens. O formato impresso é tradicional e oferece uma sensação tangível e formalidade, sendo ideal para reuniões presenciais. O formato digital, como PDF ou apresentações de <i>slides</i>, é prático e facilmente compartilhável por <i>e-mail</i>, permitindo a inclusão de elementos visuais interativos, como <i>links</i> e vídeos. Plataformas <i>on-line</i>, como <i>websites</i> dedicados ou portfólios digitais, permitem uma apresentação dinâmica e acessível, nas quais clientes podem navegar por diferentes seções do projeto.</p>
+            <p>Além disso, apresentações virtuais por meio de videoconferências são uma opção moderna que permite uma explicação detalhada e ao vivo da proposta, facilitando a interação e o esclarecimento imediato de dúvidas. A escolha do formato deve considerar a preferência do cliente e o contexto da apresentação para garantir clareza e impacto.</p>
+            <div class="caixa-destaque icone-atencao">
+              <p>Vale lembrar que a melhor maneira de entregar uma proposta de prestação de serviços em <i>design</i> de interiores é por meio de uma apresentação ao vivo, seja presencial, seja <i>on-line</i>. Essa abordagem permite uma comunicação direta e imediata, facilitando o esclarecimento de dúvidas e a discussão de detalhes em tempo real. Além disso, a interação ao vivo permite ao <i>designer</i> captar as reações e os <i>feedbacks</i> do cliente, ajustando a proposta conforme necessário. A apresentação ao vivo também demonstra profissionalismo e comprometimento, já criando vínculo e proporcionando um ambiente de confiança e colaboração, que é fundamental desde o início do processo para que se tenha sucesso no projeto.</p>
+            </div>
+            <p>Quanto mais completa e visual for a proposta, demonstrando ao cliente os benefícios da contratação, mais fácil será o fechamento de contrato. É importante deixar o preço sempre para o final: mostrar primeiramente a qualidade e os diferenciais do serviço que será prestado e depois informar o preço e as condições.</p>
+            <p>Normalmente o escritório já tem um modelo de proposta de prestação de serviços a ser apresentado. Esse modelo serve para qualquer tipo de trabalho a ser realizado pelo <i>designer</i> de interiores, seja uma consultoria mais simples, seja um projeto completo ou ainda um gerenciamento de obra. Será necessário apenas personalizar para cada situação específica, considerando as especificidades de cada projeto e serviço.</p>
+            <h4>Elaboração e estrutura: como elaborar?</h4>
+            <p>Confira no infográfico a seguir a estrutura para elaborar a proposta de prestação de serviços em <i>design</i> de interiores.</p>
+            <div aria-hidden="true">
+              <img src="imgs/infografico1.png" class="img-responsive center-block hidden-xs print">
+              <img src="imgs/info1_1.png" class="img-responsive center-block visible-xs no-print">
+              <img src="imgs/info1_2.png" class="img-responsive center-block visible-xs no-print">
+              <img src="imgs/info1_3.png" class="img-responsive center-block visible-xs no-print">
+              <img src="imgs/info1_4.png" class="img-responsive center-block visible-xs no-print">
+              <img src="imgs/info1_5.png" class="img-responsive center-block visible-xs no-print">
+              <img src="imgs/info1_6.png" class="img-responsive center-block visible-xs no-print">
+            </div>
+            <div class="acessivel no-print">
+              Introdução <br>
+              Apresentação do designer e do escopo do trabalho <br>
+              <br>
+              Objetivos <br>
+              Metas e expectativas do projeto <br>
+              <br>
+              Metodologia <br>
+              Passos que serão seguidos durante o projeto <br>
+              <br>
+              Cronograma <br>
+              Prazos para cada etapa do projeto <br>
+              <br>
+              Custos <br>
+              Honorários profissionais <br>
+              <br>
+              Anexos <br>
+              Materiais adicionais, como portfólio, referências e outros documentos relevantes
+            </div>
+
+            <p>Clique ou toque para fazer <i>download</i> do conteúdo. </p>
+            <div class="download-pdf">
+              <a class="btn-download" href="docs/Modelo de orçamento.docx" download="Modelo de orçamento.docx">Modelo de orçamento da ABD</a>
+            </div>
+
+            <button type="button" class="btn btn-fechar" data-dismiss="modal"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal modal-100 fade" id="modal-precificacao" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <div class="container">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              <div class="ico-fechar"></div>
+            </button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <h3>Precificação</h3>
+            <p>Este conhecimento trará algumas reflexões, pois, na vida profissional, você perceberá que muitos clientes estão dispostos a gastar grandes quantias em itens de mobiliário, como, por exemplo, um sofá de R$ 12.000, mas relutam em investir na contratação de um profissional de <i>design</i> de interiores. Isso acontece porque, muitas vezes, os clientes não percebem a vantagem clara desse serviço. </p>
+            <p>A falta de compreensão da diferença entre valor e preço pode ser uma barreira significativa. O valor de contratar um <i>designer</i> de interiores vai além do custo; envolve a experiência, a visão criativa e a capacidade de transformar um espaço de maneira funcional e esteticamente agradável. Um <i>designer</i> de interiores não só otimiza a disposição e a funcionalidade dos ambientes, mas também evita erros que podem sair caros, como a compra de móveis inadequados ou a escolha de materiais impróprios. Além disso, pode indicar melhores fornecedores e garantir que o projeto seja concluído dentro do orçamento e do prazo estabelecido.</p>
+            <p>Ao explicar esses benefícios e demonstrar como a contratação de um profissional pode resultar em um projeto mais eficiente e com menos problemas. Os clientes podem começar a entender que o investimento em um bom profissional de interiores é um passo inteligente que traz retornos significativos, em termos tanto de satisfação pessoal quanto de valorização do seu imóvel.</p>
+            <h4>Eu empresa, eu CNPJ: por que não posso ser MEI e sim Simples Nacional. Vantagens da empresa Simples Nacional. Contrate um contador de confiança</h4>
+            <img src="imgs/fig02.jpg" class="img-responsive center-block img-borda">
+            <p class="legenda-imagem">
+              <i>Designer</i> em seu escritório <br>
+              Fonte: Pexels (2024)
+            </p>
+            <p class="acessivel no-print">Fotografia de mulher branca, com cabelos loiros e lisos em comprimento médio, olhos claros, olhando para a frente em direção ao observador da cena. Ela veste uma camisa branca e está sentada em frente uma mesa de trabalho e folheando uma revista de designer de interiores. Dispostos sobre a mesa estão outros elementos relacionados com a profissão, como folhas de projetos, cartela de cores, amostras de materiais. A parede ao fundo é em um cinza esverdeado e há um vaso grande com folhas verdes.</p>
+            <p><b>Os <i>designers</i> de interiores não podem se enquadrar como microempreendedores individuais (MEI) devido às especificidades e exigências da sua atividade profissional, que requerem um grau de qualificação e responsabilidade</b>. As atividades intelectuais desenvolvidas por um <i>designer</i> são regulamentadas por algum órgão de classe. No caso dos técnicos em <i>design</i> de interiores, o órgão é o CFT (Conselho Federal dos Técnicos Industriais).</p>
+            <div class="caixa-destaque icone-importante">
+              <p>A classificação de MEI é destinada a atividades de baixo risco e complexidade, enquanto o <i>design</i> de interiores exige um conhecimento técnico aprofundado, frequentemente envolvendo projetos que têm um impacto significativo em termos de segurança e funcionalidade dos espaços.</p>
+            </div>
+            <p>Além disso, contratar um contador é essencial para que os <i>designers</i> de interiores mantenham suas obrigações fiscais e contábeis em ordem. Um contador ajuda a escolher o regime tributário mais adequado, gerir a emissão de notas fiscais, realizar o cálculo correto dos impostos e garantir a conformidade com a legislação vigente. Esse suporte é vital para que o <i>designer</i> possa focar em sua atividade principal, garantindo a sustentabilidade financeira do seu negócio e evitando problemas legais e fiscais no futuro.</p>
+            <h4>Como chegar a um preço justo e competitivo? O que considerar?</h4>
+            <p>Na unidade curricular <b>Prestar consultoria em <i>design</i> de interiores</b>, no conhecimento sobre consultoria, você teve acesso a informações sobre as melhores formas de precificar os seus serviços. Esse cálculo pode ser feito por metragem quadrada (m²) ou por custo de produção (valor hora). Vale a pena revisitar esse conhecimento, pois nele você aprendeu a precificar os honorários para uma consultoria em <i>design</i> de interiores. Agora, você só precisa seguir os mesmos passos para precificar outros serviços.</p>
+            <p>Para chegar a um preço justo e competitivo no serviço de <i>design</i> de interiores, é fundamental considerar uma série de fatores. Primeiramente, é importante avaliar os custos operacionais, incluindo despesas com materiais, ferramentas, <i>softwares</i> especializados e o tempo dedicado a cada projeto. Além disso, é essencial analisar o mercado, observando os preços praticados por outros profissionais da área e a demanda pelos serviços. A experiência e a reputação do <i>designer</i> também devem ser levadas em conta, pois profissionais mais experientes e reconhecidos podem justificar preços mais elevados. A complexidade e a escala do projeto são outros fatores cruciais, já que projetos mais detalhados requerem mais tempo de dedicação. Por fim, a percepção de valor pelo cliente deve ser considerada, garantindo que o preço reflita não apenas os custos e o lucro desejado, mas também o valor percebido pelo cliente em termos de qualidade, criatividade e inovação do serviço prestado. Equilibrar todos esses elementos ajuda a definir um preço que seja justo para o cliente e sustentável para o seu negócio.</p>
+
+            <button type="button" class="btn btn-fechar" data-dismiss="modal"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal modal-100 fade" id="modal-contrato" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <div class="container">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              <div class="ico-fechar"></div>
+            </button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <h3>Contrato</h3>
+            <img src="imgs/fig03.jpg" class="img-responsive center-block img-borda">
+            <p class="legenda-imagem">
+              Aceite de proposta <br>
+              Fonte: Pexels (2024)
+            </p>
+            <p class="acessivel no-print">Fotografia de quatro pessoas. No primeiro plano, ao lado direito da imagem, está uma mulher branca, cabelos castanhos curtos e cacheados, usando óculos redondo, vestindo blazer bege e blusa de lã com gola alta na cor cinza. Ela está olhando para o lado esquerdo e cumprimentando um homem. Este veste blusa marrou e tem pele parda, cabelos castanhos e curtos e também usa óculos. No segundo plano há outra mulher, um pouco mais baixa, de pele branca, cabelos castanhos lisos e compridos, e veste uma camisa social em tom bege e está olhando na direção da primeira mulher. Logo ao lado dela está um outro homem mais alto, pele negra, cabelos pretos, veste uma camisa em cor terra sobreposta a uma camiseta verde clara. Todos estão sorrindo.</p>
+            <p>Um contrato de prestação de serviço em <i>design</i> de interiores é um documento formal que estabelece os termos e as condições acordados entre o <i>designer</i> e o cliente para a execução de um projeto de interiores. Esse contrato serve para definir claramente os direitos e as responsabilidades de ambas as partes, garantindo que todos os aspectos do serviço sejam compreendidos e aceitos antes do início do trabalho.</p>
+            <p>Assim como acontece com o documento de orçamento (proposta de prestação de serviço), normalmente o escritório já tem um modelo de contrato já formatado. Esse modelo também serve para qualquer tipo de trabalho a ser realizado pelo designer de interiores, como uma consultoria mais simples, um projeto completo ou ainda um gerenciamento de obra. É necessário personalizá-lo para cada situação específica considerando as especificidades de cada projeto e serviço.</p>
+            <img src="imgs/fig04.jpg" class="img-responsive center-block img-borda">
+            <p class="legenda-imagem">
+              Assinatura de contrato <br>
+              Fonte: Pexels (2024)
+            </p>
+            <p class="acessivel no-print">Fotografia de um contrato sendo assinado. Há uma folha branca com espaço para a assinatura e essa assinatura sendo feita por uma mão branca e caneta tinteiro preta.</p>
+            <h4>Elaboração e estrutura: como elaborar?</h4>
+            <p>Em seguida você terá acesso a dois modelos de contrato: o primeiro é um contrato para projeto de <i>design</i> de interiores e o segundo é o contrato de acompanhamento para a execução do projeto.</p>
+            <p>Conheça antes alguns importantes conceitos do assunto:</p>
+            <ul>
+              <li><b>Escopo</b>: descrição detalhada dos serviços a serem prestados.</li>
+              <li><b>Prazos</b>: cronograma para a conclusão de cada etapa do projeto ou do serviço prestado.</li>
+              <li><b>Formas de pagamento</b>: especificação dos honorários do designer, as formas de pagamento, o cronograma de pagamentos e possíveis adicionais ou alterações de preço. Isso proporciona clareza financeira e evita surpresas.</li>
+              <li><b>Aspectos legais</b>:<br>Responsabilidade das partes: deveres e obrigações tanto do consultor quanto do cliente, incluindo aprovação de etapas e fornecimento de informações e condições para cancelamento do contrato e possíveis penalidades.</li>
+            </ul>
+            <p>Clique ou toque para fazer <i>download</i> do conteúdo. </p>
+            <div class="download-pdf">
+              <a class="btn-download" href="docs/modelo-de-proposta-contrato.doc" download="modelo-de-proposta-contrato.doc">Modelo ABD contrato de projeto</a>
+              <a class="btn-download" href="docs/contrato-de-acompanhamento.docx" download="contrato-de-acompanhamento.docx">Modelo ABD contrato de acompanhamento para execução de projeto</a>
+            </div>
+
+            <button type="button" class="btn btn-fechar" data-dismiss="modal"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal modal-100 fade" id="modal-projeto" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <div class="container">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              <div class="ico-fechar"></div>
+            </button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <h3>Projeto executivo</h3>
+            <p>Na unidade curricular <b>Elaborar projeto executivo de <i>design</i> de interiores</b>, você teve acesso a informações detalhadas sobre a etapa de projeto chamada projeto executivo. Vale a pena revisar esse conteúdo!</p>
+            <div class="caixa-destaque icone-nota">
+              <p>É o projeto executivo que fornecerá todas as informações necessárias para que a etapa de execução seja realizada da melhor forma possível.</p>
+            </div>
+            <p>Um ponto importante no processo de gerenciamento da obra é, além de enviar o projeto para fornecedores e equipe de mão de obra, imprimir as pranchas dos projetos e fixá-las em local visível na obra. Dessa forma, caso seja necessário consultar as orientações, os profissionais terão fácil acesso aos desenhos diretamente no local.</p>
+            <img src="imgs/fig05.jpg" class="img-responsive center-block img-borda">
+            <p class="legenda-imagem">
+              Projeto executivo fixado na obra  <br>
+              Fonte: Freepik (2024)
+            </p>
+            <p class="acessivel no-print">Fotografia de dois profissionais, um homem e uma mulher, em frente a um projeto técnico que está sobre uma superfície em uma obra ao ar livre. Ao fundo da fotografia estão prédios de vários andares. Os profissionais estão analisando o projeto com a ajuda de um tablet e um notebook.</p>
+            <p>Vale lembrar que o <i>designer</i> pode ser contratado apenas para fazer o gerenciamento do projeto executivo, fazendo o acompanhamento do projeto que foi elaborado por outro <i>designer</i> de interiores. Nesses casos, é importante ter o contato do profissional que realizou o projeto para sanar eventuais dúvidas ou alterações necessárias. O cliente deve realizar essa conexão entre os profissionais.</p>
+
+            <button type="button" class="btn btn-fechar" data-dismiss="modal"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal modal-100 fade" id="modal-as_built" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <div class="container">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              <div class="ico-fechar"></div>
+            </button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <h3><i>As built</i></h3>
+            <p><i>As built</i>, que significa “como construído”, são os desenhos técnicos que você entregará ao cliente após o final da obra, demonstrando, de forma comparativa, como os espaços ficaram após a execução dos trabalhos, ou seja, <i>as built</i> é uma versão atualizada de um projeto original.</p>
+            <p>Não é exatamente o caderno de projeto executivo. No <i>as built</i> comparam-se os desenhos originais da edificação e inclui-se qualquer alteração projetual que possa ter sido feita com a nova proposta e execução. O termo refere-se, em outras palavras, a um desenho comparativo de como era o espaço e de como ficou após as alterações.</p>
+            <p>Por que esse documento é importante? A resposta está neste infográfico:</p>
+            <img src="imgs/infografico2.png" class="img-responsive center-block hidden-xs print">
+            <div class="visible-xs no-print">
+              <img src="imgs/info2_manutencao.png" class="img-responsive center-block">
+              <img src="imgs/info2_responsabilidade.png" class="img-responsive center-block">
+              <img src="imgs/info2_reformas.png" class="img-responsive center-block">
+              <img src="imgs/info2_compilance.png" class="img-responsive center-block">
+            </div>
+            <div class="acessivel no-print">
+              Manutenção <br>
+              Ajuda na localização dos elementos executados, em caso de reparos futuros. <br>
+              Reformas e expansões <br>
+              Detalhamentos demonstrando como tudo ficou instalado, de que forma tudo foi feito, sendo a base para novas intervenções. <br>
+              <i>Compliance</i> <br>
+              Garantia de que a obra está de acordo com as normas e os regulamentos. <br>
+              Responsabilidade <br>
+              Registro oficial de como tudo foi executado.
+            </div>
+            <p><b>De que forma é feito o <i>as built</i>?</b></p>
+            <p>O <i>designer</i> de interiores faz a comparação visual entre os projetos originais e os atuais, em camadas visuais sobrepostas, marcando com uma cor de destaque o que mudou. Esse tipo de trabalho é mais comum quando há alteração ou construção de paredes (alvenaria ou <i>drywall</i>), ou ainda quando há mudanças de pontos elétricos e hidráulicos.</p>
+            <p>É preciso lembrar sempre que, para realizar o projeto e a execução de intervenções estruturais (projeto arquitetônico), o <i>designer</i> de interiores precisará contar com a parceria de um engenheiro, arquiteto ou técnico em edificação. O profissional técnico em edificação está habilitado para trabalhar como parceiro do <i>designer</i> de interiores em construções de até 80 m² de área construída com até dois pavimentos. </p>
+
+            <button type="button" class="btn btn-fechar" data-dismiss="modal"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal modal-100 fade" id="modal-execucao" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <div class="container">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              <div class="ico-fechar"></div>
+            </button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <h3>Execução</h3>
+            <img src="imgs/fig06.jpg" class="img-responsive center-block img-borda">
+            <p class="legenda-imagem">
+              Executando um projeto em obra  <br>
+              Fonte: Pexels (2024)
+            </p>
+            <p class="acessivel no-print">Fotografia de uma obra sendo executada. Na cena estão duas pessoas, um homem e uma mulher. O homem está no primeiro plano ao lado direito da imagem. Ele segura e olha em direção a uma folha grande de projeto. O homem tem pele parda e cabelos pretos curtos, veste uma camiseta preta de mangas curtas. Ao lado dele está uma mulher negra, cabelos pretos lisos, presos em um rabo de cavalo. Ela veste uma camisa xadrez com fundo preto e detalhes em bege sobreposta a uma camiseta bege. Ela está de braços cruzados olhando em direção ao projeto que está nas mãos do homem.</p>
+            <p>A execução de um projeto envolve a tradução precisa dos planos e conceitos desenvolvidos na fase de planejamento, transformando o que era um projeto no papel em realidade. Esse processo começa pela coordenação e supervisão das equipes de trabalho, como pedreiros, eletricistas, pintores, marceneiros, entre outros. A atenção aos detalhes é crucial, garantindo que cada elemento seja instalado conforme projetado e que todas as soluções técnicas e estéticas sejam implementadas corretamente.</p>
+            <p>Durante a execução, o <i>designer</i> de interiores monitora continuamente o progresso, ajustando conforme necessário para resolver problemas imprevistos e garantir a qualidade do trabalho. O objetivo é assegurar que o resultado final reflita fielmente a visão inicial, atendendo às expectativas do cliente em termos de funcionalidade, estética e conforto, culminando em um espaço harmonioso e bem-acabado.</p>
+            <p>No conhecimento <b>Gerenciamento de obra</b>, nesta mesma unidade curricular, você terá acesso a maiores detalhes.</p>
+            <img src="imgs/fig07.jpg" class="img-responsive center-block img-borda">
+            <p class="legenda-imagem">
+              Execução de obra <br>
+              Fonte: Pexels (2024)
+            </p>
+            <p class="acessivel no-print">Fotografia de um homem branco, cabelos castanhos curtos, que usa uma camiseta de manga curta na cor branca, calça preta e óculos. Ele usa uma luva de proteção na cor branca e está segurando um equipamento em direção ao teto, que serve para lixar o forro de gesso. Não é possível ver na imagem, mas presume-se que ele esteja sobre algum andaime ou escada. Ao fundo aparecem as paredes sem o acabamento e uma janela. O teto também não está com o acabamento finalizado, pois é justamente onde o homem está trabalhando.</p>
+
+            <button type="button" class="btn btn-fechar" data-dismiss="modal"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal modal-100 fade" id="modal-acompanhamento" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <div class="container">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              <div class="ico-fechar"></div>
+            </button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <h3>Acompanhamento e visitas técnicas</h3>
+            <p>O acompanhamento de obra e as visitas técnicas são essenciais para garantir a fidelidade do projeto de <i>design</i> de interiores, assegurando que cada detalhe seja executado conforme o planejado. Essas práticas permitem a supervisão constante do progresso, a identificação e a resolução de problemas em tempo real e a verificação da qualidade dos materiais e da mão de obra utilizada. Além disso, o acompanhamento contínuo facilita a comunicação entre o <i>designer</i>, os fornecedores e os profissionais da construção, promovendo ajustes necessários e evitando erros que podem resultar em custos adicionais e atrasos.</p>
+            <div class="caixa-destaque">
+              <p>Visitas técnicas regulares garantem que o projeto esteja dentro do cronograma e do orçamento, proporcionando ao cliente a confiança de que o resultado final atenderá às suas expectativas de forma precisa e satisfatória.</p>
+            </div>
+            <img src="imgs/fig08.jpg" class="img-responsive center-block img-borda">
+            <p class="legenda-imagem">
+              Visita técnica <br>
+              Fonte: Pexels (2024)
+            </p>
+            <p class="acessivel no-print">Fotografia de uma obra, em que há uma mulher mostrada de corpo inteiro. Ela é branca, cabelos pretos lisos e presos em um rabo de cavalo e está usando um capacete de obra na cor branca. Ela veste uma camisa bege-clara sobreposta a uma blusa branca, calça jeans azul marinho, tênis branco e está segurando um tablet branco. As paredes, o piso e o teto do ambiente ainda não estão acabados e na cena há vários equipamentos e elementos usados na execução de obra, como, por exemplo, uma escada ao fundo e maletas de ferramentas.</p>
+            <p>A assiduidade das visitas dependerá de quanto o profissional confia na equipe de mão de obra. Se for uma equipe com a qual ele nunca trabalhou, é importante estar em contato mais direto com ela, fazendo visitas mais constantes. Também depende de os seus projetos executivos apresentarem os detalhes mais importantes e conterem todas as informações para a correta execução e interpretação dos profissionais de mão de obra, deixando-os com maior autonomia.</p>
+            <p>Acompanhar a chegada dos materiais na obra é de suma importância para garantir que todos os itens recebidos estejam de acordo com as especificações do projeto e em perfeitas condições. Essa etapa permite a conferência dos materiais, verificando se a quantidade, a qualidade e as características correspondem ao que foi solicitado. Além disso, o <i>designer</i> de interiores pode instruir a equipe de obra sobre o armazenamento adequado dos materiais, prevenindo danos e preservando a integridade dos itens até sua utilização. Esse cuidado evita desperdícios, retrabalhos e atrasos no cronograma, garantindo que o projeto se desenvolva de maneira eficiente e dentro dos padrões de qualidade esperados. Assim, a supervisão na chegada dos materiais contribui significativamente para o sucesso do projeto, assegurando que todos os elementos necessários estejam prontos para serem implementados conforme o planejamento.</p>
+            <p>Você verá mais detalhes sobre esse assunto no conhecimento <b>Gerenciamento de obra</b>, nesta mesma unidade curricular.</p>
+
+            <!--ATIVIDADE-->
+            <div class="no-print" aria-hidden="true">
+              <div class="caixa-destaque-livre">
+                <p>Considerando o que você aprendeu até este momento, relacione os termos da coluna A (esquerda) aos seus conceitos na coluna B (esquerda):</p>
+                <div class="row div-associar_colunas">
+                  <div class="col-12 col-sm-5 flexs coluna1">
+                    <button data-resp="1" class="item item1">
+                      <p>Projeto executivo</p>
+                    </button>
+                    <button data-resp="2" class="item item2">
+                      <p>Precificação</p>
+                    </button>
+                    <button data-resp="3" class="item item3">
+                      <p>Contrato</p>
+                    </button>
+                    <button data-resp="4" class="item item4">
+                      <p><i>As built</i></p>
+                    </button>
+                    <button data-resp="5" class="item item5">
+                      <p>Visitas técnicas</p>
+                    </button>
+                  </div>
+                  <div class="col-12 col-sm-7 flexs mt-3 coluna2">
+                    <button type="button" data-resp="1" class="resp resp1">
+                      <div class="txtacao"><i class="fa fa-question"></i></div>
+                      <p>Documento que detalha a execução do projeto e fornece orientações para os profissionais envolvidos na obra.</p>
+                    </button>
+                    <button type="button" data-resp="2" class="resp resp2">
+                      <div class="txtacao"><i class="fa fa-question"></i></div>
+                      <p>Etapa que envolve a definição dos custos operacionais, dos honorários e da análise de mercado para estabelecer um preço justo.</p>
+                    </button>
+                    <button type="button" data-resp="3" class="resp resp3">
+                      <div class="txtacao"><i class="fa fa-question"></i></div>
+                      <p>Documento formal que define os termos e as condições acordados entre o <i>designer</i> e o cliente, incluindo prazos e formas de pagamento.</p>
+                    </button>
+                    <button type="button" data-resp="4" class="resp resp4">
+                      <div class="txtacao"><i class="fa fa-question"></i></div>
+                      <p>Desenhos técnicos atualizados que mostram como os espaços ficaram após a execução da obra, utilizados para manutenção e futuras reformas.</p>
+                    </button>
+                    <button type="button" data-resp="5" class="resp resp5">
+                      <div class="txtacao"><i class="fa fa-question"></i></div>
+                      <p>Supervisão contínua do progresso da obra, resolução de problemas e verificação da qualidade dos materiais e da mão de obra utilizada.</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-fechar" data-dismiss="modal"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal modal-100 fade" id="modal-encerramento" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <div class="container">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              <div class="ico-fechar"></div>
+            </button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <h3>Encerramento</h3>
+            <p>O trabalho de um <i>designer</i> de interiores é fundamental para transformar espaços comuns em ambientes funcionais, esteticamente agradáveis e personalizados, atendendo às necessidades e expectativas dos clientes. Neste conhecimento, você aprendeu pontos importantes relacionados aos documentos que devem ser elaborados durante o processo de atendimento dos seus clientes.</p>
+            <p>A proposta de prestação de serviço é um documento inicial que tem como objetivo alinhar as expectativas e formalizar uma relação comercial entre as partes envolvidas. Foi demonstrado também que essa proposta pode ser apresentada, seja em formato impresso, digital ou <i>on-line</i>. Ela deve ser bem elaborada e estruturada para comunicar claramente o escopo e as etapas do projeto ou serviços que serão realizados. Isso se aplica também ao contrato, que também é um documento extremamente importante por informar os aspectos legais formalizando o acordo entre <i>designer</i> e cliente. A execução do projeto passa pela criação de um projeto executivo e o <i>as built</i>, acompanhada por visitas técnicas regulares para assegurar a qualidade e a conformidade do trabalho realizado. O acompanhamento contínuo e a coordenação eficaz garantem que cada detalhe do <i>design</i> seja implementado conforme planejado, resultando em um trabalho bem-sucedido e clientes satisfeitos.</p>
+
+            <button type="button" class="btn btn-fechar" data-dismiss="modal"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!--  Em caso de footer personalizado utilizar esse elemento e adicionar a classe customizada
+    <footer>
+    </footer>
+	-->
+  <!-- carrega todas as imagens dos icones nesta div
+ caso queira adicionar mais imagens de novos icones do css,
+ ou qualquer imagem que deva ser contabilizada durante a fase
+ de loading, referenciar aqui.
+ -->
+  <div class="ico-div-loader">
+    <img src="../template/images/atencao.png" />
+    <img src="../template/images/bg-content.jpg" />
+    <img src="../template/images/bg-topo.jpg" />
+    <img src="../template/images/black-zoom-in-256.png" />
+    <img src="../template/images/concluindo.png" />
+    <img src="../template/images/curtir.png" />
+    <img src="../template/images/desafio.png" />
+    <img src="../template/images/dica.png" />
+    <img src="../template/images/doc.png" />
+    <img src="../template/images/fundamental.png" />
+    <img src="../template/images/icon-03.png" />
+    <img src="../template/images/importante.png" />
+    <img src="../template/images/lightbulb.png" />
+    <img src="../template/images/link.png" />
+    <img src="../template/images/link_pdf_hover.png" />
+    <img src="../template/images/link_pdf_normal.png" />
+    <img src="../template/images/logo-senac.png" />
+    <img src="../template/images/mark-icon.png" />
+    <img src="../template/images/mark-icon02.png" />
+    <img src="../template/images/midia.png" />
+    <img src="../template/images/monitor.png" />
+    <img src="../template/images/nao_curtir.png" />
+    <img src="../template/images/pergunta.png" />
+    <img src="../template/images/pesquisa.png" />
+    <img src="../template/images/play.png" />
+    <img src="../template/images/radio_flat.png" />
+    <img src="../template/images/refletir.png" />
+    <img src="../template/images/saiba_mais.png" />
+    <img src="../template/images/senac_loader.png" />
+    <img src="../template/images/tanamidia.png" />
+    <img src="../template/images/transcricao.png" />
+    <img src="../template/images/transcricao_small.png" />
+    <img src="../template/images/tv.png" />
+    <img src="../template/images/tv_bottom.png" />
+    <img src="../template/images/zoom.png" />
+    <img src="../template/images/zoom_ie.cur" />
+    <img src="../template/images/zoom_ie.png" />
+    <!-- adicionar as imagens customizadas aqui abaixo -->
+
+    <img src="imgs/bt01_hover.png" />
+    <img src="imgs/bt02_hover.png" />
+    <img src="imgs/bt03_hover.png" />
+    <img src="imgs/bt04_hover.png" />
+    <img src="imgs/bt05_hover.png" />
+    <img src="imgs/bt06_hover.png" />
+    <img src="imgs/bt07_hover.png" />
+    <img src="imgs/bt08_hover.png" />
+    <img src="imgs/bt09_hover.png" />
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="../template/js/jquery.min.js"></script>
+  <script src="../template/js/bootstrap.min.js"></script>
+  <script src="../template/js/jquery.magnific-popup.min.js"></script>
+  <script src="../template/js/print.js"></script>
+  <script src="../template/js/template.config.js"></script>
+  <script src="../template/js/images.loader.js"></script>
+  <script src="../template/js/highlight.min.js"></script>
+  <script src="../template/js/parallax.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/associar-colunas.js"></script>
+
+  <noscript>
+    <style media="screen">
+      .over-loader {
+        display: none;
+      }
+    </style>
+  </noscript>
+</body>
+
+</html>
+<script>
+  document.addEventListener("DOMContentLoaded", (event) => {
+    document.querySelectorAll("pre code").forEach((el) => {
+      hljs.highlightElement(el);
+    });
+  });
+  //inicializa zoom na imagem
+  $(".zoom-imagem").magnificPopup({
+    type: "image",
+    mainClass: "mfp-with-zoom", // this class is for CSS animation below
+    zoom: {
+      enabled: true, // By default it's false, so don't forget to enable it
+
+      duration: 300, // duration of the effect, in milliseconds
+      easing: "ease-in-out", // CSS transition easing function
+
+      // The "opener" function should return the element from which popup will be zoomed in
+      // and to which popup will be scaled down
+      // By defailt it looks for an image tag:
+      opener: function (openerElement) {
+        // openerElement is the element on which popup was initialized, in this case its <a> tag
+        // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+        return openerElement.is("img")
+          ? openerElement
+          : openerElement.find("img");
+      },
+    },
+    image: {
+      markup:
+        '<div class="mfp-figure">' +
+        '<div class="mfp-close"></div>' +
+        '<div class="mfp-img"></div>' + // Floated left
+        '<div class="mfp-bottom-bar">' +
+        "<figcaption>" +
+        '<div class="mfp-title" style="text-align:center"></div>' +
+        '<div class="mfp-counter"></div>' +
+        "</figcaption>" +
+        "</div>" +
+        "</div>", // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
+
+      cursor: "mfp-zoom-out-cur", // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
+
+      tError: '<a href="%url%">A imagem</a> não pode ser carregada.', // Error message
+    },
+  });
+
+  //inicializa popover
+  $(function () {
+    $('[data-toggle="popover"]').popover();
+  });
+  //inicializa tooltip
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+
+  /*------- Script de animação do botão -------*/
+  var root = document.documentElement;
+  root.className += " js";
+
+  function boxTop(idBox) {
+    var boxOffset = $(idBox).offset().top;
+    return boxOffset;
+  }
+
+  $(document).ready(function () {
+    var $target = $(".animeStart"),
+      $target2 = $(".animeStop"),
+      targetBox = $(".box"),
+      animationClass = "anime-init",
+      windowHeight = $(window).height(),
+      offset = windowHeight - windowHeight / 4;
+
+    function animeScroll() {
+      var documentTop = $(document).scrollTop();
+      $target.each(function () {
+        if (documentTop > boxTop(this) - offset) {
+          targetBox.addClass(animationClass);
+        } else {
+          targetBox.removeClass(animationClass);
+        }
+        if (documentTop > boxTop($target2) - offset) {
+          targetBox.removeClass(animationClass);
+        }
+      });
+    }
+    animeScroll();
+
+    $(document).scroll(function () {
+      animeScroll();
+    });
+  });
+</script>
+
+<script>
+  var scriptElem = document.createElement("script");
+  (scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js"),
+    (scriptElem.charset = "UTF-8"),
+    (scriptElem.onload = function () {
+      window.ht = new HT({
+        token: "bf5b7efb148a829a126a0e0c9fd533bf",
+        align: "top",
+        videoEnabled: true,
+        ytEmbedReplace: true,
+        mobileConfig: {
+          align: "right",
+          actionsAlign: "top",
+          customButtonStyle: {
+            borderRadius: "6px",
+            size: "38px",
+            horizontalMargin: "13px",
+            bottomMargin: "140px",
+            rightMargin: "40px",
+          },
+        },
+      });
+      $(".ht-skip").attr("aria-hidden", "true");
+    }),
+    document.body.appendChild(scriptElem);
+</script>
