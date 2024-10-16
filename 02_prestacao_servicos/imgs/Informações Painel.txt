@@ -1,0 +1,10 @@
+Container 1024px
+
+Botões painel
+Roboto bold 18px #fff
+48px de altura
+Border radius 25px
+Border 2px #fff
+Fundo #804A3C
+
+Hover #E73D31
