@@ -19,6 +19,10 @@ body{
   padding-bottom: 60px;
 }
 
+.bloco{
+  position: relative;
+}
+
 .bloco1 {
   margin-top: -70px;
   padding-top: 40px !important;
@@ -85,6 +89,10 @@ h2, h3, h4 {
   font-weight: bold;
 }
 
+
+.grupo-imprimir button.bto-imprimir{
+  z-index: 20;
+}
 .margem-botao{
   margin-top: 100px;
 }
@@ -293,127 +301,15 @@ h3.panel-title, .tab-content p{
 }
 
 
-.painel-lojas{
-  margin: 40px auto;
-  text-align: center;
-  padding: 0 !important;
-}
-.btn-lojas{
-  background: no-repeat center;
-  background-size: cover;
-  border: none;
-  border-radius: 30px;
-  width: 430px;
-  height: 196px;
-  margin: 15px;
-  transition: all 0.2s;
-}
-.btn-varejo{background-image: url('../imgs/bt_varejo.png');}
-.btn-atacado{background-image: url('../imgs/bt_atacado.png');}
-.btn-varejo:hover{background-image: url('../imgs/bt_varejo_hover.png');}
-.btn-atacado:hover{background-image: url('../imgs/bt_atacado_hover.png');}
-
-
-.painel-mapa{
-  background: url('../imgs/painel_bg.jpg') no-repeat center;
-  background-size: 100%;
-  width: 900px;
-  height: 635px;
-  margin: 40px auto;
-  padding: 0 !important;
-  position: relative;
-}
-.btn-mapa{
-  background: no-repeat center;
-  background-size: cover;
-  border: none;
-  height: 57px;
-  transition: all 0.2s;
+.img-esquerda{
   position: absolute;
-  filter: drop-shadow(#333 4px 4px 3px);
 }
-.btn-shoppings{
-  background-image: url('../imgs/painel_bt06.png');
-  width: 177px;
-  bottom: 101px;
-  right: 208px;
+.img-direita{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
 }
-.btn-centros_comerciais{
-  background-image: url('../imgs/painel_bt07.png');
-  width: 283px;
-  bottom: 228px;
-  left: 40px;
-}
-.btn-lojas_rua{
-  background-image: url('../imgs/painel_bt03.png');
-  width: 186px;
-  top: 254px;
-  right: 164px;
-}
-.btn-galerias_comerciais{
-  background-image: url('../imgs/painel_bt01.png');
-  width: 283px;
-  top: 66px;
-  left: 116px;
-}
-.btn-open_mall{
-  background-image: url('../imgs/painel_bt04.png');
-  width: 167px;
-  top: 210px;
-  left: 185px;
-}
-.btn-aeroportos{
-  background-image: url('../imgs/painel_bt02.png');
-  width: 175px;
-  top: 78px;
-  right: 60px;
-}
-.btn-e_commerce{
-  background-image: url('../imgs/painel_bt05.png');
-  width: 193px;
-  bottom: 59px;
-  left: 40px;
-}
-
-.btn-shoppings:hover{background-image: url('../imgs/painel_bt06_hover.png');}
-.btn-centros_comerciais:hover{background-image: url('../imgs/painel_bt07_hover.png');}
-.btn-lojas_rua:hover{background-image: url('../imgs/painel_bt03_hover.png');}
-.btn-galerias_comerciais:hover{background-image: url('../imgs/painel_bt01_hover.png');}
-.btn-open_mall:hover{background-image: url('../imgs/painel_bt04_hover.png');}
-.btn-aeroportos:hover{background-image: url('../imgs/painel_bt02_hover.png');}
-.btn-e_commerce:hover{background-image: url('../imgs/painel_bt05_hover.png');}
-
-
-.painel-ponto_venda{
-  margin: 40px auto;
-  text-align: center;
-  padding: 0 !important;
-  max-width: 700px;
-}
-.btn-ponto_venda{
-  background: no-repeat center;
-  background-size: cover;
-  border: none;
-  border-radius: 10px;
-  width: 176px;
-  height: 176px;
-  margin: 20px;
-  transition: all 0.2s;
-}
-.btn-vitrine{background-image: url('../imgs/bt_01.png');}
-.btn-entrada{background-image: url('../imgs/bt_02.png');}
-.btn-expositores_produtos{background-image: url('../imgs/bt_03.png');}
-.btn-circulacao{background-image: url('../imgs/bt_04.png');}
-.btn-experimentacao{background-image: url('../imgs/bt_05.png');}
-.btn-caixa_pagamento{background-image: url('../imgs/bt_06.png');}
-
-.btn-vitrine:hover{background-image: url('../imgs/bt_01_hover.png');}
-.btn-entrada:hover{background-image: url('../imgs/bt_02_hover.png');}
-.btn-expositores_produtos:hover{background-image: url('../imgs/bt_03_hover.png');}
-.btn-circulacao:hover{background-image: url('../imgs/bt_04_hover.png');}
-.btn-experimentacao:hover{background-image: url('../imgs/bt_05_hover.png');}
-.btn-caixa_pagamento:hover{background-image: url('../imgs/bt_06_hover.png');}
-
 
 
 @media screen and (max-width: 820px) {
@@ -424,19 +320,6 @@ h3.panel-title, .tab-content p{
     margin-right: 0px;
   }
 
-  .divisor-top{
-    margin-top: -2px;
-    margin-bottom: -31px;
-  }
-  .divisor-botton{
-    margin-top: -31px;
-    margin-bottom: -2px;
-  }
-
-  .painel-mapa{
-    transform: scale(0.78);
-    margin: -50px -100px;
-  }
 
 }
 
@@ -466,25 +349,5 @@ h3.panel-title, .tab-content p{
     scale: 0.6;
   }
 
-  .btn-lojas{
-    width: 340px;
-    height: 155px;
-  }
 
-  .painel-mapa{
-    transform: scale(1);
-    background: none;
-    width: 100%;
-    height: auto;
-    margin: 40px auto;
-  }
-  .btn-mapa{
-    position: relative;
-    margin: 20px auto;
-    display: block;
-    top: unset;
-    right: unset;
-    bottom: unset;
-    left: unset;
-  }
 }
