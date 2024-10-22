@@ -163,6 +163,10 @@ p.legenda-imagem {
 }
 
 
+.tabela-grande{
+  overflow-x: unset;
+}
+
 
 /* FIM-/ESTRUTURA PARA ELEMENTOS RELACIONADOS AOS BOTÕES E AJUDA DA IMPRESSÃO */
 

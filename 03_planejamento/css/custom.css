@@ -271,6 +271,11 @@ table.senac td{
   color: #fff;
   margin: 50px auto;
 }
+.caixa-destaque-livre{
+  background-color: #2A8080;
+  color: #fff;
+  margin: 50px auto;
+}
 
 .espera-video{
   display: flex;
@@ -319,7 +324,7 @@ table.senac td{
   filter: drop-shadow(#333 3px 3px 4px);
 }
 
-
+/*-------------- Painel SCRUM --------------*/
 .painel-scrum{
   background: url('../imgs/painel_01_scrum.png') no-repeat center;
   margin: 20px auto;
@@ -454,7 +459,7 @@ table.senac td{
   margin-top: -430px;
   margin-left: -270px;
 }
-
+/*-------------- /Painel SCRUM --------------*/
 
 .download-pdf{
   text-align: center;
@@ -477,6 +482,37 @@ table.senac td{
   background-color: #E73D31;
   color: #fff;
   text-decoration: none;
+}
+
+
+.painel-ferramentas{
+  width: 545px;
+  height: 210px;
+  margin: 20px auto;
+  position: relative;
+}
+.painel-ferramentas button{
+  width: 301px;
+  height: 111px;
+  border: none;
+  position: absolute;
+  background-size: cover;
+  transition: all 0.3s;
+}
+.painel-ferramentas button:hover{
+  transform: scale(1.05);
+}
+.btn-ferramenta01{
+  background: url('../imgs/painel_02_bt01.png') no-repeat;
+}
+.btn-ferramenta02{
+  background: url('../imgs/painel_02_bt02.png') no-repeat;
+  margin-left: 240px;
+  margin-top: 50px;
+}
+.btn-ferramenta03{
+  background: url('../imgs/painel_02_bt03.png') no-repeat;
+  margin-top: 100px;
 }
 
 
@@ -520,5 +556,14 @@ table.senac td{
   .painel-scrum{
     transform: scale(0.8);
     margin: -20px;
+  }
+
+  .painel-ferramentas{
+    width: 100%;
+    height: auto;
+  }
+  .painel-ferramentas button{
+    position: relative;
+    margin: 0px auto;
   }
 }

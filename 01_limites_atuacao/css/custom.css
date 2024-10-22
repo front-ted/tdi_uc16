@@ -2,10 +2,15 @@ body {
   background: url('../imgs/bg.jpg') repeat;
 }
 
-.container {
+.container{
   background-color: #fff;
+  position: relative;
   z-index: 3;
 }
+.container.div-conteudo{
+  box-shadow: #565656 0px 5px 8px;
+}
+
 
 .bg-linha {
   position: absolute;
@@ -552,7 +557,7 @@ img.sombra {
 }
 
 .sombra-personalizada {
-  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
+  filter: drop-shadow(#505050 3px 3px 4px);
 }
 
 .borda {
@@ -641,6 +646,7 @@ img.sombra {
 
 .citacao {
   padding-left: 30%;
+  font-size: 13px;
 }
 
 table p {

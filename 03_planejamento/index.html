@@ -175,7 +175,7 @@
           <h3>Instrumentos: metodologias e ferramentas</h3>
           <p>Existem diversos instrumentos que auxiliam o gerenciamento da execução de projetos de <i>design</i> de interiores. Você deverá escolher aquele ou aqueles que mais atendem à demanda do seu escritório de <i>design</i> de interiores ou poderá ter contato com alguns desses métodos ao trabalhar para outros profissionais de <i>design</i> ou arquitetura. Confira algumas metodologias e ferramentas que auxiliam no planejamento e gerenciamento de projetos. Alguns serão abordados de maneira aprofundada em seguida, mas entenda antes como poderá utilizá-los em seus computadores e <i>smartphones</i>.</p>
           <h4>Metodologias</h4>
-          <p>Neste momento está-se falando do método em si, ou seja, de que forma se pode planejar e gerenciar a obra, e não necessariamente das ferramentas que serão utilizadas para gerenciamento.</p>
+          <p>Neste momento está se falando do método em si, ou seja, de que forma se pode planejar e gerenciar a obra, e não necessariamente das ferramentas que serão utilizadas para gerenciamento.</p>
           <p>É importante salientar que as metodologias apresentadas podem ou não ser aplicadas. Cabe ao <i>designer</i> de interiores verificar se o método faz sentido para a organização do seu negócio.</p>
           <div class="caixa-destaque">
             <p>O método Scrum é um método bastante utilizado nas áreas de TI (tecnologia da informação) e <i>marketing</i>, que, nos últimos anos, tem sido aplicado por grandes escritórios de arquitetura e engenharia. Jeff Sutherland é o cocriador do método de 1993, inicialmente voltado para as áreas de <i>software</i> e desenvolvimento de produtos. Porém, em seu livro <i>Scrum: A Arte de Fazer o Dobro de Trabalho na Metade do Tempo</i> (2016), Sutherland demonstra que a proposta pode ser aplicada nas mais diversas áreas, incluindo a construção civil, o <i>design</i> de interiores e a arquitetura. Teoricamente, a proposta é simples.</p>
@@ -237,6 +237,7 @@
 
           <div class="no-print" aria-hidden="true">
             <p>Clique ou toque para visualizar o conteúdo.</p>
+            <!--
             <div class='panel-group' id='accordion01' role='tablist' aria-multiselectable='true'>
               <div class='panel panel-default'>
                 <div class='panel-heading' role='tab' id='heading01'>
@@ -305,11 +306,17 @@
                 </div>
               </div>
             </div>
+            -->
+            <div class="painel-ferramentas">
+              <button type="button" class="btn-ferramenta01" data-toggle="modal" data-target="#modal-ferramenta01"></button>
+              <button type="button" class="btn-ferramenta02" data-toggle="modal" data-target="#modal-ferramenta02"></button>
+              <button type="button" class="btn-ferramenta03" data-toggle="modal" data-target="#modal-ferramenta03"></button>
+            </div>
           </div>
           <div class="acessivel print">
             <h4>Orçamentos</h4>
             <p>É a forma que se tem de aferir os valores de cada um dos itens de um projeto. Aqui, é necessário tentar ser o mais detalhista possível, para que não haja gastos fora do que está sendo previsto. Quando você indica um piso cerâmico, por exemplo, não pode esquecer que precisará comprar argamassa e rejunte também. A forma mais simples de organizar um orçamento é em tabelas, e programas de planilha como o Excel são ótimos para isso.</p>
-            <img src="imgs/fig02.jpg" class="img-responsive center-block img-borda">
+            <img src="imgs/fig02.jpg" class="img-responsive center-block img-borda img-maior">
             <p class="legenda-imagem">
               Planilha de orçamento para reforma <br>
               Fonte: Max Planilhas (s. d.)
@@ -317,7 +324,7 @@
             <p class="acessivel no-print">Captura de tela que mostra uma planilha no software Excel chamada “Orçamento reforma residencial”. É composta de diversas células preenchidas com itens como valor previsto, valor gasto, saldo, gasto material e gasto mão de obra. Abaixo, quatro colunas indicadas como data, descrição, categoria e valor. Abaixo estão células preenchidas com essas informações</p>
             <h4>Memorial descritivo</h4>
             <p>O nome “memorial descritivo” vocês já viram algumas vezes ao longo do curso. No contexto do gerenciamento de obra, o memorial descritivo especificará materiais, técnicas e acabamentos que serão utilizados na execução do projeto. Portanto, ele é um documento escrito que indica o que o projeto executivo não consegue comunicar. Você pode utilizar programas tipo planilha, como Excel, ou até mesmo programas de texto, como o Word.</p>
-            <img src="imgs/fig03.jpg" class="img-responsive center-block img-borda">
+            <img src="imgs/fig03.jpg" class="img-responsive center-block img-borda img-maior">
             <p class="legenda-imagem">
               Memorial descritivo <br>
               Fonte: Marilac (s. d.)
@@ -325,7 +332,7 @@
             <p class="acessivel no-print">Captura de tela que mostra uma tabela com listagem de itens que serão realizados em uma obra. Está dividida em quadros menores, com títulos como demolição e remoção, elétrica, alvenaria, instalações, gesso, revestimento e pintura. Em cada quadro há linhas especificando aposentos e colunas especificando local, trabalho e quantitativo.</p>
             <h4>Cronograma de obra e diagrama de Gantt</h4>
             <p>É a principal ferramenta para auxiliar no planejamento da obra. Com o cronograma de obra (e o diagrama de Gantt), é possível determinar as atividades, os prazos e as sequências de execução e ter uma visão clara de todo o processo. Basta pintar as células e colunas, definindo as datas para que cada tarefa seja cumprida. Aqui, programas como o MS Project ou Excel podem ajudar.</p>
-            <img src="imgs/fig04.jpg" class="img-responsive center-block img-borda">
+            <img src="imgs/fig04.jpg" class="img-responsive center-block img-borda img-maior">
             <p class="legenda-imagem">
               Cronograma e diagrama de Gantt <br>
               Fonte: <i>Blog</i> Planilha de Obra (2020)
@@ -401,11 +408,19 @@
 
           <h3>Cronograma físico-financeiro</h3>
           <p>Antes de iniciar um cronograma, é importante estabelecer uma ordem lógica das atividades que serão feitas. Por exemplo, você não fará a pintura antes de passar os eletrodutos nas paredes. Mattos (2010) traz uma dica importante de como pensar a ordem das atividades: pergunte “<b>de quem esta atividade depende?</b>”; com isso, é possível determinar um ponto final e determinar os antecessores.</p>
-          <div class="caixa-destaque icone-doc">
-            <p>O cronograma é o instrumento de planejamento no dia a dia da obra, e é por ele que o responsável técnico e a equipe devem seguir diversas providências, como programar atividades, instruir equipes, fazer compras, alugar equipamentos, verificar e monitorar progresso das atividades, replanejar a obra, entre outros (Mattos, 2010). O cronograma físico-financeiro abordará o planejamento e também incluirá valores gastos no período em questão. A junção dos dois faz com que seja possível fazer uma previsão semanal ou mensal de gastos, além das conclusões e dos pagamentos por etapa realizada.</p>
+          <div class="caixa-destaque-livre row">
+            <div class="col-sm-6 col-xs-12">
+              <br>
+              <p>O cronograma é o instrumento de planejamento no dia a dia da obra, e é por ele que o responsável técnico e a equipe devem seguir diversas providências, como programar atividades, instruir equipes, fazer compras, alugar equipamentos, verificar e monitorar progresso das atividades, replanejar a obra, entre outros (Mattos, 2010). O cronograma físico-financeiro abordará o planejamento e também incluirá valores gastos no período em questão. A junção dos dois faz com que seja possível fazer uma previsão semanal ou mensal de gastos, além das conclusões e dos pagamentos por etapa realizada.</p>
+            </div>
+            <div class="col-sm-1 col-xs-12"></div>
+            <div class="col-sm-5 col-xs-12">
+              <br>
+              <img src="imgs/img-destaque.png" class="img-responsive center-block no-print">
+            </div>
           </div>
           <p>Um instrumento que ajuda muito neste momento é o cronograma de Gantt. Esse recurso criado pelo engenheiro Henry Gantt insere um gráfico de barras associando atividades em uma coluna na esquerda e datas em uma linha na parte superior. O comprimento da barra corresponde à duração da atividade, de forma que se consegue visualizar os dias de início e fim. Veja um exemplo simples.</p>
-          <div class='table-responsive'>
+          <div class='table-responsive tabela-grande'>
             <table class='senac'>
               <tbody>
                 <tr>
@@ -524,7 +539,7 @@
             Fonte: Senac EAD (2024)
           </p>
 
-          <p>Que tal fazer um teste? Clique abaixo para fazer o <i>download</i> do arquivo em Excel de uma situação hipotética de reforma de cozinha e insira mais linhas na planilha. Pense em tudo que seria feito em uma obra deste tipo. Coloque itens como “fazer rejunte”, “compra de tintas”, “fazer abertura no gesso”, “instalação de luminárias”, “marcenaria” e pense em quantos dias você estimaria para cada um desses itens. Tente também fazer a inserção de linhas e de valores fictícios. Poste no fórum ou envie para seu tutor conferir.</p>
+          <p class="no-print">Que tal fazer um teste? Clique abaixo para fazer o <i>download</i> do arquivo em Excel de uma situação hipotética de reforma de cozinha e insira mais linhas na planilha. Pense em tudo que seria feito em uma obra deste tipo. Coloque itens como “fazer rejunte”, “compra de tintas”, “fazer abertura no gesso”, “instalação de luminárias”, “marcenaria” e pense em quantos dias você estimaria para cada um desses itens. Tente também fazer a inserção de linhas e de valores fictícios. Poste no fórum ou envie para seu tutor conferir.</p>
           <div class="download-pdf no-print">
             <a class="btn-download" href="docs/ANEXO CRONOGRAMA GANTT.xlsx" download="ANEXO CRONOGRAMA GANTT.xlsx">ANEXO CRONOGRAMA GANTT</a>
           </div>
@@ -534,21 +549,29 @@
           <div class="caixa-destaque icone-dica">
             <p>Dica: acesse as seguintes unidades curriculares para rever esses conhecimentos:</p>
             <ul>
-              <li>Projetar design de interiores residencial</li>
-              <li>Projetar design de interiores corporativo</li>
-              <li>Projetar design de interiores de ponto de vendas</li>
-              <li>Projetar design de espaços efêmeros</li>
+              <li>Projetar <i>design</i> de interiores residencial</li>
+              <li>Projetar <i>design</i> de interiores corporativo</li>
+              <li>Projetar <i>design</i> de interiores de ponto de vendas</li>
+              <li>Projetar <i>design</i> de espaços efêmeros</li>
             </ul>
           </div>
           <p>O memorial descritivo é, portanto, mais um documento de importância fundamental no planejamento da obra. É a partir dele que você conseguirá estabelecer orçamentos e cronogramas para o andamento da execução. Com ele, você também tem uma documentação que evita mal-entendidos e combinações verbais. Garantir que essa documentação esteja de posse dos envolvidos facilita a comunicação e garante eficiência no processo. Além disso, com o memorial, você conseguirá ter um controle mais adequado dos custos do projeto.</p>
           <p>O controle dos custos começará no orçamento inicial. A partir de um levantamento detalhado, você conseguirá contatar fornecedores e mão de obra para passarem os valores de cada serviço e material que será utilizado. Com isso, você terá uma estimativa bastante detalhada do que será gasto. </p>
-          <div class="caixa-destaque">
-            <p>É importante que, mesmo com orçamento inicial, os gastos sejam monitorados. Não é incomum acontecerem gastos a mais na obra, podendo ser por erros de execução ou de projeto, mas também por questões diversas, como alterações dos itens do memorial descritivo ou até mesmo do projeto inicial. Aqui, um acompanhamento com ferramentas como o Excel poderá ajudá-lo a ter esses valores sempre atualizados.</p>
+          <div class="caixa-destaque-livre row">
+            <div class="col-sm-6 col-xs-12">
+              <p>É importante que, mesmo com orçamento inicial, os gastos sejam monitorados. Não é incomum acontecerem gastos a mais na obra, podendo ser por erros de execução ou de projeto, mas também por questões diversas, como alterações dos itens do memorial descritivo ou até mesmo do projeto inicial. Aqui, um acompanhamento com ferramentas como o Excel poderá ajudá-lo a ter esses valores sempre atualizados.</p>
+            </div>
+            <div class="col-sm-1 col-xs-12"></div>
+            <div class="col-sm-5 col-xs-12">
+              <br>
+              <img src="imgs/img-monitoramento.png" class="img-responsive center-block no-print">
+            </div>
           </div>
 
           <h3>Plano de reforma</h3>
           <p>A ABD, Associação Brasileira de <i>Design</i> de Interiores, disponibiliza para os seus associados uma ferramenta que auxilia no planejamento e no gerenciamento de obras. Trata-se de um documento de plano de reforma, criado em um editor de planilha, contendo as principais informações da reforma e o escopo de trabalho em cada ambiente, que vão de aplicação e revestimentos até a instalação de marcenaria. A planilha deve ser alimentada com todas as informações, desde tipo de intervenção que será realizada, quem será o prestador de serviço a qual será o material utilizado. Para ter acesso ao modelo, é preciso ser associado. A ABD aceita profissionais experientes, recém-formados e estudantes por meio do pagamento de anuidade.</p>
-          <a href="imgs/fig07.jpg" target="_blank" class="img-zoom">
+          <img src="imgs/fig07.jpg" class="img-responsive center-block img-borda print acessivel img-maior">
+          <a href="imgs/fig07.jpg" target="_blank" class="img-zoom no-print">
             <img src="imgs/fig07.jpg" class="img-responsive center-block img-borda">
           </a>
           <p class="legenda-imagem">
@@ -746,6 +769,90 @@
     </div>
   </div>
   
+  <div class="modal fade" id="modal-ferramenta01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Orçamentos</h4>
+        </div>
+        <div class="modal-body">
+          <div class=''>
+            <p>É a forma que se tem de aferir os valores de cada um dos itens de um projeto. Aqui, é necessário tentar ser o mais detalhista possível, para que não haja gastos fora do que está sendo previsto. Quando você indica um piso cerâmico, por exemplo, não pode esquecer que precisará comprar argamassa e rejunte também. A forma mais simples de organizar um orçamento é em tabelas, e programas de planilha como o Excel são ótimos para isso.</p>
+            <a href="imgs/fig02.jpg" target="_blank" class="img-zoom">
+              <img src="imgs/fig02.jpg" class="img-responsive center-block img-borda">
+            </a>
+            <p class="legenda-imagem">
+              Planilha de orçamento para reforma <br>
+              Fonte: Max Planilhas (s. d.)
+            </p>
+            <p class="acessivel no-print">Captura de tela que mostra uma planilha no software Excel chamada “Orçamento reforma residencial”. É composta de diversas células preenchidas com itens como valor previsto, valor gasto, saldo, gasto material e gasto mão de obra. Abaixo, quatro colunas indicadas como data, descrição, categoria e valor. Abaixo estão células preenchidas com essas informações</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal-ferramenta02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Memorial descritivo</h4>
+        </div>
+        <div class="modal-body">
+          <div class=''>
+            <p>O nome “memorial descritivo” vocês já viram algumas vezes ao longo do curso. No contexto do gerenciamento de obra, o memorial descritivo especificará materiais, técnicas e acabamentos que serão utilizados na execução do projeto. Portanto, ele é um documento escrito que indica o que o projeto executivo não consegue comunicar. Você pode utilizar programas tipo planilha, como Excel, ou até mesmo programas de texto, como o Word.</p>
+            <a href="imgs/fig03.jpg" target="_blank" class="img-zoom">
+              <img src="imgs/fig03.jpg" class="img-responsive center-block img-borda">
+            </a>
+            <p class="legenda-imagem">
+              Memorial descritivo <br>
+              Fonte: Marilac (s. d.)
+            </p>
+            <p class="acessivel no-print">Captura de tela que mostra uma tabela com listagem de itens que serão realizados em uma obra. Está dividida em quadros menores, com títulos como demolição e remoção, elétrica, alvenaria, instalações, gesso, revestimento e pintura. Em cada quadro há linhas especificando aposentos e colunas especificando local, trabalho e quantitativo.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal-ferramenta03" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content no-print">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Cronograma de obra e diagrama de Gantt</h4>
+        </div>
+        <div class="modal-body">
+          <div class=''>
+            <p>É a principal ferramenta para auxiliar no planejamento da obra. Com o cronograma de obra (e o diagrama de Gantt), é possível determinar as atividades, os prazos e as sequências de execução e ter uma visão clara de todo o processo. Basta pintar as células e colunas, definindo as datas para que cada tarefa seja cumprida. Aqui, programas como o MS Project ou Excel podem ajudar.</p>
+            <a href="imgs/fig04.jpg" target="_blank" class="img-zoom">
+              <img src="imgs/fig04.jpg" class="img-responsive center-block img-borda">
+            </a>
+            <p class="legenda-imagem">
+              Cronograma e diagrama de Gantt <br>
+              Fonte: <i>Blog</i> Planilha de Obra (2020)
+            </p>
+            <p class="acessivel no-print">Captura de tela de uma planilha no software Excel contendo, no topo, datas e dias por semana, e, na esquerda, os diferentes serviços. No encontro da data com o serviço, é pintado de verde quando ocorre, ficando em branco quando não ocorre. É possível verificar que, ao longo dos dias, as barras vão indo para a direita, demonstrando a passagem dos serviços e a interligação entre eles.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"></button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   
   <!-- Modais 100% -->

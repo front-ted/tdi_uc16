@@ -30,63 +30,107 @@ $(document).ready(function () {
 
     //localStorage.clear()
 
-    var btn_alvo_01;
-    var btn_alvo_02;
-    var btn_alvo_03;
-    var btn_alvo_04;
-    var btn_alvo_05;
+    var btn_painel_01;
+    var btn_painel_02;
+    var btn_painel_03;
+    var btn_painel_04;
+    var btn_painel_05;
+    var btn_painel_06;
+    var btn_painel_07;
+    var btn_painel_08;
+    var btn_painel_09;
 
-    $(".btn-necessidades").on('click', function(){
-        localStorage.setItem('btn_alvo_01', 'check');
-        $(this).css("background-image","url('imgs/bt1_hover.png')");
-        $("#img-dardo01").addClass("img-dardo01");
+    $(".btn-prestacao").on('click', function(){
+        localStorage.setItem('btn_painel_01', 'check');
+        $(this).css("background-image","url('imgs/bt01_hover.png')");
+        $(".txt01").css("background-color","#E73D31");
     })
-    $(".btn-especificidades").on('click', function(){
-        localStorage.setItem('btn_alvo_02', 'check');
-        $(this).css("background-image","url('imgs/bt2_hover.png')");
-        $("#img-dardo02").addClass("img-dardo02");
+    $(".btn-proposta").on('click', function(){
+        localStorage.setItem('btn_painel_02', 'check');
+        $(this).css("background-image","url('imgs/bt02_hover.png')");
+        $(".txt02").css("background-color","#E73D31");
     })
-    $(".btn-comportamento").on('click', function(){
-        localStorage.setItem('btn_alvo_03', 'check');
-        $(this).css("background-image","url('imgs/bt3_hover.png')");
-        $("#img-dardo03").addClass("img-dardo03");
+    $(".btn-precificacao").on('click', function(){
+        localStorage.setItem('btn_painel_03', 'check');
+        $(this).css("background-image","url('imgs/bt03_hover.png')");
+        $(".txt03").css("background-color","#E73D31");
     })
-    $(".btn-perfis_clientes").on('click', function(){
-        localStorage.setItem('btn_alvo_04', 'check');
-        $(this).css("background-image","url('imgs/bt4_hover.png')");
-        $("#img-dardo04").addClass("img-dardo04");
+    $(".btn-contrato").on('click', function(){
+        localStorage.setItem('btn_painel_04', 'check');
+        $(this).css("background-image","url('imgs/bt04_hover.png')");
+        $(".txt04").css("background-color","#E73D31");
     })
-    $(".btn-criacao_persona").on('click', function(){
-        localStorage.setItem('btn_alvo_05', 'check');
-        $(this).css("background-image","url('imgs/bt5_hover.png')");
-        $("#img-dardo05").addClass("img-dardo05");
+    $(".btn-projeto").on('click', function(){
+        localStorage.setItem('btn_painel_05', 'check');
+        $(this).css("background-image","url('imgs/bt05_hover.png')");
+        $(".txt05").css("background-color","#E73D31");
+    })
+    $(".btn-as_built").on('click', function(){
+        localStorage.setItem('btn_painel_06', 'check');
+        $(this).css("background-image","url('imgs/bt06_hover.png')");
+        $(".txt06").css("background-color","#E73D31");
+    })
+    $(".btn-execucao").on('click', function(){
+        localStorage.setItem('btn_painel_07', 'check');
+        $(this).css("background-image","url('imgs/bt07_hover.png')");
+        $(".txt07").css("background-color","#E73D31");
+    })
+    $(".btn-acompanhamento").on('click', function(){
+        localStorage.setItem('btn_painel_08', 'check');
+        $(this).css("background-image","url('imgs/bt08_hover.png')");
+        $(".txt08").css("background-color","#E73D31");
+    })
+    $(".btn-encerramento").on('click', function(){
+        localStorage.setItem('btn_painel_09', 'check');
+        $(this).css("background-image","url('imgs/bt09_hover.png')");
+        $(".txt09").css("background-color","#E73D31");
     })
 
-    btn_alvo_01 = localStorage.getItem('btn_alvo_01');
-    btn_alvo_02 = localStorage.getItem('btn_alvo_02');
-    btn_alvo_03 = localStorage.getItem('btn_alvo_03');
-    btn_alvo_04 = localStorage.getItem('btn_alvo_04');
-    btn_alvo_05 = localStorage.getItem('btn_alvo_05');
+    btn_painel_01 = localStorage.getItem('btn_painel_01');
+    btn_painel_02 = localStorage.getItem('btn_painel_02');
+    btn_painel_03 = localStorage.getItem('btn_painel_03');
+    btn_painel_04 = localStorage.getItem('btn_painel_04');
+    btn_painel_05 = localStorage.getItem('btn_painel_05');
+    btn_painel_06 = localStorage.getItem('btn_painel_06');
+    btn_painel_07 = localStorage.getItem('btn_painel_07');
+    btn_painel_08 = localStorage.getItem('btn_painel_08');
+    btn_painel_09 = localStorage.getItem('btn_painel_09');
 
-    if (btn_alvo_01 == 'check') {
-        $(".btn-necessidades").css("background-image","url('imgs/bt1_hover.png')");
-        $("#img-dardo01").addClass("img-dardo01");
+    if (btn_painel_01 == 'check') {
+        $(".btn-prestacao").css("background-image","url('imgs/bt01_hover.png')");
+        $(".txt01").css("background-color","#E73D31");
     }
-    if (btn_alvo_02 == 'check') {
-        $(".btn-especificidades").css("background-image","url('imgs/bt2_hover.png')");
-        $("#img-dardo02").addClass("img-dardo02");
+    if (btn_painel_02 == 'check') {
+        $(".btn-proposta").css("background-image","url('imgs/bt02_hover.png')");
+        $(".txt02").css("background-color","#E73D31");
     }
-    if (btn_alvo_03 == 'check') {
-        $(".btn-comportamento").css("background-image","url('imgs/bt3_hover.png')");
-        $("#img-dardo03").addClass("img-dardo03");
+    if (btn_painel_03 == 'check') {
+        $(".btn-precificacao").css("background-image","url('imgs/bt03_hover.png')");
+        $(".txt03").css("background-color","#E73D31");
     }
-    if (btn_alvo_04 == 'check') {
-        $(".btn-perfis_clientes").css("background-image","url('imgs/bt4_hover.png')");
-        $("#img-dardo04").addClass("img-dardo04");
+    if (btn_painel_04 == 'check') {
+        $(".btn-contrato").css("background-image","url('imgs/bt04_hover.png')");
+        $(".txt04").css("background-color","#E73D31");
     }
-    if (btn_alvo_05 == 'check') {
-        $(".btn-criacao_persona").css("background-image","url('imgs/bt5_hover.png')");
-        $("#img-dardo05").addClass("img-dardo05");
+    if (btn_painel_05 == 'check') {
+        $(".btn-projeto").css("background-image","url('imgs/bt05_hover.png')");
+        $(".txt05").css("background-color","#E73D31");
+    }
+    if (btn_painel_06 == 'check') {
+        $(".btn-as_built").css("background-image","url('imgs/bt06_hover.png')");
+        $(".txt06").css("background-color","#E73D31");
+    }
+    if (btn_painel_07 == 'check') {
+        $(".btn-execucao").css("background-image","url('imgs/bt07_hover.png')");
+        $(".txt07").css("background-color","#E73D31");
+    }
+    if (btn_painel_08 == 'check') {
+        $(".btn-acompanhamento").css("background-image","url('imgs/bt08_hover.png')");
+        $(".txt08").css("background-color","#E73D31");
+    }
+    if (btn_painel_09 == 'check') {
+        $(".btn-encerramento").css("background-image","url('imgs/bt09_hover.png')");
+        $(".txt09").css("background-color","#E73D31");
     }
 
 });
