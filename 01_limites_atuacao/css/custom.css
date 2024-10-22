@@ -666,11 +666,7 @@ table p {
 }
 
 
-
-
-
-
-
+/*
 @media (max-width: 1440px) {
 
   .bg-linha,
@@ -702,11 +698,7 @@ table p {
     left: -72px;
     top: 852%;
   }
-
-
 }
-
-
 
 @media (max-width: 1400px) {
 
@@ -742,7 +734,6 @@ table p {
   }
 }
 
-
 @media (max-width: 1370px) {
   .bg-imagem {
     scale: 0.5;
@@ -768,7 +759,7 @@ table p {
   }
 
 }
-
+*/
 
 @media (max-width: 820px) {
   .img-destaque1 {
