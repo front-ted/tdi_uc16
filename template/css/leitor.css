@@ -525,6 +525,18 @@ iframe,
   font-size: 12px !important;
 }
 
+.citacao2 {
+  padding-left: 6% !important;
+  font-size: 12px !important;
+  text-align: justify !important;
+  line-height: 14px !important;
+}
+.citacao2 p{
+  font-size: 12px !important;
+  text-align: justify !important;
+  line-height: 14px !important;
+}
+
 .checklist2 {
   list-style-type: none;
   padding-left: 0;
