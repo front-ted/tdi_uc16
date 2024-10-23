@@ -741,7 +741,11 @@ table p {
 
 
 @media (max-width: 1440px) {
-
+  body {
+    background: url('../imgs/bg_1400.jpg') no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
 
 }
 
