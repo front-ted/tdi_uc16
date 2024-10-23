@@ -543,6 +543,12 @@ iframe,
   top: 0;
 }
 
+
+.img-grande {
+  width: 85% !important;
+}
+
+
 @media print {
   .paginas {
     page-break-inside: avoid;

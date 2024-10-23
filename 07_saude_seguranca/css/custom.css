@@ -1,11 +1,13 @@
 body {
-  background: url('../imgs/bg.jpg') no-repeat;
+  background: url('../imgs/bg.jpg') no-repeat center;
   background-attachment: fixed;
-  background-size:auto;
+  background-size: cover;
 }
 
 .container {
   background-color: #fff;
+  padding-left: 30px;
+  padding-right: 30px;
   z-index: 3;
 }
 
@@ -342,14 +344,14 @@ img.sombra {
   -webkit-backface-visibility: hidden;
   /* Safari */
   backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flip-card-front {
   /* border: 3px solid #fff;
   background: #d64d3d; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .flip-card-front h4 {
@@ -371,6 +373,7 @@ img.sombra {
 }
 
 .flip-card-back p {
+  justify-self: center;
   margin-top: 0;
   padding: 40px;
 }
@@ -508,9 +511,11 @@ table p {
 
 /* painel1 */
 .painel-sdesktop {
-  background: url('../imgs/bg-painel01.jpg');
-  width: 901px;
-  height: 401px;
+  background: url('../imgs/bg-painel01.jpg') no-repeat;
+  background-size: cover;
+  width: 900px;
+  height: 400px;
+  position: relative;
 }
 
 .painel-sdesktop button:hover {
@@ -520,7 +525,8 @@ table p {
 
 .bt-treinamento {
   position: absolute;
-  margin-top: 14%;
+  bottom: 80px;
+  left: 90px;
   border: none;
   background-color: transparent;
   width: 100px;
@@ -528,7 +534,6 @@ table p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 4.6%;
   color: #000;
 }
 
@@ -540,7 +545,8 @@ table p {
 
 .bt-planejamento {
   position: absolute;
-  margin-top: 8.5%;
+  bottom: 190px;
+  left: 230px;
   border: none;
   background-color: transparent;
   width: 100px;
@@ -548,7 +554,6 @@ table p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 11.9%;
   color: #000;
 }
 
@@ -560,7 +565,8 @@ table p {
 
 .bt-equipamentos {
   position: absolute;
-  margin-top: 8.5%;
+  bottom: 190px;
+  right: 230px;
   border: none;
   background-color: transparent;
   width: 100px;
@@ -568,7 +574,6 @@ table p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 29.9%;
   color: #000;
 }
 
@@ -580,7 +585,8 @@ table p {
 
 .bt-inspecoes {
   position: absolute;
-  margin-top: 14%;
+  bottom: 80px;
+  right: 75px;
   border: none;
   background-color: transparent;
   width: 100px;
@@ -588,7 +594,6 @@ table p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 38%;
   color: #000;
 }
 
@@ -616,6 +621,10 @@ table p {
   margin-bottom: 10px;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.painel2 button{
+  transition: all 0.3s;
 }
 
 .bt-capacetes {
@@ -665,86 +674,56 @@ table p {
 
 /* painel3 */
 .painel-sdesktop2 {
-  background: url('../imgs/bg-painel02.jpg');
-  width: 801px;
-  height: 501px;
+  background: url('../imgs/bg-painel02.jpg') no-repeat center;
+  background-size: cover;
+  width: 800px;
+  height: 500px;
+  position: relative;
 }
 
+.painel-sdesktop2 button{
+  border: none !important;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
 .painel-sdesktop2 button:hover {
-  color: unset !important;
-  border: unset !important;
+  transform: scale(1.1);
+  border: none !important;
 }
 
 .bt-placas {
   background: url('../imgs/bt01-painel02.png');
-  position: absolute;
-  margin-top: 11.5%;
-  border: none;
+  margin-top: 220px;
   width: 127px;
   height: 64px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 17.9%;
-}
-
-.bt-placas:hover {
-  transform: scale(1.1);
-  border: none;
+  margin-left: 340px;
 }
 
 .bt-barreiras {
   background: url('../imgs/bt02-painel02.png');
-  position: absolute;
-  margin-top: 19%;
-  border: none;
+  bottom: 30px;
   width: 149px;
   height: 65px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 7.9%;
-}
-
-.bt-barreiras:hover {
-  transform: scale(1.1);
-  border: none;
+  left: 100px;
 }
 
 .bt-iluminacao {
   background: url('../imgs/bt03-painel02.png');
-  position: absolute;
-  margin-top: 4.5%;
-  border: none;
+  top: 100px;
   width: 181px;
   height: 64px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 6%;
-}
-
-.bt-iluminacao:hover {
-  transform: scale(1.1);
-  border: none;
+  left: 60px;
 }
 
 .bt-comunicacao {
   background: url('../imgs/bt04-painel02.png');
-  position: absolute;
-  margin-top: 9.5%;
-  border: none;
+  top: 140px;
   width: 168px;
   height: 64px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 27%;
-}
-
-.bt-comunicacao:hover {
-  transform: scale(1.1);
-  border: none;
+  right: 140px;
 }
 
 .painel-smobile2 {
@@ -762,302 +741,18 @@ table p {
 
 
 @media (max-width: 1440px) {
-  .bt-treinamento {
-    position: absolute;
-    margin-top: 18.6%;
-    border: none;
-    background-color: transparent;
-    width: 100px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 5.9%;
-    color: #000;
-  }
 
-  .bt-planejamento {
-    position: absolute;
-    margin-top: 11.1%;
-    border: none;
-    background-color: transparent;
-    width: 100px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 15.9%;
-    color: #000;
-  }
-
-  .bt-inspecoes {
-    position: absolute;
-    margin-top: 19%;
-    border: none;
-    background-color: transparent;
-    width: 100px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 50.6%;
-    color: #000;
-  }
-
-  .bt-equipamentos {
-    position: absolute;
-    margin-top: 11%;
-    border: none;
-    background-color: transparent;
-    width: 100px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 39.9%;
-    color: #000;
-  }
-
-  .bt-barreiras {
-    background: url('../imgs/bt02-painel02.png');
-    position: absolute;
-    margin-top: 25%;
-    border: none;
-    width: 149px;
-    height: 65px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 8.9%;
-  }
-
-  .bt-placas {
-    background: url('../imgs/bt01-painel02.png');
-    position: absolute;
-    margin-top: 15.5%;
-    border: none;
-    width: 127px;
-    height: 64px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 23.9%;
-  }
-
-  .bt-comunicacao {
-    background: url('../imgs/bt04-painel02.png');
-    position: absolute;
-    margin-top: 12.5%;
-    border: none;
-    width: 168px;
-    height: 64px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 36%;
-  }
-
-  .bt-iluminacao {
-    background: url('../imgs/bt03-painel02.png');
-    position: absolute;
-    margin-top: 6.5%;
-    border: none;
-    width: 181px;
-    height: 64px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 7%;
-  }
-
-  body {
-    background: unset;
-  }
 
 }
 
 
 @media (max-width: 1400px) {
 
-  .bt-treinamento {
-    position: absolute;
-    margin-top: 19%;
-    border: none;
-    background-color: transparent;
-    width: 100px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 6%;
-  }
-
-  .bt-planejamento {
-    position: absolute;
-    margin-top: 11.3%;
-    border: none;
-    background-color: transparent;
-    width: 100px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 16.3%;
-    color: #000;
-  }
-
-  .bt-inspecoes {
-    position: absolute;
-    margin-top: 19%;
-    border: none;
-    background-color: transparent;
-    width: 100px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 51.6%;
-    color: #000;
-  }
-
-  .bt-equipamentos {
-    position: absolute;
-    margin-top: 11.4%;
-    border: none;
-    background-color: transparent;
-    width: 100px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 40.7%;
-    color: #000;
-  }
-
-  .bt-barreiras {
-    background: url('../imgs/bt02-painel02.png');
-    position: absolute;
-    margin-top: 26%;
-    border: none;
-    width: 149px;
-    height: 65px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 7.9%;
-  }
-
-  .bt-iluminacao {
-    background: url('../imgs/bt03-painel02.png');
-    position: absolute;
-    margin-top: 6.5%;
-    border: none;
-    width: 181px;
-    height: 64px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 7%;
-  }
-
-  .bt-placas {
-    background: url('../imgs/bt01-painel02.png');
-    position: absolute;
-    margin-top: 15.5%;
-    border: none;
-    width: 127px;
-    height: 64px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 23.9%;
-  }
-
-  .bt-comunicacao {
-    background: url('../imgs/bt04-painel02.png');
-    position: absolute;
-    margin-top: 12.5%;
-    border: none;
-    width: 168px;
-    height: 64px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 36%;
-  }
-
 }
 
 
 @media (max-width: 1370px) {
 
-  .bt-treinamento {
-    position: absolute;
-    margin-top: 20%;
-    border: none;
-    background-color: transparent;
-    width: 100px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 6.5%;
-  }
-
-  .bt-planejamento {
-    position: absolute;
-    margin-top: 11.7%;
-    border: none;
-    background-color: transparent;
-    width: 100px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 16.8%;
-    color: #000;
-  }
-
-  .bt-equipamentos {
-    position: absolute;
-    margin-top: 11.5%;
-    border: none;
-    background-color: transparent;
-    width: 100px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 41.9%;
-    color: #000;
-  }
-
-  .bt-inspecoes {
-    position: absolute;
-    margin-top: 20%;
-    border: none;
-    background-color: transparent;
-    width: 100px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 53.6%;
-    color: #000;
-  }
-
-  .bt-placas {
-    background: url('../imgs/bt01-painel02.png');
-    position: absolute;
-    margin-top: 16.5%;
-    border: none;
-    width: 127px;
-    height: 64px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 24.9%;
-  }
 
 }
 
@@ -1068,12 +763,13 @@ table p {
   }
 
   .painel-smobile {
-    display: block;
-    background: unset;
+    display: none;
   }
 
   .painel-sdesktop {
-    display: none;
+    transform: scale(0.75);
+    margin: -40px;
+    margin-left: -110px;
   }
 
   .painel-smobile button {
@@ -1093,6 +789,29 @@ table p {
     color: #fff !important;
     font-weight: bold;
   }
+  
+  .painel-sdesktop2{
+    transform: scale(0.85);
+    margin: -30px -65px;
+  }
+
+}
+
+@media (max-width: 580px) {
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .painel-smobile {
+    display: block;
+    background: unset;
+  }
+
+  .painel-sdesktop {
+    display: none;
+  }
 
   .painel-sdesktop2 button:hover {
     color: unset !important;
@@ -1103,16 +822,22 @@ table p {
   }
 
   .painel-smobile2 {
+    background: url('../imgs/bg-painel02.jpg') no-repeat bottom left;
     display: block;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 15px;
+    padding: 30px 0px;
   }
 
   .painel-sdesktop2 {
     display: none;
+  }
+
+  .painel-smobile2 button{
+    filter: drop-shadow(#333 5px 5px 4px);
   }
 
   .bt-placas-mob {
@@ -1164,5 +889,3 @@ table p {
   }
 
 }
-
-@media (max-width: 580px) {}

@@ -312,6 +312,22 @@ h3.panel-title, .tab-content p{
 }
 
 
+@media screen and (max-width: 1500px) {
+  
+  .img-esquerda, .img-direita{
+    width: 200px;
+  }
+
+}
+
+@media screen and (max-width: 1300px) {
+  
+  .img-esquerda, .img-direita{
+    width: 160px;
+  }
+
+}
+
 @media screen and (max-width: 820px) {
   .carousel-control.left {
     margin-left: 0px;

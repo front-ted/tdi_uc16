@@ -10,8 +10,8 @@ h5 {
 }
 
 .bloco {
-  padding: 80px 0;
-} 
+  padding: 60px 0;
+}
 
 .bloco1, .bloco5 {
   background: #1A4948;
@@ -32,7 +32,7 @@ h5 {
 }
 
 .grupo-imprimir {
-  margin-top: 104px;
+  margin-top: 54px;
 }
 
 .bloco5 h3{
@@ -128,7 +128,7 @@ img.sombra {
 }
 
 .panel-heading {
-  background-color: #2A8080 !important;
+  background-color: rgba(214, 77, 61, 1) !important;
   color: #fff !important;
   border-radius: 25px;
   padding: 15px 30px;
@@ -141,7 +141,7 @@ img.sombra {
 .panel-group .panel-heading+.panel-collapse>.list-group,
 .panel-group .panel-heading+.panel-collapse>.panel-body {
   border: none;
-  border-left: #2A8080 solid 5px;
+  border-left: rgba(214, 77, 61, 1) solid 5px;
   margin-left: 30px;
   padding-right: 40px;
 }
