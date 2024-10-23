@@ -519,9 +519,10 @@ iframe,
 
 .citacao {
   padding-left: 30% !important;
+  font-size: 13px !important;
 }
 .citacao p{
-  font-size: 10pt !important;
+  font-size: 13px !important;
 }
 
 .checklist2 {
