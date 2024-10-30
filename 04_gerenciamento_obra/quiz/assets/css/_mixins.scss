@@ -1,0 +1,23 @@
+
+// Definição do mixin
+@mixin button-bg-reset(){
+    background: none;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top left; 
+    display: block;
+    border: 0px none;
+    color: #ffffff00;
+    font-size: 1px;
+    cursor: pointer;
+}
+@mixin button-bgs($padrao, $hover, $inativo) {
+    background-image: url($padrao);
+        &:hover {
+            background-image: url($hover);
+        }
+        &[disabled]{
+            background-image: url($inativo);
+            cursor: not-allowed;
+        }
+  }

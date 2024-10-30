@@ -1,0 +1,754 @@
+html, body {
+  height: 100%;
+  transform-origin: center;
+  background-color: #333;
+}
+
+.donttouchit {
+  pointer-events: none !important;
+  touch-action: none !important;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+          user-select: none !important;
+}
+
+#app {
+  width: 1920px;
+  height: 1080px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -960px;
+  margin-top: -540px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#app #capa {
+  width: 100%;
+  height: 100%;
+}
+#app #capa.bg {
+  background: url(../img/bg_capa.jpg) top left/100% auto no-repeat;
+}
+#app #intro {
+  width: 100%;
+  height: 100%;
+}
+#app #intro.bg {
+  background: url(../img/bg_intro_fim.jpg) top left/100% auto no-repeat;
+}
+#app #intro .foto {
+  position: absolute;
+  top: 73px;
+  left: 99px;
+  border: 22px solid white;
+  box-shadow: 22px 22px 0 rgba(0, 0, 0, 0.4);
+}
+#app #intro .avatar {
+  position: absolute;
+  top: 30px;
+  left: 779px;
+  filter: drop-shadow(5px 15px 0 #45221d);
+}
+#app #intro .painel {
+  background: url(../img/painel_cliente.png) top left/100% auto no-repeat;
+  width: 688px;
+  height: 1013px;
+  position: absolute;
+  top: 35px;
+  right: 80px;
+}
+#app #intro .painel .titulo, #app #intro .painel .corpo, #app #intro .painel .botao {
+  width: calc(100% - 20px);
+  margin-left: 3px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+#app #intro .painel .titulo {
+  font-family: "Roboto Condensed", sans-serif;
+  padding-top: 15px;
+}
+#app #intro .painel .corpo {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding-top: 88px;
+  height: 766px;
+  padding-left: 40px;
+  padding-right: 40px;
+  line-height: 53px;
+}
+#app #intro .painel .corpo .destaque {
+  border: 2px solid #86b3b3;
+  background-color: #286060;
+  border-radius: 40px;
+  padding: 30px 20px;
+  margin-bottom: 80px;
+}
+#app #intro .painel .botao {
+  padding-top: 0px;
+}
+
+#perguntas {
+  position: relative;
+}
+#perguntas .pergunta {
+  position: relative;
+}
+#perguntas .pergunta .bto.etapas {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  z-index: 10;
+}
+#perguntas .pergunta .titulo, #perguntas .pergunta .corpo, #perguntas .pergunta .botao {
+  width: calc(100% - 20px);
+  margin-left: 3px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+#perguntas .pergunta .respostas {
+  background: url(../img/painel_respostas.png) top left/100% auto no-repeat;
+  z-index: 3;
+  width: 688px;
+  height: 1014px;
+  position: absolute;
+  top: 35px;
+  right: 30px;
+}
+#perguntas .pergunta .respostas .titulo {
+  font-family: "Roboto Condensed", sans-serif;
+  padding-top: 15px;
+}
+#perguntas .pergunta .respostas .titulo .bto.voltar {
+  position: absolute;
+  top: 0px;
+  left: -150px;
+}
+#perguntas .pergunta .respostas .corpo {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding-top: 40px;
+  height: 766px;
+  padding-left: 40px;
+  padding-right: 40px;
+  line-height: 53px;
+  position: relative;
+  height: 830px;
+}
+#perguntas .pergunta .respostas .corpo .opcoes {
+  position: absolute;
+  right: 60px;
+  width: 103%;
+  top: 60px;
+}
+#perguntas .pergunta .respostas .corpo .opcoes::after {
+  content: "";
+  width: 20px;
+  height: calc(100% - 40px);
+  display: block;
+  background-color: #9c5751;
+  top: 20px;
+  bottom: 0;
+  right: -20px;
+  position: absolute;
+}
+#perguntas .pergunta .respostas .corpo .opcoes .opcao {
+  border: 1px solid #9c5751;
+  background-color: #ffe4ed;
+  color: #333;
+  padding: 40px 30px;
+  text-align: left;
+  line-height: 40px;
+  font-weight: 500;
+  width: 100%;
+  position: relative;
+  padding-left: 66px;
+}
+#perguntas .pergunta .respostas .corpo .opcoes .opcao.inativo {
+  pointer-events: none;
+  touch-action: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+#perguntas .pergunta .respostas .corpo .opcoes .opcao span {
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+#perguntas .pergunta .respostas .corpo .opcoes .opcao[disabled] {
+  background-color: #818181;
+}
+#perguntas .pergunta .respostas .corpo .opcoes .opcao:hover:not([disabled]) {
+  background-color: #fdf1f5;
+}
+#perguntas .pergunta .respostas .corpo .opcoes .opcao:hover:not([disabled]) span {
+  transform: scale(0.9);
+  transition: transform 0.3s;
+}
+#perguntas .pergunta .respostas .corpo .opcoes .opcao .alternativa {
+  position: absolute;
+  top: 10px;
+  left: -52px;
+}
+#perguntas .pergunta .conteudo {
+  background: url(../img/painel_questoes.png) top left/100% auto no-repeat;
+  z-index: 3;
+  width: 688px;
+  height: 1014px;
+  position: absolute;
+  top: 35px;
+  right: 30px;
+}
+#perguntas .pergunta .conteudo .titulo {
+  font-family: "Roboto Condensed", sans-serif;
+  padding-top: 15px;
+}
+#perguntas .pergunta .conteudo .corpo {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding-top: 88px;
+  height: 766px;
+  padding-left: 40px;
+  padding-right: 40px;
+  line-height: 46px;
+}
+#perguntas .pergunta .conteudo .corpo .destaque {
+  border: 2px solid #86b3b3;
+  background-color: #286060;
+  border-radius: 40px;
+  padding: 30px 20px;
+  margin-bottom: 80px;
+}
+#perguntas .pergunta .conteudo .botao {
+  padding-top: 0px;
+}
+#perguntas .pergunta .bg-mask {
+  background: url(../img/bg_lateral_interno.png) top left/100% auto no-repeat;
+  z-index: 2;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 972px;
+  height: 1081px;
+}
+
+.alternativa {
+  background-image: url(../img/alternativa.png);
+  background-position: top left;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 104px;
+  display: block;
+}
+.alternativa.inativa {
+  background-image: url(../img/alternativa_inativo.png);
+}
+.alternativa.selecionada {
+  background-image: url(../img/alternativa_selec.png);
+}
+
+.avatar {
+  display: block;
+}
+.avatar.cliente {
+  background: url(../img/avatar_cliente.png) top left/100% auto no-repeat;
+  width: 350px;
+  height: 350px;
+}
+.avatar.funcionario {
+  background: url(../img/avatar_obras.png) top left/100% auto no-repeat;
+  width: 216px;
+  height: 288px;
+}
+
+.bto {
+  background: none;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top left;
+  display: block;
+  border: 0px none;
+  color: rgba(255, 255, 255, 0);
+  font-size: 1px;
+  cursor: pointer;
+}
+.bto.comecar {
+  width: 487px;
+  height: 178px;
+  position: absolute;
+  bottom: 137px;
+  right: 200px;
+  background: none;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top left;
+  display: block;
+  border: 0px none;
+  color: rgba(255, 255, 255, 0);
+  font-size: 1px;
+  cursor: pointer;
+  background-image: url("../img/bt_comecar.png");
+}
+.bto.comecar:hover {
+  background-image: url("../img/bt_comecar_hv.png");
+}
+.bto.comecar[disabled] {
+  background-image: url("../img/bt_comecar_hv.png");
+  cursor: not-allowed;
+}
+.bto.iniciar {
+  width: 373px;
+  height: 144px;
+  margin: auto;
+  background: none;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top left;
+  display: block;
+  border: 0px none;
+  color: rgba(255, 255, 255, 0);
+  font-size: 1px;
+  cursor: pointer;
+  background-image: url("../img/bt_iniciar.png");
+}
+.bto.iniciar:hover {
+  background-image: url("../img/bt_iniciar_hv.png");
+}
+.bto.iniciar[disabled] {
+  background-image: url("../img/bt_iniciar_inativo.png");
+  cursor: not-allowed;
+}
+.bto.concluir {
+  width: 304px;
+  height: 118px;
+  background: none;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top left;
+  display: block;
+  border: 0px none;
+  color: rgba(255, 255, 255, 0);
+  font-size: 1px;
+  cursor: pointer;
+  background-image: url("../img/bt_concluir.png");
+}
+.bto.concluir:hover {
+  background-image: url("../img/bt_concluir_hv.png");
+}
+.bto.concluir[disabled] {
+  background-image: url("../img/bt_concluir_hv.png");
+  cursor: not-allowed;
+}
+.bto.continuar {
+  width: 303px;
+  height: 117px;
+  background: none;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top left;
+  display: block;
+  border: 0px none;
+  color: rgba(255, 255, 255, 0);
+  font-size: 1px;
+  cursor: pointer;
+  background-image: url("../img/bt_continuar.png");
+}
+.bto.continuar:hover {
+  background-image: url("../img/bt_continuar_hv.png");
+}
+.bto.continuar[disabled] {
+  background-image: url("../img/bt_continuar_hv.png");
+  cursor: not-allowed;
+}
+.bto.fechar {
+  width: 304px;
+  height: 118px;
+  background: none;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top left;
+  display: block;
+  border: 0px none;
+  color: rgba(255, 255, 255, 0);
+  font-size: 1px;
+  cursor: pointer;
+  background-image: url("../img/bt_fechar.png");
+}
+.bto.fechar:hover {
+  background-image: url("../img/bt_fechar_hv.png");
+}
+.bto.fechar[disabled] {
+  background-image: url("../img/bt_fechar_hv.png");
+  cursor: not-allowed;
+}
+.bto.reiniciar {
+  width: 304px;
+  height: 118px;
+  background: none;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top left;
+  display: block;
+  border: 0px none;
+  color: rgba(255, 255, 255, 0);
+  font-size: 1px;
+  cursor: pointer;
+  background-image: url("../img/bt_reiniciar.png");
+}
+.bto.reiniciar:hover {
+  background-image: url("../img/bt_reiniciar_hv.png");
+}
+.bto.reiniciar[disabled] {
+  background-image: url("../img/bt_reiniciar_hv.png");
+  cursor: not-allowed;
+}
+.bto.repetir {
+  width: 304px;
+  height: 117px;
+  background: none;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top left;
+  display: block;
+  border: 0px none;
+  color: rgba(255, 255, 255, 0);
+  font-size: 1px;
+  cursor: pointer;
+  background-image: url("../img/bt_repetir.png");
+}
+.bto.repetir:hover {
+  background-image: url("../img/bt_repetir_hv.png");
+}
+.bto.repetir[disabled] {
+  background-image: url("../img/bt_repetir_hv.png");
+  cursor: not-allowed;
+}
+.bto.responda {
+  width: 304px;
+  height: 117px;
+  background: none;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top left;
+  display: block;
+  border: 0px none;
+  color: rgba(255, 255, 255, 0);
+  font-size: 1px;
+  cursor: pointer;
+  background-image: url("../img/bt_responda.png");
+}
+.bto.responda:hover {
+  background-image: url("../img/bt_responda_hv.png");
+}
+.bto.responda[disabled] {
+  background-image: url("../img/bt_responda_hv.png");
+  cursor: not-allowed;
+}
+.bto.anterior {
+  width: 90px;
+  height: 90px;
+  background-image: url("../img/bt_anterior.png");
+}
+.bto.anterior:hover {
+  background-image: url("../img/bt_anterior_hv.png");
+}
+.bto.anterior[disabled] {
+  background-image: url("../img/bt_anterior_inativo.png");
+  cursor: not-allowed;
+}
+.bto.proximo {
+  width: 90px;
+  height: 90px;
+  background-image: url("../img/bt_proximo.png");
+}
+.bto.proximo:hover {
+  background-image: url("../img/bt_proximo_hv.png");
+}
+.bto.proximo[disabled] {
+  background-image: url("../img/bt_proximo_inativo.png");
+  cursor: not-allowed;
+}
+.bto.voltar {
+  width: 144px;
+  height: 118px;
+  background-image: url("../img/bt_voltar.png");
+}
+.bto.voltar:hover {
+  background-image: url("../img/bt_voltar_hv.png");
+}
+.bto.voltar[disabled] {
+  background-image: url("../img/bt_voltar_inativo.png");
+  cursor: not-allowed;
+}
+.bto.download {
+  width: 381px;
+  height: 187px;
+  background-image: url("../img/bt_download.png");
+}
+.bto.download:hover {
+  background-image: url("../img/bt_download_hv.png");
+}
+.bto.download[disabled] {
+  background-image: url("../img/bt_download.png");
+  cursor: not-allowed;
+}
+.bto.etapas {
+  width: 169px;
+  height: 168px;
+  background-image: url("../img/bt_etapas.png");
+}
+.bto.etapas:hover {
+  background-image: url("../img/bt_etapas_hv.png");
+}
+.bto.etapas[disabled] {
+  background-image: url("../img/bt_etapas_inativo.png");
+  cursor: not-allowed;
+}
+
+#logo {
+  width: 903px;
+  height: 493px;
+  display: block;
+  overflow: hidden;
+  background: url(../img/logo_reforma.png) top left/100% auto no-repeat;
+  position: absolute;
+  bottom: 160px;
+  left: 150px;
+}
+#logo.responsivo {
+  width: 903px;
+  height: auto;
+  display: block;
+  position: relative;
+}
+#logo.responsivo::before {
+  content: "";
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-top: 54.6%;
+}
+
+#feedbacks {
+  touch-action: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+  width: 1077px;
+  height: 1080px;
+}
+#feedbacks button {
+  pointer-events: all;
+  touch-action: all;
+}
+#feedbacks .feed-positivo {
+  background-image: url(../img/painel_positivo.png);
+}
+#feedbacks .feed-positivo p {
+  text-align: center;
+  width: 411px;
+  padding-top: 40px;
+}
+#feedbacks .feed-negativo {
+  background-image: url(../img/painel_negativo.png);
+}
+#feedbacks .feed-positivo, #feedbacks .feed-negativo {
+  display: none;
+  background-position: top left;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 717px;
+  height: 299px;
+  position: absolute;
+  top: -90px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+  padding-top: 59px;
+}
+#feedbacks .feed-positivo p, #feedbacks .feed-negativo p {
+  line-height: 43px;
+}
+#feedbacks .feed-positivo .botoes, #feedbacks .feed-positivo .conteudo, #feedbacks .feed-negativo .botoes, #feedbacks .feed-negativo .conteudo {
+  position: relative;
+  margin-left: 133px;
+  margin-right: 40px;
+}
+#feedbacks .feed-positivo .conteudo, #feedbacks .feed-negativo .conteudo {
+  overflow: hidden;
+  height: 150px;
+  margin-left: 200px;
+}
+#feedbacks .feed-positivo .conteudo p, #feedbacks .feed-negativo .conteudo p {
+  font-size: 40px;
+}
+#feedbacks .feed-positivo .botoes, #feedbacks .feed-negativo .botoes {
+  text-align: center;
+}
+#feedbacks .feed-positivo .botoes > button, #feedbacks .feed-negativo .botoes > button {
+  display: inline-block;
+}
+
+#etapas {
+  position: absolute;
+  top: 33px;
+  right: 30px;
+  background: url(../img/modal_etapas.png) top left/100% auto no-repeat;
+  width: 1646px;
+  height: 1015px;
+  z-index: 99999;
+}
+#etapas .titulo, #etapas .corpo {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+#etapas .titulo {
+  position: relative;
+  width: 100%;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 19px;
+}
+#etapas .corpo {
+  position: relative;
+  width: 100%;
+  height: 892px;
+  overflow: hidden;
+}
+#etapas .corpo .imagem {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  width: 786px;
+  height: auto;
+  border: 22px solid white;
+  box-shadow: 20px 20px 0 rgba(51, 51, 51, 0.3411764706);
+}
+#etapas .corpo .conteudo {
+  position: absolute;
+  top: 120px;
+  right: 102px;
+  width: 570px;
+  font-size: 40px;
+}
+#etapas .corpo .conteudo .titulo_etapa {
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #80392c;
+}
+#etapas .corpo .conteudo .texto {
+  margin-bottom: 40px;
+  line-height: 40px;
+}
+#etapas .corpo .botoes {
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+}
+#etapas .corpo .botoes button {
+  display: inline-block;
+  margin: 40px 40px;
+}
+
+#encerramento {
+  background: url(../img/bg_intro_fim.jpg) top left/100% auto no-repeat;
+  width: 1920px;
+  height: 1080px;
+}
+#encerramento .antesdepois {
+  width: 940px;
+  position: relative;
+  top: 70px;
+  left: 70px;
+}
+#encerramento .antesdepois .foto {
+  width: 100%;
+  height: auto;
+  border: 22px solid white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* The animation code */
+  /* The element to apply the animation to */
+}
+@keyframes fade_out {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#encerramento .antesdepois .foto.depois {
+  opacity: 0;
+  animation-name: fade_out;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#encerramento .painel {
+  position: relative;
+  background: url(../img/painel_cliente.png) top left/100% auto no-repeat;
+  width: 688px;
+  height: 1013px;
+  overflow: hidden;
+  position: absolute;
+  top: 40px;
+  right: 100px;
+}
+#encerramento .painel .titulo {
+  width: 100%;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+#encerramento .painel .corpo {
+  width: 100%;
+  height: 721px;
+  text-align: center;
+  font-size: 40px;
+  overflow: hidden;
+}
+#encerramento .painel .corpo p:nth-child(1) {
+  font-size: 50px;
+  margin-top: 100px;
+}
+#encerramento .painel .corpo p {
+  color: white;
+  padding-left: 100px;
+  padding-right: 100px;
+  line-height: 40px;
+}
+#encerramento .painel .botoes {
+  text-align: center;
+  width: 100%;
+}
+#encerramento .painel .botoes button {
+  display: inline-block;
+  margin: 40px 40px;
+}/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDI UC16 - Quiz</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="app">
+        <!-- Capa -->
+        <div id="capa" class="position-relative bg">
+            <div id="logo" aria-hidden="true"></div>
+            <button type="button" class="bto comecar">Começar</button>
+        </div>
+        <!-- Intro -->
+        <div id="intro" class="secoes bg d-none">
+            <img src="assets/img/img_00.jpg" class="foto donttouchit" alt="">
+            <span class="avatar cliente" aria-hidden="true"></span>
+            <div class="painel">
+                <div class="conteudo conteudo1">
+                    <div class="titulo">
+                        Reforma da cozinha
+                    </div>
+                    <div class="corpo">
+                        <p>Olá, <i>designer</i>, tudo bem? </p>
+                        <p>Estou precisando da sua ajuda com a reforma da minha cozinha. Ela parece muito antiga e eu
+                            quero modificá-la completamente. Já tenho um projeto executivo pronto e gostaria de saber se
+                            posso contar com seu apoio para me orientar corretamente nas etapas de obra. </p>
+                    </div>
+                    <div class="botao">
+                        <button type="button" class="bto continuar m-auto">Continuar</button>
+                    </div>
+                </div>
+                <div class="conteudo conteudo2 d-none">
+                    <div class="titulo">
+                        Reforma da cozinha
+                    </div>
+                    <div class="corpo">
+                        <div class="destaque">
+                            <p>Lembre-se de estudar o conteúdo da unidade curricular para que suas respostas sejam
+                                corretas. </p>
+                        </div>
+                        <p>Clique no botão abaixo para iniciar o simulador.</p>
+                    </div>
+                    <div class="botao">
+                        <button type="button" class="bto iniciar">Iniciar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Looping do Quiz -->
+        <div id="perguntas" class="secoes d-none">
+            <div id="pergunta1" class="pergunta">
+                <button type="button" class="bto etapas" disabled>Etapas</button>
+                <img src="assets/img/img_01.jpg" class="render donttouchit" alt="">
+                <div class="bg-mask"></div>
+                <div class="conteudo">
+                    <div class="titulo">
+                        Selecione a alternativa correta
+                    </div>
+                    <div class="corpo">
+                        <span class="avatar funcionario m-auto" aria-hidden="true"></span>
+                        <br>
+                        <p>
+                            “Olá, <i>designer</i>, tudo bem? Vamos iniciar a nossa obra? Eu gostaria de saber qual é o
+                            primeiro passo que a minha equipe de obra deve dar.”
+                        </p>
+                    </div>
+                    <div class="botao">
+                        <button type="button" class="bto responda m-auto">Responda</button>
+                    </div>
+                </div>
+                <div class="respostas d-none">
+                    <div class="titulo">
+                        Selecione a alternativa correta
+                        <button type="button" class="bto voltar">Voltar</button>
+                    </div>
+                    <div class="corpo">
+                        <div class="opcoes">
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Remover móveis e materiais antigos e demolir a parede entre sala e cozinha com o auxílio
+                                de um responsável técnico.</button>
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Demolir a parede entre sala e cozinha sem auxílio de um responsável técnico e colocar
+                                novos pisos e revestimentos.</button>
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Instalar forro de gesso e pintar.</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="pergunta2" class="pergunta d-none">
+                <button type="button" class="bto etapas">Etapas</button>
+                <img src="assets/img/img_02.jpg" class="render donttouchit" alt="">
+                <div class="bg-mask"></div>
+                <div class="conteudo">
+                    <div class="titulo">
+                        Selecione a alternativa correta
+                    </div>
+                    <div class="corpo">
+                        <span class="avatar funcionario m-auto" aria-hidden="true"></span>
+                        <br>
+                        <p>
+                            “A remoção e a demolição estão finalizadas, mas minha cozinha continua com um aspecto
+                            antigo. O que devo fazer para mudar isso?”
+                        </p>
+                    </div>
+                    <div class="botao">
+                        <button type="button" class="bto responda m-auto">Responda</button>
+                    </div>
+                </div>
+                <div class="respostas d-none">
+                    <div class="titulo">
+                        Selecione a alternativa correta
+                        <button type="button" class="bto voltar">Voltar</button>
+                    </div>
+                    <div class="corpo">
+                        <div class="opcoes">
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa selecionada"></span>
+                                Ajustar ou refazer a parte elétrica e hidráulica de acordo com o projeto.</button>
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Retirar revestimentos de parede e de piso. </button>
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Instalar as bancadas em granito.</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="pergunta3" class="pergunta d-none">
+                <button type="button" class="bto etapas">Etapas</button>
+                <img src="assets/img/img_03.jpg" class="render donttouchit" alt="">
+                <div class="bg-mask"></div>
+                <div class="conteudo">
+                    <div class="titulo">
+                        Selecione a alternativa correta
+                    </div>
+                    <div class="corpo">
+                        <span class="avatar funcionario m-auto" aria-hidden="true"></span>
+                        <br>
+                        <p>
+                            “Agora, depois da retirada de todo o revestimento antigo, o que devemos fazer?”
+                        </p>
+                    </div>
+                    <div class="botao">
+                        <button type="button" class="bto responda m-auto">Responda</button>
+                    </div>
+                </div>
+                <div class="respostas d-none">
+                    <div class="titulo">
+                        Selecione a alternativa correta
+                        <button type="button" class="bto voltar">Voltar</button>
+                    </div>
+                    <div class="corpo">
+                        <div class="opcoes">
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa selecionada"></span>
+                                Rebocar as paredes para começar a colocação de revestimentos e pintura.</button>
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Colocar novos pisos e revestimentos nas paredes e/ou no piso, de acordo com o
+                                projeto.</button>
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Ajustar a parte elétrica e hidráulica, conforme o projeto, e, se necessário, incluir a
+                                instalação de novos pontos de água, esgoto, tomadas e iluminação. </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="pergunta4" class="pergunta d-none">
+                <button type="button" class="bto etapas">Etapas</button>
+                <img src="assets/img/img_03-2.jpg" class="render donttouchit" alt="">
+                <div class="bg-mask"></div>
+                <div class="conteudo">
+                    <div class="titulo">
+                        Selecione a alternativa correta
+                    </div>
+                    <div class="corpo">
+                        <span class="avatar funcionario m-auto" aria-hidden="true"></span>
+                        <br>
+                        <p>
+                            “Todas as mudanças elétricas e hidráulicas foram realizadas de acordo com o projeto
+                            executivo, mas ainda não consigo visualizar o projeto tomando forma. Qual será a próxima
+                            etapa a ser realizada?”
+                        </p>
+                    </div>
+                    <div class="botao">
+                        <button type="button" class="bto responda m-auto">Responda</button>
+                    </div>
+                </div>
+                <div class="respostas d-none">
+                    <div class="titulo">
+                        Selecione a alternativa correta
+                        <button type="button" class="bto voltar">Voltar</button>
+                    </div>
+                    <div class="corpo">
+                        <div class="opcoes">
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa selecionada"></span>
+                                Iniciar a colocação do revestimento em porcelanato nas paredes.</button>
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Reparar e rebocar as paredes, o piso e o teto, preparando-os para pintura e instalação
+                                de novos revestimentos.</button>
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Instalar o forro de gesso. </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="pergunta5" class="pergunta d-none">
+                <button type="button" class="bto etapas">Etapas</button>
+                <img src="assets/img/img_04.jpg" class="render donttouchit" alt="">
+                <div class="bg-mask"></div>
+                <div class="conteudo">
+                    <div class="titulo">
+                        Selecione a alternativa correta
+                    </div>
+                    <div class="corpo">
+                        <span class="avatar funcionario m-auto" aria-hidden="true"></span>
+                        <br>
+                        <p>
+                            “Ontem chegaram os revestimentos que escolhemos. São lindos, eu adorei! O mestre de obras
+                            está me questionando se já pode começar a instalação. O que devo solicitar que ele faça
+                            agora?”
+                        </p>
+                    </div>
+                    <div class="botao">
+                        <button type="button" class="bto responda m-auto">Responda</button>
+                    </div>
+                </div>
+                <div class="respostas d-none">
+                    <div class="titulo">
+                        Selecione a alternativa correta
+                        <button type="button" class="bto voltar">Voltar</button>
+                    </div>
+                    <div class="corpo">
+                        <div class="opcoes">
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa selecionada"></span>
+                                Colocar os novos revestimentos nas paredes e no piso, de acordo com a paginação do
+                                projeto, e, nas paredes sem revestimento, se possível, adiantar a pintura.</button>
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Colocar os revestimentos apenas no piso, de acordo com o projeto.</button>
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Colocar os novos revestimentos nas paredes e no piso, utilizando a paginação sugerida
+                                pelo mestre de obras, e, nas paredes sem revestimento, se possível, adiantar a
+                                pintura.</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="pergunta6" class="pergunta d-none">
+                <button type="button" class="bto etapas">Etapas</button>
+                <img src="assets/img/img_05.jpg" class="render donttouchit" alt="">
+                <div class="bg-mask"></div>
+                <div class="conteudo">
+                    <div class="titulo">
+                        Selecione a alternativa correta
+                    </div>
+                    <div class="corpo">
+                        <span class="avatar funcionario m-auto" aria-hidden="true"></span>
+                        <br>
+                        <p>
+                            “Adorei o resultado e já estou começando a imaginar minha cozinha pronta. O que vem agora?
+                            Posso combinar com o marceneiro a instalação dos móveis?”
+                        </p>
+                    </div>
+                    <div class="botao">
+                        <button type="button" class="bto responda m-auto">Responda</button>
+                    </div>
+                </div>
+                <div class="respostas d-none">
+                    <div class="titulo">
+                        Selecione a alternativa correta
+                        <button type="button" class="bto voltar">Voltar</button>
+                    </div>
+                    <div class="corpo">
+                        <div class="opcoes">
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa selecionada"></span>
+                                Claro. Pode combinar a instalação dos móveis, pois essa é a próxima etapa a ser
+                                realizada.</button>
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Ainda não. Precisamos instalar as bancadas em granito antes da marcenaria.</button>
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Ainda não. Precisamos instalar o forro de gesso antes da marcenaria.</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="pergunta7" class="pergunta d-none">
+                <button type="button" class="bto etapas">Etapas</button>
+                <img src="assets/img/img_06.jpg" class="render donttouchit" alt="">
+                <div class="bg-mask"></div>
+                <div class="conteudo">
+                    <div class="titulo">
+                        Selecione a alternativa correta
+                    </div>
+                    <div class="corpo">
+                        <span class="avatar funcionario m-auto" aria-hidden="true"></span>
+                        <br>
+                        <p>
+                            “Ainda bem que tenho você para me orientar em cada etapa. E qual vem agora?”
+                        </p>
+                    </div>
+                    <div class="botao">
+                        <button type="button" class="bto responda m-auto">Responda</button>
+                    </div>
+                </div>
+                <div class="respostas d-none">
+                    <div class="titulo">
+                        Selecione a alternativa correta
+                        <button type="button" class="bto voltar">Voltar</button>
+                    </div>
+                    <div class="corpo">
+                        <div class="opcoes">
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa selecionada"></span>
+                                Agora sim é o momento de chamar o marceneiro para produzir os móveis.</button>
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Agora sim é o momento de chamar o marceneiro para orçar os móveis.</button>
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Agora sim é o momento de chamar o marceneiro para a instalação dos móveis.</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="pergunta8" class="pergunta d-none">
+                <button type="button" class="bto etapas">Etapas</button>
+                <img src="assets/img/img_07.jpg" class="render donttouchit" alt="">
+                <div class="bg-mask"></div>
+                <div class="conteudo">
+                    <div class="titulo">
+                        Selecione a alternativa correta
+                    </div>
+                    <div class="corpo">
+                        <span class="avatar funcionario m-auto" aria-hidden="true"></span>
+                        <br>
+                        <p>
+                            “Que lindo! O marceneiro fez um ótimo trabalho. Agora precisamos realizar a instalação dos
+                            tampos em granito, correto?”
+                        </p>
+                    </div>
+                    <div class="botao">
+                        <button type="button" class="bto responda m-auto">Responda</button>
+                    </div>
+                </div>
+                <div class="respostas d-none">
+                    <div class="titulo">
+                        Selecione a alternativa correta
+                        <button type="button" class="bto voltar">Voltar</button>
+                    </div>
+                    <div class="corpo">
+                        <div class="opcoes">
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa selecionada"></span>
+                                Exatamente! A próxima etapa é realizar a instalação dos tampos em granito, conforme o
+                                projeto.</button>
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Exatamente! Mas, antes da instalação dos tampos, precisamos instalar a cuba e a
+                                torneira.</button>
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Exatamente! Mas, antes da instalação dos tampos, precisamos trocar o revestimento da
+                                parede.</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="pergunta9" class="pergunta d-none">
+                <button type="button" class="bto etapas">Etapas</button>
+                <img src="assets/img/img_08.jpg" class="render donttouchit" alt="">
+                <div class="bg-mask"></div>
+                <div class="conteudo">
+                    <div class="titulo">
+                        Selecione a alternativa correta
+                    </div>
+                    <div class="corpo">
+                        <span class="avatar funcionario m-auto" aria-hidden="true"></span>
+                        <br>
+                        <p>
+                            “Estamos chegando ao fim da obra. Qual é o próximo serviço de que vou precisar?”
+                        </p>
+                    </div>
+                    <div class="botao">
+                        <button type="button" class="bto responda m-auto">Responda</button>
+                    </div>
+                </div>
+                <div class="respostas d-none">
+                    <div class="titulo">
+                        Selecione a alternativa correta
+                        <button type="button" class="bto voltar">Voltar</button>
+                    </div>
+                    <div class="corpo">
+                        <div class="opcoes">
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa selecionada"></span>
+                                Do eletricista, para escolher as luminárias que serão instaladas no forro.</button>
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Do eletricista, para refazer a elétrica do ambiente.</button>
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Do eletricista, para instalar as luminárias previstas no projeto de iluminação para o
+                                forro e para a marcenaria.</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="pergunta10" class="pergunta d-none">
+                <button type="button" class="bto etapas">Etapas</button>
+                <img src="assets/img/img_09.jpg" class="render donttouchit" alt="">
+                <div class="bg-mask"></div>
+                <div class="conteudo">
+                    <div class="titulo">
+                        Selecione a alternativa correta
+                    </div>
+                    <div class="corpo">
+                        <span class="avatar funcionario m-auto" aria-hidden="true"></span>
+                        <br>
+                        <p>
+                            “Uau, nunca tinha visto minha cozinha tão bem-iluminada. Qual é o próximo passo agora?”
+                        </p>
+                    </div>
+                    <div class="botao">
+                        <button type="button" class="bto responda m-auto">Responda</button>
+                    </div>
+                </div>
+                <div class="respostas d-none">
+                    <div class="titulo">
+                        Selecione a alternativa correta
+                        <button type="button" class="bto voltar">Voltar</button>
+                    </div>
+                    <div class="corpo">
+                        <div class="opcoes">
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa selecionada"></span>
+                                Medir os vãos da marcenaria que estão designados para os eletrodomésticos e sair para
+                                comprá-los.</button>
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Instalar os eletrodomésticos, a cuba e a torneira nos locais designados, de acordo com o
+                                projeto, verificando o bom funcionamento deles após a instalação.</button>
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Instalar os eletrodomésticos, a cuba e a torneira nos locais designados, de acordo com o
+                                projeto, sem a necessidade de verificar o bom funcionamento deles após a
+                                instalação.</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="pergunta11" class="pergunta d-none">
+                <button type="button" class="bto etapas">Etapas</button>
+                <img src="assets/img/img_10.jpg" class="render donttouchit" alt="">
+                <div class="bg-mask"></div>
+                <div class="conteudo">
+                    <div class="titulo">
+                        Selecione a alternativa correta
+                    </div>
+                    <div class="corpo">
+                        <span class="avatar funcionario m-auto" aria-hidden="true"></span>
+                        <br>
+                        <p>
+                            “Estou muito feliz, a cozinha ficou exatamente como no projeto. Ainda ficou algo pendente?”
+                        </p>
+                    </div>
+                    <div class="botao">
+                        <button type="button" class="bto responda m-auto">Responda</button>
+                    </div>
+                </div>
+                <div class="respostas d-none">
+                    <div class="titulo">
+                        Selecione a alternativa correta
+                        <button type="button" class="bto voltar">Voltar</button>
+                    </div>
+                    <div class="corpo">
+                        <div class="opcoes">
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa selecionada"></span>
+                                Sim. Podemos realizar uma limpeza profunda para remover sujeiras e resíduos da obra e
+                                depois agendar um jantar para comemorar a finalização.</button>
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Não. Sua cozinha está pronta. Que tal agendar um jantar de comemoração?</button>
+                            <button type="button" class="opcao">
+                                <span aria-hidden="true" class="alternativa"></span>
+                                Sim, podemos uma limpeza profunda para remover sujeiras e resíduos da obra e adicionar
+                                elementos decorativos e utensílios de cozinha, para humanizar o espaço.</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Tela final -->
+        <div id="encerramento" class="secoes d-none">
+            <div class="antesdepois">
+                <img src="assets/img/img_fim_antes.jpg" class="foto antes" alt="">
+                <img src="assets/img/img_fim_depois.jpg" class="foto depois" alt="">
+            </div>
+            <div class="painel">
+                <div class="titulo">
+                    Reforma da cozinha
+                </div>
+                <div class="corpo text-center">
+                    <p>Parabéns!</p>
+                    <p>Você conseguiu ajudar a sua cliente a definir corretamente as etapas da obra.</p>
+                    <p>Clique aqui e baixe a animação com o passo a passo da reforma da cozinha.</p>
+                    <a href="bonificacao.mp4" class="bto download m-auto" download target="_blank">Faça o
+                        <i>download</i></a>
+                </div>
+                <div class="botoes">
+                    <button type="button" class="bto reiniciar d-inline-block">Reiniciar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Feedbacks -->
+        <div id="feedbacks" class="d-none">
+            <div class="feed-positivo">
+                <div class="conteudo">
+                    <p>Muito bem!</p>
+                </div>
+                <div class="botoes">
+                    <button type="button" class="bto continuar">Continuar</button>
+                </div>
+            </div>
+            <div class="feed-negativo">
+                <div class="conteudo">
+                    <p>Você tem certeza de que esta é a opção correta? Tente novamente!</p>
+                </div>
+                <div class="botoes">
+                    <button type="button" class="bto repetir">Repetir</button>
+                </div>
+            </div>
+        </div>
+        <!-- Etapas -->
+        <div id="etapas" class="d-none">
+            <div class="titulo">
+                Confira aqui o progresso de sua obra. Navegue entre as etapas já solucionadas.
+            </div>
+            <div class="corpo">
+                <img src="assets/img/img_01.jpg" alt="" aria-hidden="true" class=" imagem" style="display: block;">
+                <img src="assets/img/img_02.jpg" alt="" aria-hidden="true" class=" imagem">
+                <img src="assets/img/img_03.jpg" alt="" aria-hidden="true" class=" imagem">
+                <img src="assets/img/img_03-2.jpg" alt="" aria-hidden="true" class=" imagem">
+                <img src="assets/img/img_04.jpg" alt="" aria-hidden="true" class=" imagem">
+                <img src="assets/img/img_05.jpg" alt="" aria-hidden="true" class=" imagem">
+                <img src="assets/img/img_06.jpg" alt="" aria-hidden="true" class=" imagem">
+                <img src="assets/img/img_07.jpg" alt="" aria-hidden="true" class=" imagem">
+                <img src="assets/img/img_08.jpg" alt="" aria-hidden="true" class=" imagem">
+                <img src="assets/img/img_09.jpg" alt="" aria-hidden="true" class=" imagem">
+                <img src="assets/img/img_10.jpg" alt="" aria-hidden="true" class=" imagem">
+                <!-- <img src="assets/img/img_12.jpg" alt="" aria-hidden="true" class=" imagem"> -->
+
+                <div class="conteudo">
+                    <div class="titulo_etapa">
+                        Etapa <span>1</span>
+                    </div>
+                    <div class="texto">
+                        <p>Remover móveis e materiais antigos e demolir a parede entre sala e cozinha com o auxílio
+                            de um responsável técnico.</p>
+                    </div>
+                    <div class="botoes">
+                        <div>
+                            <button type="button" class="bto anterior" disabled>Anterior</button>
+                            <button type="button" class="bto proximo">Próximo</button>
+                        </div>
+                        <button type="button" class="bto fechar">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery v3.7.1 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS (requer jQuery) v5.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

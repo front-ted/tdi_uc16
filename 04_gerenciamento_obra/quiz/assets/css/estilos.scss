@@ -1,0 +1,629 @@
+@import "mixins";
+
+html, body { 
+    height: 100%;
+    transform-origin: center;
+    background-color: #333
+}
+.donttouchit {
+    pointer-events: none !important;
+    touch-action: none !important;
+    user-select: none !important;
+}
+#app{
+    width: 1920px;
+    height: 1080px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -960px;
+    margin-top: -540px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
+    #capa {
+        width: 100%;
+        height: 100%;
+        &.bg {
+            background: url(../img/bg_capa.jpg) top left / 100% auto no-repeat;
+        }
+    }
+
+    #intro {
+        width: 100%;
+        height: 100%;
+        &.bg {
+            background: url(../img/bg_intro_fim.jpg) top left / 100% auto no-repeat;
+        }
+
+        .foto {
+            position: absolute;
+            top: 73px;
+            left: 99px;
+            border: 22px solid white;
+            box-shadow: 22px 22px 0 rgba(0, 0, 0, 0.4);
+        }
+        .avatar {
+            position: absolute;
+            top: 30px;
+            left: 779px;
+            filter: drop-shadow(5px 15px 0 #45221d);
+        }
+        .painel {
+            background: url(../img/painel_cliente.png) top left / 100% auto no-repeat;
+            width: 688px;
+            height: 1013px;
+            position: absolute;
+            top: 35px;
+            right: 80px;
+            .titulo, .corpo, .botao {
+                width: calc(100% - 20px);
+                margin-left: 3px;
+                color: white;
+                text-align: center;
+                font-size: 40px;
+                 
+            }
+            .titulo {
+                font-family: 'Roboto Condensed', sans-serif;
+                padding-top: 15px;
+            }
+            .corpo {
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                padding-top: 88px;
+                height: 766px;
+                padding-left: 40px;
+                padding-right: 40px;
+                line-height: 53px;
+                
+
+                .destaque {
+                    border: 2px solid #86b3b3;
+                    background-color: #286060;
+                    border-radius: 40px;
+                    padding: 30px 20px;
+                    margin-bottom: 80px;
+                }
+            }
+            .botao {
+                padding-top: 0px;
+            }
+        }
+    }
+}
+
+#perguntas {
+    position: relative;
+    
+    .pergunta {
+        position: relative;
+        .bto.etapas {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            z-index: 10;
+        }
+        .titulo, .corpo, .botao {
+            width: calc(100% - 20px);
+            margin-left: 3px;
+            color: white;
+            text-align: center;
+            font-size: 40px;
+        }
+        .respostas {
+            background: url(../img/painel_respostas.png) top left / 100% auto no-repeat;
+            z-index: 3;
+            width: 688px;
+            height: 1014px;
+            position: absolute;
+            top: 35px;
+            right: 30px;
+
+            .titulo {
+                font-family: 'Roboto Condensed', sans-serif;
+                padding-top: 15px;
+                .bto.voltar {
+                    position: absolute;
+                    top: 0px;
+                    left: -150px;
+                }
+            }
+            .corpo {
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                padding-top: 40px;
+                height: 766px;
+                padding-left: 40px;
+                padding-right: 40px;
+                line-height: 53px;
+                position: relative;
+                height: 830px;
+
+                .opcoes {
+
+                    position: absolute;
+                    right: 60px;
+                    width: 103%;
+                    top: 60px;
+                  
+                    &::after {
+                        content: "";
+                        width: 20px;
+                        height: calc(100% - 40px);
+                        display: block;
+                        background-color: #9c5751;
+                        top: 20px;
+                        bottom: 0;
+                        right: -20px;
+                        position: absolute;
+                    }
+                    .opcao {
+                        border: 1px solid #9c5751;
+                        background-color: #ffe4ed;
+                        color: #333;
+                        padding: 40px 30px;
+                        text-align: left;
+                        line-height: 40px;
+                        font-weight: 500;
+                        width: 100%;
+                        position: relative;
+                        padding-left: 66px;
+
+                        &.inativo {
+                            pointer-events: none;
+                            touch-action: none;
+                            user-select: none;
+                        }
+                        span {
+                            transform: scale(1);
+                            transition: transform 0.3s;
+                        }
+                        &[disabled] {
+                            background-color: #818181;
+
+                        }
+                        &:hover:not([disabled]) {
+                            background-color: #fdf1f5;
+                            span {
+                                transform: scale(0.9);
+                                transition: transform 0.3s;
+                            }
+                        }
+                        
+                        .alternativa {
+                            position: absolute;
+                            top: 10px;
+                            left: -52px;
+                        }
+                    }
+                }
+            }
+        }
+        .conteudo {
+            background: url(../img/painel_questoes.png) top left / 100% auto no-repeat;
+            z-index: 3;
+            width: 688px;
+            height: 1014px;
+            position: absolute;
+            top: 35px;
+            right: 30px;
+            
+            .titulo {
+                font-family: 'Roboto Condensed', sans-serif;
+                padding-top: 15px;
+            }
+            .corpo {
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                padding-top: 88px;
+                height: 766px;
+                padding-left: 40px;
+                padding-right: 40px;
+                line-height: 46px;
+                
+
+                .destaque {
+                    border: 2px solid #86b3b3;
+                    background-color: #286060;
+                    border-radius: 40px;
+                    padding: 30px 20px;
+                    margin-bottom: 80px;
+                }
+            }
+            .botao {
+                padding-top: 0px;
+            }
+        }
+        .bg-mask {
+            background: url(../img/bg_lateral_interno.png) top left / 100% auto no-repeat;
+            z-index: 2;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 972px;
+            height: 1081px;
+
+        }
+    }
+}
+
+// icones alternativas
+.alternativa {
+    background-image: url(../img/alternativa.png);
+    background-position: top left;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 104px;
+    display: block;
+
+    &.inativa {
+        background-image: url(../img/alternativa_inativo.png);
+    }
+
+    &.selecionada {
+        background-image: url(../img/alternativa_selec.png);
+    }
+}
+
+// Avatar
+.avatar {
+    display: block;
+
+    &.cliente {
+        background: url(../img/avatar_cliente.png) top left / 100% auto no-repeat;
+        width: 350px;
+        height: 350px;
+    }
+
+    &.funcionario {
+        background: url(../img/avatar_obras.png) top left / 100% auto no-repeat;
+        width: 216px;
+        height: 288px;
+    }
+}
+
+// Botões
+.bto {
+    @include button-bg-reset();
+
+    &.comecar {
+        width: 487px;
+        height: 178px;
+        position: absolute;
+        bottom: 137px;
+        right: 200px;
+        @include button-bg-reset();
+        @include button-bgs("../img/bt_comecar.png", "../img/bt_comecar_hv.png", "../img/bt_comecar_hv.png");
+    }
+
+    &.iniciar {
+        width: 373px;
+        height: 144px;
+        margin: auto;
+        @include button-bg-reset();
+        @include button-bgs("../img/bt_iniciar.png", "../img/bt_iniciar_hv.png", "../img/bt_iniciar_inativo.png");
+    }
+    &.concluir {
+        width: 304px;
+        height: 118px;
+        @include button-bg-reset();
+        @include button-bgs("../img/bt_concluir.png", "../img/bt_concluir_hv.png", "../img/bt_concluir_hv.png");
+    }
+    &.continuar {
+        width: 303px;
+        height: 117px;
+        @include button-bg-reset();
+        @include button-bgs("../img/bt_continuar.png", "../img/bt_continuar_hv.png", "../img/bt_continuar_hv.png");
+    }
+    &.fechar {
+        width: 304px;
+        height: 118px;
+        @include button-bg-reset();
+        @include button-bgs("../img/bt_fechar.png", "../img/bt_fechar_hv.png", "../img/bt_fechar_hv.png");
+    }
+    &.reiniciar {
+        width: 304px;
+        height: 118px;
+        @include button-bg-reset();
+        @include button-bgs("../img/bt_reiniciar.png", "../img/bt_reiniciar_hv.png", "../img/bt_reiniciar_hv.png");
+    }
+    &.repetir {
+        width: 304px;
+        height: 117px;
+        @include button-bg-reset();
+        @include button-bgs("../img/bt_repetir.png", "../img/bt_repetir_hv.png", "../img/bt_repetir_hv.png");
+    }
+    &.responda {
+        width: 304px;
+        height: 117px;
+        @include button-bg-reset();
+        @include button-bgs("../img/bt_responda.png", "../img/bt_responda_hv.png", "../img/bt_responda_hv.png");
+    }
+    &.anterior {
+        width: 90px;
+        height: 90px;
+        @include button-bgs("../img/bt_anterior.png", "../img/bt_anterior_hv.png", "../img/bt_anterior_inativo.png");
+    }
+    &.proximo {
+        width: 90px;
+        height: 90px;
+        @include button-bgs("../img/bt_proximo.png", "../img/bt_proximo_hv.png", "../img/bt_proximo_inativo.png");
+    }
+    &.voltar {
+        width: 144px;
+        height: 118px;
+        @include button-bgs("../img/bt_voltar.png", "../img/bt_voltar_hv.png", "../img/bt_voltar_inativo.png");
+    }
+    &.download {
+        width: 381px;
+        height: 187px;
+        @include button-bgs("../img/bt_download.png", "../img/bt_download_hv.png", "../img/bt_download.png");
+    }
+    &.etapas {
+        width: 169px;
+        height: 168px;
+        @include button-bgs("../img/bt_etapas.png", "../img/bt_etapas_hv.png", "../img/bt_etapas_inativo.png");
+    }
+
+}
+
+// Logotipo
+#logo {
+    width: 903px;
+    height: 493px;
+    display: block;
+    overflow: hidden;
+    background: url(../img/logo_reforma.png) top left / 100% auto no-repeat;
+    position: absolute;
+    bottom: 160px;
+    left: 150px;
+
+    &.responsivo {
+        width: 903px;
+        height: auto;
+        display: block;
+        position: relative; 
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: auto;
+            display: block;
+            padding-top: 54.6%;
+        }
+    }
+}
+// Feedbacks
+#feedbacks {
+    touch-action: none;
+    pointer-events: none;
+    user-select: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    width: 1077px;
+    height: 1080px;
+    & button {
+        pointer-events: all;
+        touch-action: all;   
+    }
+    .feed-positivo {
+        background-image: url(../img/painel_positivo.png);
+        p {
+            text-align: center;
+            width: 411px;
+            padding-top: 40px;
+        }
+    }
+    .feed-negativo {
+        background-image: url(../img/painel_negativo.png);
+    }
+    .feed-positivo, .feed-negativo {
+        display: none;
+        background-position: top left;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        width: 717px;
+        height: 299px;
+        position: absolute;
+        top: -90px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        margin: auto;
+        padding-top: 59px;
+
+        p {
+            line-height: 43px;
+        }
+        .botoes, .conteudo {
+            position: relative;
+            margin-left: 133px;
+            margin-right: 40px;
+        }
+        .conteudo {
+            overflow: hidden;
+            height: 150px;
+            margin-left: 200px;
+            p {
+                font-size: 40px;
+            }    
+        }   
+
+        .botoes {
+            text-align: center;
+        }     
+        .botoes > button {
+            display: inline-block;
+        }
+    }
+}
+
+#etapas {
+    position: absolute;
+    top: 33px;
+    right: 30px;
+    background: url(../img/modal_etapas.png) top left / 100% auto no-repeat;
+    width: 1646px;
+    height: 1015px;
+    z-index: 99999;
+
+    .titulo, .corpo {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    .titulo {
+        position: relative;
+        width: 100%;
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        padding-top: 14px;
+        padding-bottom: 19px;
+    }
+    .corpo {
+        position: relative;
+        width: 100%;
+        height: 892px;
+        overflow: hidden;
+    
+        .imagem {
+            display: none;
+            position: absolute;
+            top: 40px;
+            left: 50px;
+            width: 786px;
+            height: auto;
+            border: 22px solid white;
+            box-shadow: 20px 20px 0 #33333357;
+        }
+        .conteudo {
+            position: absolute;
+            top: 120px;
+            right: 102px;
+            width: 570px;
+            font-size: 40px;
+            
+            .titulo_etapa {
+                font-weight: 700;
+                font-size: 50px;
+                margin-bottom: 20px;
+                color: #80392c;
+            }
+            .texto {
+                margin-bottom: 40px;
+                line-height: 40px;
+            }
+            
+        }
+        .botoes {
+            text-align: center;
+            overflow: hidden; 
+            width: 100%;
+
+            button {
+                display: inline-block;
+                margin: 40px 40px;
+                
+            }
+        }
+    }
+}
+#encerramento {
+    background: url(../img/bg_intro_fim.jpg) top left / 100% auto no-repeat;
+    width: 1920px;
+    height: 1080px;
+
+    .antesdepois{
+        width: 940px;
+        position: relative;
+        top: 70px;
+        left: 70px;
+        
+        .foto {
+            width: 100%;
+            height: auto;
+            border: 22px solid white; 
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+            /* The animation code */
+            @keyframes fade_out {
+                0% {opacity: 0}
+                5% {opacity: 1}
+                50% {opacity: 1}
+               55% {opacity: 0}
+               100% {opacity: 0}
+                
+
+            }
+            
+            /* The element to apply the animation to */
+            &.depois {
+                opacity: 0;
+                animation-name: fade_out;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+        }
+
+        
+    }
+
+    .painel {
+        position: relative;
+        background: url(../img/painel_cliente.png) top left / 100% auto no-repeat;
+        width: 688px;
+        height: 1013px;
+        overflow: hidden;
+        position: absolute;
+        top: 40px;
+        right: 100px;
+        
+        .titulo {
+            width: 100%;
+            font-size: 40px;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .corpo {
+            width: 100%;
+            height: 721px;
+            text-align: center;
+            font-size: 40px;
+            overflow: hidden;
+
+            p:nth-child(1) {
+                font-size: 50px;
+                margin-top: 100px;
+            }
+            p {
+                color: white;
+                padding-left: 100px;
+                padding-right: 100px;
+                line-height: 40px;
+            }
+        }
+        .botoes {
+            text-align: center;
+            width: 100%;
+            
+            button {
+                display: inline-block;
+                margin: 40px 40px;
+            } 
+        }
+    }
+}
+//Capa
+
+
+  
