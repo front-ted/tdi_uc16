@@ -852,22 +852,40 @@
               Acesse o simulador e relembre esse conhecimento.
             </p>
             <style>
-              .oda-quiz img {
+              .oda-quiz {
                 transition: .5s;
-                max-width: 450px;
+                max-width: fit-content;
                 margin: auto;
                 display: block;
                 box-shadow: 0 3px 3px #35353567;
+                position: relative;
               }
 
-              .oda-quiz:hover img {
+              .oda-quiz img {
+                max-width: 450px;
+                height: auto;
+              }
+
+              .oda-quiz:hover {
                 transform: scale(1.1);
                 transition: .5s;
                 box-shadow: 0 10px 10px #35353567;
               }
+
+              .oda-quiz::before {
+                content: "";
+                width: 150px;
+                height: 150px;
+                background: url(imgs/selo-presencialidade.png) top left / 100% auto no-repeat;
+                position: absolute;
+                z-index: 10;
+                display: block;
+                top: -25px;
+                left: -75px;
+              }
             </style>
             <a href="quiz/index.html" class="oda-quiz" target="_blank">
-              <img src="quiz/thumb.png" alt="Clique para abrir o quiz">
+              <img src="quiz/thumb.png" class="img-fluid" alt="Clique para abrir o quiz">
             </a>
             <p class="no-print">
               É ótimo relembrar as etapas de uma obra, não é mesmo? Porém, conforme visto, somente a compreensão e a
