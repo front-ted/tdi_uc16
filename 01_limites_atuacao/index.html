@@ -774,12 +774,36 @@
               as
               normas técnicas e regulamentações vigentes, incluindo a NBR 16280:2024.
             </p>
-            <!-- <p> Confira nos quadrinhos a seguir um exemplo prático de associação profissional entre um <i>designer</i> e
-              um engenheiro. </p>
-            
-            <div class="espera-video center-block no-print">
-              HQ
-            </div> -->
+            <style>
+              #hq-engenheiro>img {
+                display: block;
+                margin: auto;
+                position: relative;
+                max-width: 750px
+              }
+
+              #hq-engenheiro>button {
+                max-width: 550px;
+                font-size: 20px;
+                margin: auto;
+                display: block;
+                background-color: #397f7f;
+                border: 1px solid #397f7f !important;
+                margin-bottom: 100px;
+              }
+
+              #hq-engenheiro>button:hover {
+                background-color: #2d7070;
+              }
+            </style>
+            <div id="hq-engenheiro" aria-hidden="true">
+              <img id="hq1" src="hq/pag1.png" class="img-responsive" alt="">
+              <img id="hq2" src="hq/pag2.png" class="img-responsive" style="display: none" alt="">
+              <img id="hq3" src="hq/pag3.png" class="img-responsive" style="display: none" alt="">
+              <img id="hq4" src="hq/pag4.png" class="img-responsive" style="display: none" alt="">
+              <button type="button" id="proximapagina" class="btn btn-primary">Próxima página</button>
+            </div>
+
             <div class="acessivel no-print">
               <p><b>Página 1: o desafio</b></p>
               <p> Quadrinho 1</p>
@@ -1381,7 +1405,18 @@
     });
   });
 </script>
-
+<script>
+  $(function () {
+    var HQPagina = 1;
+    $("#hq-engenheiro > button").click(function () {
+      HQPagina++;
+      $("#hq" + HQPagina).fadeIn("fast");
+      if (HQPagina >= 4) {
+        $(this).hide();
+      }
+    })
+  })
+</script>
 <script>
   var scriptElem = document.createElement("script");
   (scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js"),
